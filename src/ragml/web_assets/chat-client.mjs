@@ -52,7 +52,13 @@ export function createChatClient(fetcher = globalThis.fetch.bind(globalThis), { 
     },
     reset() {
       this.cancel();
+      const previous = sessionId;
       sessionId = null;
+      if (!previous) return Promise.resolve();
+      return fetcher(`/v1/chat/sessions/${previous}`, {
+        method: "DELETE", credentials: "same-origin", cache: "no-store",
+        signal: AbortSignal.timeout(5000),
+      }).catch(() => {});
     },
     async send(text) {
       const message = text.trim();
@@ -70,6 +76,7 @@ export function createChatClient(fetcher = globalThis.fetch.bind(globalThis), { 
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),
           cache: "no-store",
+          credentials: "same-origin",
           signal: controller.signal,
         });
         let result;
@@ -80,6 +87,10 @@ export function createChatClient(fetcher = globalThis.fetch.bind(globalThis), { 
         }
         if (turn !== epoch) throw new ChatFailure("cancelled");
         if (!response.ok) {
+          if (result?.code === "session_not_found") {
+            sessionId = null;
+            throw new ChatFailure("session_not_found", true, result?.request_id);
+          }
           throw new ChatFailure(result?.code || "internal_error", result?.retryable === true, result?.request_id);
         }
         if (!validReply(result)) throw new ChatFailure("invalid_response", true);

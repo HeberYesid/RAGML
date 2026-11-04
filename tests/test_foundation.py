@@ -316,7 +316,6 @@ def test_foundation_http_reports_health_and_rag_absence_honestly(tmp_path: Path)
         assert "do-not-echo" not in bad.text and "hidden-input" not in bad.text
         assert client.get("/missing").json()["code"] == "not_found"
         assert client.get("/docs").status_code == 404
-        assert (
-            "200"
-            not in client.get("/openapi.json").json()["paths"]["/v1/chat"]["post"]["responses"]
-        )
+        responses = client.get("/openapi.json").json()["paths"]["/v1/chat"]["post"]["responses"]
+        assert responses["200"]["content"]["application/json"]["schema"]["$ref"].endswith("ChatResponse")
+        assert "503" in responses

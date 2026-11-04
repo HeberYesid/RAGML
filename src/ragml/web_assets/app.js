@@ -68,9 +68,8 @@ function renderCatalog(data) {
 async function checkConnection() {
   $("check-connection").disabled = true;
   try {
-    const response = await fetch("/health", { cache: "no-store", signal: AbortSignal.timeout(5000) });
-    if (!response.ok) throw new Error("unavailable");
-    $("connection-status").textContent = "API local conectada";
+    const response = await fetch("/ready", { cache: "no-store", signal: AbortSignal.timeout(10000) });
+    $("connection-status").textContent = response.ok ? "Asistente local disponible" : "Asistente requiere preparación";
   } catch {
     $("connection-status").textContent = "API sin conexión";
   } finally {
@@ -110,7 +109,10 @@ function renderSources(turn, result, prefix) {
       const expires = new Date(citation.expires_at);
       source.append(node("p", `Actualización: ${new Date(citation.source_updated_at).toLocaleString("es-CO")}`));
       source.append(node("p", `Vigencia hasta: ${expires.toLocaleString("es-CO")}`));
-      if (expires <= new Date()) source.append(node("p", "Dato vencido: requiere una nueva consulta.", "response-warning"));
+      const simulated = result.data_mode === "demo" && result.versions?.commercial_clock === "simulated";
+      const evaluatedAt = simulated ? new Date(result.versions.commercial_evaluated_at) : new Date();
+      if (expires <= evaluatedAt) source.append(node("p", "Dato vencido: requiere una nueva consulta.", "response-warning"));
+      if (simulated) source.append(node("p", `Vigencia comprobada en el reloj simulado: ${evaluatedAt.toLocaleString("es-CO")}.`, "muted"));
     }
     sources.append(source);
   });
@@ -170,6 +172,7 @@ const errorMessages = {
   network_error: "No se pudo conectar con el servicio local. Tu consulta se conserva; puedes reintentar.",
   timeout: "La consulta superó el tiempo de espera. Tu texto se conserva. Puedes reintentar cuando el servicio esté disponible.",
   internal_error: "El servicio no pudo completar la consulta. Tu texto se conserva.",
+  session_not_found: "La conversación venció o dejó de estar disponible. Reenvía tu consulta para iniciar una nueva.",
 };
 
 async function submit(event) {
@@ -188,6 +191,14 @@ async function submit(event) {
   try {
     const result = await client.send(text);
     if (revision !== view) return;
+    if (catalog && result.versions?.catalog_profile && result.versions.catalog_profile !== catalog.profile.revision) {
+      const refreshed = await fetch("/v1/web/catalog", { cache: "no-store", signal: AbortSignal.timeout(10000) });
+      if (!refreshed.ok) throw new ChatFailure("invalid_response", true);
+      const latest = await refreshed.json();
+      if (latest.profile.revision !== result.versions.catalog_profile) throw new ChatFailure("invalid_response", true);
+      if (revision !== view) return;
+      renderCatalog(latest);
+    }
     if (catalog && (result.store_id !== catalog.profile.store_id || result.data_mode !== catalog.profile.data_mode)) {
       client.reset();
       throw new ChatFailure("invalid_response");
@@ -254,5 +265,15 @@ document.querySelectorAll("[data-prompt]").forEach(button => button.addEventList
 checkConnection();
 fetch("/v1/web/catalog", { cache: "no-store", signal: AbortSignal.timeout(10000) })
   .then(response => { if (!response.ok) throw new Error("unavailable"); return response.json(); })
-  .then(renderCatalog)
+  .then(async data => {
+    renderCatalog(data);
+    try {
+      const response = await fetch("/v1/web/runtime", { cache: "no-store", signal: AbortSignal.timeout(10000) });
+      if (!response.ok) return;
+      const runtime = await response.json();
+      if (runtime.store_id !== data.profile.store_id || runtime.catalog_profile !== data.profile.revision) return;
+      if (runtime.commercial_clock === "simulated") $("data-notice").textContent += ` Precios y existencias se reproducen con reloj simulado: ${new Date(runtime.evaluated_at).toLocaleString("es-CO")}.`;
+      $("privacy-note").textContent = `El historial visible permanece en esta pestaña. El servidor local conserva los requisitos durante ${Math.round(runtime.session_ttl_seconds / 60)} minutos de inactividad, en memoria y sin guardarlos en disco. Revisa las fuentes.`;
+    } catch { /* The catalog remains usable if the runtime notice is unavailable. */ }
+  })
   .catch(() => { $("catalog-message").textContent = "No se pudo cargar el catálogo. Puedes intentar una consulta al asistente."; });

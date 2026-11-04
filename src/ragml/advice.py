@@ -6,7 +6,6 @@ from uuid import UUID
 
 from ragml.commercial import CommercialLookup, CommercialPort, ValueView
 from ragml.contracts import (
-    AttributeScalar,
     AttributeValue,
     CatalogDataset,
     Category,
@@ -16,14 +15,11 @@ from ragml.contracts import (
     Stock,
     Variant,
 )
-from ragml.conversation import CommercialCitation, SessionState
+from ragml.conversation import CommercialCitation, SessionRequirement, SessionState
 
 
-class AttributeConstraint(Contract):
-    key: Identifier
-    operator: Literal["eq", "min", "max"] = "eq"
-    value: AttributeScalar
-    unit: Identifier | None = None
+class AttributeConstraint(SessionRequirement):
+    """A validated recommendation constraint that can be retained in a session."""
 
 
 class AdviceRequest(Contract):

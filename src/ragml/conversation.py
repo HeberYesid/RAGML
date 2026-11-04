@@ -6,7 +6,7 @@ from uuid import UUID
 from pydantic import AwareDatetime, Field, StringConstraints, model_validator
 
 from ragml.commercial import CommercialLookup
-from ragml.contracts import Contract, DataMode, Identifier, Money
+from ragml.contracts import AttributeScalar, Contract, DataMode, Identifier, Money
 from ragml.evidence import Location, SourceManifest
 
 
@@ -128,6 +128,13 @@ class ChatResponse(Contract):
                     raise ValueError("Commercial citation is not backed by a fresh observation")
 
 
+class SessionRequirement(Contract):
+    key: Identifier
+    operator: Literal["eq", "min", "max"] = "eq"
+    value: AttributeScalar
+    unit: Identifier | None = None
+
+
 class SessionState(Contract):
     session_id: UUID
     store_id: Identifier
@@ -135,6 +142,12 @@ class SessionState(Contract):
     created_at: AwareDatetime
     last_seen_at: AwareDatetime
     budget: Money | None = None
+    category_id: Identifier | None = None
+    selected_variants: tuple[Identifier, ...] = ()
+    candidate_products: tuple[Identifier, ...] = ()
+    mandatory_constraints: tuple[SessionRequirement, ...] = ()
+    preference_constraints: tuple[SessionRequirement, ...] = ()
+    pending_constraints: tuple[Identifier, ...] = ()
     mandatory_requirements: dict[str, str] = Field(default_factory=dict)
     preferences: dict[str, str] = Field(default_factory=dict)
     presented_variants: tuple[Identifier, ...] = ()
@@ -148,7 +161,12 @@ class SessionState(Contract):
 
 class ErrorResponse(Contract):
     code: Literal[
-        "invalid_input", "not_found", "rag_not_ready", "provider_unavailable", "internal_error"
+        "invalid_input",
+        "not_found",
+        "rag_not_ready",
+        "provider_unavailable",
+        "internal_error",
+        "session_not_found",
     ]
     message: Identifier
     request_id: UUID

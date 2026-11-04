@@ -9,6 +9,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
 from ragml.api import create_app
+from ragml.chat import ChatService
 from ragml.contracts import CatalogDataset
 from ragml.settings import Settings, load_settings
 
@@ -36,6 +37,18 @@ def create_web_app(settings: Settings | None = None) -> FastAPI:
             raise HTTPException(status_code=503, detail="Catalog unavailable") from exc
         response.headers["Cache-Control"] = "no-store"
         return data
+
+    @app.get("/v1/web/runtime")
+    def runtime(response: Response) -> dict[str, str | int | bool]:
+        service: ChatService | None = app.state.chat_service
+        if service is None:
+            raise HTTPException(status_code=503, detail="Chat unavailable")
+        try:
+            state = service.runtime()
+        except (OSError, ValueError) as exc:
+            raise HTTPException(status_code=503, detail="Runtime unavailable") from exc
+        response.headers["Cache-Control"] = "no-store"
+        return state
 
     return app
 

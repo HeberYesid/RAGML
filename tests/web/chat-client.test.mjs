@@ -98,3 +98,32 @@ test("does not accept broken evidence links or fields that the interface cannot 
     await assert.rejects(client.send("Consulta"), error => error.code === "invalid_response");
   }
 });
+
+test("new conversation removes the previous server session using same-origin credentials", async () => {
+  const requests = [];
+  const client = createChatClient(async (url, options) => {
+    requests.push({ url, ...options });
+    if (options.method === "DELETE") return new Response(null, { status: 204 });
+    return new Response(JSON.stringify(reply));
+  });
+  await client.send("Primera");
+  await client.reset();
+  await client.send("Nueva");
+  assert.equal(requests[1].method, "DELETE");
+  assert.equal(requests[1].url, `/v1/chat/sessions/${session}`);
+  assert.equal(requests[1].credentials, "same-origin");
+  assert.equal(JSON.parse(requests[2].body).session_id, undefined);
+});
+
+test("expired sessions release the old identity before a retry", async () => {
+  const requests = [];
+  const client = createChatClient(async (url, options) => {
+    requests.push(JSON.parse(options.body));
+    if (requests.length === 2) return new Response(JSON.stringify({ code: "session_not_found" }), { status: 404 });
+    return new Response(JSON.stringify(reply));
+  });
+  await client.send("Primera");
+  await assert.rejects(client.send("Seguimiento"), error => error.code === "session_not_found" && error.retryable);
+  await client.send("Nueva consulta");
+  assert.equal(requests[2].session_id, undefined);
+});
