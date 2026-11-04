@@ -1,0 +1,7 @@
+{
+  "version": "0.40.14",
+  "archive_url": "https://github.com/ollama/ollama/releases/download/v0.40.14/ollama-windows-amd64.zip",
+  "archive_bytes": 1601954968,
+  "archive_sha256": "65d68cade6cf6375f398b518224f8c8a15e062387f38cf477abfc848de7e7e29",
+  "executable_sha256": "14e0fff0449ce3c3a7fe9db8b8b32089274db5f835d4c99f5af7c32dcbf08981"
+}

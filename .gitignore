@@ -1,0 +1,24 @@
+# Local environments and tool output
+.venv/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Private configuration and imported store data
+.env
+.env.*
+!.env.example
+data/private/
+data/runtime/
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.log

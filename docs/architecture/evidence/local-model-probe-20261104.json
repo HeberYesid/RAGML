@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-11-04T13:59:34.574157+00:00",
+  "kind": "synthetic_infrastructure_probe_not_rag_evaluation",
+  "models": {
+    "schema_version": "0.1",
+    "runtime_version": "0.40.14",
+    "generation": {
+      "tag": "qwen3:4b-instruct-2507-q4_K_M",
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "size_bytes": 2497293803,
+      "quantization": "Q4_K_M"
+    },
+    "embedding": {
+      "tag": "qwen3-embedding:0.6b",
+      "digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+      "size_bytes": 639150858,
+      "quantization": "Q8_0"
+    },
+    "embedding_dimensions": 1024
+  },
+  "context_tokens": 4096,
+  "output_limit_tokens": 256,
+  "generation": [
+    {
+      "wall_seconds": 4.464,
+      "message": {
+        "content": "Su potencia es de 8 watts."
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 4437852300,
+      "load_duration": 3388753500,
+      "prompt_eval_count": 63,
+      "eval_count": 10
+    },
+    {
+      "wall_seconds": 0.592,
+      "message": {
+        "content": "Su potencia es de 8 vatios."
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 565499500,
+      "load_duration": 4374000,
+      "prompt_eval_count": 63,
+      "eval_count": 11
+    }
+  ],
+  "embedding": {
+    "wall_seconds": 2.713,
+    "dimensions": 1024,
+    "similarities": [
+      0.7035824690437131,
+      0.2328471948046092
+    ],
+    "document_count": 2
+  }
+}

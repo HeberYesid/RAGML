@@ -1,0 +1,228 @@
+{
+  "$defs": {
+    "CommercialSnapshot": {
+      "additionalProperties": false,
+      "properties": {
+        "store_id": {
+          "minLength": 1,
+          "title": "Store Id",
+          "type": "string"
+        },
+        "variant_id": {
+          "minLength": 1,
+          "title": "Variant Id",
+          "type": "string"
+        },
+        "snapshot_id": {
+          "minLength": 1,
+          "title": "Snapshot Id",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "revision": {
+          "minLength": 1,
+          "title": "Revision",
+          "type": "string"
+        },
+        "price": {
+          "$ref": "#/$defs/Observation_Money_"
+        },
+        "stock": {
+          "$ref": "#/$defs/Observation_Stock_"
+        }
+      },
+      "required": [
+        "store_id",
+        "variant_id",
+        "snapshot_id",
+        "source_id",
+        "revision",
+        "price",
+        "stock"
+      ],
+      "title": "CommercialSnapshot",
+      "type": "object"
+    },
+    "Money": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Amount"
+        },
+        "currency": {
+          "pattern": "^[A-Z]{3}$",
+          "title": "Currency",
+          "type": "string"
+        }
+      },
+      "required": [
+        "amount",
+        "currency"
+      ],
+      "title": "Money",
+      "type": "object"
+    },
+    "Observation_Money_": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Money"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_updated_at": {
+          "format": "date-time",
+          "title": "Source Updated At",
+          "type": "string"
+        },
+        "expires_at": {
+          "format": "date-time",
+          "title": "Expires At",
+          "type": "string"
+        },
+        "source_ref": {
+          "minLength": 1,
+          "title": "Source Ref",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "source_updated_at",
+        "expires_at",
+        "source_ref"
+      ],
+      "title": "Observation[Money]",
+      "type": "object"
+    },
+    "Observation_Stock_": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Stock"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_updated_at": {
+          "format": "date-time",
+          "title": "Source Updated At",
+          "type": "string"
+        },
+        "expires_at": {
+          "format": "date-time",
+          "title": "Expires At",
+          "type": "string"
+        },
+        "source_ref": {
+          "minLength": 1,
+          "title": "Source Ref",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "source_updated_at",
+        "expires_at",
+        "source_ref"
+      ],
+      "title": "Observation[Stock]",
+      "type": "object"
+    },
+    "Stock": {
+      "additionalProperties": false,
+      "properties": {
+        "availability": {
+          "enum": [
+            "in_stock",
+            "out_of_stock"
+          ],
+          "title": "Availability",
+          "type": "string"
+        },
+        "quantity": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Quantity"
+        }
+      },
+      "required": [
+        "availability",
+        "quantity"
+      ],
+      "title": "Stock",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1",
+      "default": "0.1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "store_id": {
+      "minLength": 1,
+      "title": "Store Id",
+      "type": "string"
+    },
+    "data_mode": {
+      "enum": [
+        "demo",
+        "real"
+      ],
+      "title": "Data Mode",
+      "type": "string"
+    },
+    "revision": {
+      "minLength": 1,
+      "title": "Revision",
+      "type": "string"
+    },
+    "snapshots": {
+      "items": {
+        "$ref": "#/$defs/CommercialSnapshot"
+      },
+      "title": "Snapshots",
+      "type": "array"
+    }
+  },
+  "required": [
+    "store_id",
+    "data_mode",
+    "revision",
+    "snapshots"
+  ],
+  "title": "CommercialDataset",
+  "type": "object"
+}

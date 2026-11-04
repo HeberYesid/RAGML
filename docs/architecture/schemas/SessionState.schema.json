@@ -1,0 +1,103 @@
+{
+  "$defs": {
+    "Money": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Amount"
+        },
+        "currency": {
+          "pattern": "^[A-Z]{3}$",
+          "title": "Currency",
+          "type": "string"
+        }
+      },
+      "required": [
+        "amount",
+        "currency"
+      ],
+      "title": "Money",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "session_id": {
+      "format": "uuid",
+      "title": "Session Id",
+      "type": "string"
+    },
+    "store_id": {
+      "minLength": 1,
+      "title": "Store Id",
+      "type": "string"
+    },
+    "profile_revision": {
+      "minLength": 1,
+      "title": "Profile Revision",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "last_seen_at": {
+      "format": "date-time",
+      "title": "Last Seen At",
+      "type": "string"
+    },
+    "budget": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Money"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "mandatory_requirements": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Mandatory Requirements",
+      "type": "object"
+    },
+    "preferences": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Preferences",
+      "type": "object"
+    },
+    "presented_variants": {
+      "default": [],
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "title": "Presented Variants",
+      "type": "array"
+    }
+  },
+  "required": [
+    "session_id",
+    "store_id",
+    "profile_revision",
+    "created_at",
+    "last_seen_at"
+  ],
+  "title": "SessionState",
+  "type": "object"
+}

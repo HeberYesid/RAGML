@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-11-04T14:23:40.509039+00:00",
+  "installed_wheel": "ragml-0.2.0-py3-none-any.whl",
+  "wheel_sha256": "4b43152a1e6387bb2c698b7945b49b3b292dd5ac7dacd24fed52ca4055579d47",
+  "host": "127.0.0.1",
+  "port": 14979,
+  "results": {
+    "health": {
+      "status": 200,
+      "body": {
+        "status": "ok",
+        "stage": "foundation",
+        "version": "0.2.0",
+        "rag_available": false
+      }
+    },
+    "ready": {
+      "status": 503,
+      "body": {
+        "status": "not_ready",
+        "dependencies": {
+          "sqlite": true,
+          "generation_model": true,
+          "embedding_model": true,
+          "catalog_file": true,
+          "source_manifest_file": true,
+          "rag_implemented": false
+        },
+        "rag_available": false,
+        "message": "Base técnica disponible; el catálogo, el índice y el RAG se completarán después."
+      }
+    },
+    "chat": {
+      "status": 503,
+      "code": "rag_not_ready"
+    },
+    "invalid_input": {
+      "status": 422,
+      "code": "invalid_input"
+    },
+    "cdn_documentation_routes": "disabled",
+    "openapi_status": 200
+  },
+  "server_stopped_after_probe": true
+}
