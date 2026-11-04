@@ -1,0 +1,92 @@
+{
+  "schema_version": "0.1",
+  "phase": "7-and-8-preparation",
+  "date": "2026-11-04",
+  "scope": "Current shared workspace; software checks, offline summaries and evidence organization only",
+  "checks": [
+    {
+      "name": "pytest",
+      "exit_code": 0,
+      "observed_output": "........................................................................ [ 47%]\r\n........................................................................ [ 94%]\r\n.........                                                                [100%]\r\n153 passed in 2.87s\r\n",
+      "command": ".\\.venv\\Scripts\\python.exe -m pytest -q -p no:cacheprovider --basetemp .cache/phase78-final-tests",
+      "output_sha256_utf8": "b971722e688157fc24c5c0f7531aa7a4ff315c4307a993a499aff2a95e06aa95"
+    },
+    {
+      "name": "ruff-check",
+      "exit_code": 0,
+      "observed_output": "All checks passed!\n",
+      "command": ".\\.venv\\Scripts\\python.exe -m ruff check src tests --no-cache",
+      "output_sha256_utf8": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "name": "ruff-format",
+      "exit_code": 0,
+      "observed_output": "30 files already formatted\n",
+      "command": ".\\.venv\\Scripts\\python.exe -m ruff format --check src tests",
+      "output_sha256_utf8": "5a29981aebe12cf610955c0455e62c60bdd53f693ac0d954a67db9c7f9e5042a"
+    },
+    {
+      "name": "mypy",
+      "exit_code": 0,
+      "observed_output": "Success: no issues found in 19 source files\r\n",
+      "command": ".\\.venv\\Scripts\\python.exe -m mypy src --cache-dir .cache/phase78-final-mypy",
+      "output_sha256_utf8": "6b17fb6a37a46097878dda7d24d47ea3abd7a26d94efdbf8f17ad1c639872d16"
+    },
+    {
+      "name": "web-client",
+      "exit_code": 0,
+      "observed_output": "\u2714 sends same-origin JSON and reuses only the server-issued session (29.8151ms)\n\u2714 reports unavailable service and connection failure without losing the session (1.5201ms)\n\u2714 new conversation cancels an in-flight turn and never adopts its late session (0.7534ms)\n\u2714 rejects empty or overlong input and malformed replies without adopting a session (0.7364ms)\n\u2714 bounds waiting time and releases the client for retry (31.6555ms)\n\u2714 does not accept broken evidence links or fields that the interface cannot render (1.2242ms)\n\u2139 tests 6\n\u2139 suites 0\n\u2139 pass 6\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 267.0208\n",
+      "command": "node --test --test-isolation=none tests/web/chat-client.test.mjs",
+      "output_sha256_utf8": "b2ba4b94362d4ee19f06a1f241142fb9fa0ceb2ad1de4a082e7f8deb81084b2a"
+    },
+    {
+      "name": "package-build",
+      "exit_code": 0,
+      "observed_output": "Building source distribution (uv build backend)...\nBuilding wheel from source distribution (uv build backend)...\nSuccessfully built .cache\\phase78-dist\\ragml-0.2.0.tar.gz\nSuccessfully built .cache\\phase78-dist\\ragml-0.2.0-py3-none-any.whl\n",
+      "command": "uv build --no-sources --offline --cache-dir .cache/uv --out-dir .cache/phase78-dist",
+      "output_sha256_utf8": "3dac351397f91b5f7eea170966ce1b08022c146c24f5a210aaffcbe5a7073f68"
+    },
+    {
+      "name": "reference-integrity",
+      "exit_code": 0,
+      "observed_output": "{\r\n  \"status\": \"passed\",\r\n  \"reference_set_revision\": \"references-20261104-v1\",\r\n  \"partitions_manifest_sha256\": \"71c6ac565bb01e67bce048056b5abb7c47e7fcc113acfb8638bd188bf17b67b5\",\r\n  \"counts\": {\r\n    \"adjustment\": 60,\r\n    \"final\": 60\r\n  },\r\n  \"hashes_match\": {\r\n    \"adjustment_cases\": true,\r\n    \"reserved_archive\": true,\r\n    \"catalog\": true,\r\n    \"sources\": true,\r\n    \"commercial\": true\r\n  },\r\n  \"reserved_archive_unpacked\": false,\r\n  \"assistant_evaluation_executed\": false\r\n}\r\n",
+      "command": ".\\.venv\\Scripts\\python.exe scripts/verify_reference_integrity.py",
+      "output_sha256_utf8": "19d61be652a61e2b25ee3eeba4f2c135ae79c027732a4a485b2ac2bfa955a91e"
+    }
+  ],
+  "tdd": {
+    "seams": [
+      "public metric functions",
+      "validated JSON records and CLI"
+    ],
+    "observed_cycles": [
+      "CountMetric: import failure, then 1 passed",
+      "EvaluationRun: import failure, then 8 passed",
+      "HumanReview: import failure, then 9 passed",
+      "summarize: import failure, then 11 passed",
+      "JSON persistence/CLI: import failure, then 12 passed",
+      "unknown historical candidate: 1 failed / 12 passed, then 13 passed"
+    ]
+  },
+  "environment_issue": {
+    "initial_pytest": "PermissionError [WinError 5] in dedicated pytest temporary directory inside isolation",
+    "resolution": "Repeated through permitted local execution outside isolation; no permissions or assertions changed",
+    "baseline": "140 passed"
+  },
+  "limits": [
+    "No fresh inference, browser/visual review, load testing, clean-machine installation, final evaluation, participant study or deployment in this phase.",
+    "Reserved archive hashed only; not unpacked.",
+    "Global checks describe the shared workspace at execution time; root README changed concurrently."
+  ],
+  "additional_observations": {
+    "historical_recall_at_5": 1.0,
+    "historical_cases": 18,
+    "historical_median_seconds": 0.099139,
+    "historical_p95_seconds": 49.879168,
+    "runtime_schema_matches_export": true,
+    "wheel_contains_evaluation_module": true,
+    "wheel_contains_reserved_cases": false,
+    "fresh_inference_executed": false
+  },
+  "checked_at": "2026-11-04T18:28:36.406361+00:00"
+}

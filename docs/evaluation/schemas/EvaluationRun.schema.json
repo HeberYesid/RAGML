@@ -1,0 +1,899 @@
+{
+  "$defs": {
+    "CaseResult": {
+      "additionalProperties": false,
+      "properties": {
+        "case_id": {
+          "minLength": 1,
+          "title": "Case Id",
+          "type": "string"
+        },
+        "family_id": {
+          "minLength": 1,
+          "title": "Family Id",
+          "type": "string"
+        },
+        "category_id": {
+          "minLength": 1,
+          "title": "Category Id",
+          "type": "string"
+        },
+        "task_type": {
+          "minLength": 1,
+          "title": "Task Type",
+          "type": "string"
+        },
+        "evaluated_at": {
+          "format": "date-time",
+          "title": "Evaluated At",
+          "type": "string"
+        },
+        "execution": {
+          "enum": [
+            "completed",
+            "error"
+          ],
+          "title": "Execution",
+          "type": "string"
+        },
+        "error_code": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error Code"
+        },
+        "response_status": {
+          "anyOf": [
+            {
+              "enum": [
+                "answered",
+                "clarification_required",
+                "insufficient_evidence",
+                "temporarily_unavailable"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Response Status"
+        },
+        "gold_chunk_ids": {
+          "default": [],
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Gold Chunk Ids",
+          "type": "array"
+        },
+        "retrieved_chunk_ids": {
+          "default": [],
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Retrieved Chunk Ids",
+          "type": "array"
+        },
+        "timings_seconds": {
+          "additionalProperties": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "propertyNames": {
+            "minLength": 1
+          },
+          "title": "Timings Seconds",
+          "type": "object"
+        },
+        "warm_state": {
+          "default": "unknown",
+          "enum": [
+            "cold",
+            "warm",
+            "unknown"
+          ],
+          "title": "Warm State",
+          "type": "string"
+        },
+        "usage": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "propertyNames": {
+                "minLength": 1
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Usage"
+        },
+        "response": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ChatResponse"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/HumanReview"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "case_id",
+        "family_id",
+        "category_id",
+        "task_type",
+        "evaluated_at",
+        "execution",
+        "timings_seconds"
+      ],
+      "title": "CaseResult",
+      "type": "object"
+    },
+    "ChatResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "0.1",
+          "default": "0.1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "request_id": {
+          "format": "uuid",
+          "title": "Request Id",
+          "type": "string"
+        },
+        "session_id": {
+          "format": "uuid",
+          "title": "Session Id",
+          "type": "string"
+        },
+        "store_id": {
+          "minLength": 1,
+          "title": "Store Id",
+          "type": "string"
+        },
+        "data_mode": {
+          "enum": [
+            "demo",
+            "real"
+          ],
+          "title": "Data Mode",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "answered",
+            "clarification_required",
+            "insufficient_evidence",
+            "temporarily_unavailable"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "answer": {
+          "minLength": 1,
+          "title": "Answer",
+          "type": "string"
+        },
+        "claims": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/SupportedClaim"
+          },
+          "title": "Claims",
+          "type": "array"
+        },
+        "citations": {
+          "default": [],
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "commercial": "#/$defs/CommercialCitation",
+                "document": "#/$defs/DocumentCitation"
+              },
+              "propertyName": "kind"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/DocumentCitation"
+              },
+              {
+                "$ref": "#/$defs/CommercialCitation"
+              }
+            ]
+          },
+          "title": "Citations",
+          "type": "array"
+        },
+        "products": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/ProductReference"
+          },
+          "title": "Products",
+          "type": "array"
+        },
+        "warnings": {
+          "default": [],
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        },
+        "versions": {
+          "additionalProperties": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Versions",
+          "type": "object"
+        }
+      },
+      "required": [
+        "request_id",
+        "session_id",
+        "store_id",
+        "data_mode",
+        "status",
+        "answer",
+        "versions"
+      ],
+      "title": "ChatResponse",
+      "type": "object"
+    },
+    "CommercialCitation": {
+      "additionalProperties": false,
+      "properties": {
+        "citation_id": {
+          "minLength": 1,
+          "title": "Citation Id",
+          "type": "string"
+        },
+        "kind": {
+          "const": "commercial",
+          "default": "commercial",
+          "title": "Kind",
+          "type": "string"
+        },
+        "store_id": {
+          "minLength": 1,
+          "title": "Store Id",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "source_version": {
+          "minLength": 1,
+          "title": "Source Version",
+          "type": "string"
+        },
+        "snapshot_id": {
+          "minLength": 1,
+          "title": "Snapshot Id",
+          "type": "string"
+        },
+        "variant_id": {
+          "minLength": 1,
+          "title": "Variant Id",
+          "type": "string"
+        },
+        "field": {
+          "enum": [
+            "price",
+            "stock"
+          ],
+          "title": "Field",
+          "type": "string"
+        },
+        "source_updated_at": {
+          "format": "date-time",
+          "title": "Source Updated At",
+          "type": "string"
+        },
+        "expires_at": {
+          "format": "date-time",
+          "title": "Expires At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "citation_id",
+        "store_id",
+        "source_id",
+        "source_version",
+        "snapshot_id",
+        "variant_id",
+        "field",
+        "source_updated_at",
+        "expires_at"
+      ],
+      "title": "CommercialCitation",
+      "type": "object"
+    },
+    "CountMetric": {
+      "additionalProperties": false,
+      "properties": {
+        "numerator": {
+          "minimum": 0,
+          "title": "Numerator",
+          "type": "integer"
+        },
+        "denominator": {
+          "minimum": 0,
+          "title": "Denominator",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "numerator",
+        "denominator"
+      ],
+      "title": "CountMetric",
+      "type": "object"
+    },
+    "DocumentCitation": {
+      "additionalProperties": false,
+      "properties": {
+        "citation_id": {
+          "minLength": 1,
+          "title": "Citation Id",
+          "type": "string"
+        },
+        "kind": {
+          "const": "document",
+          "default": "document",
+          "title": "Kind",
+          "type": "string"
+        },
+        "store_id": {
+          "minLength": 1,
+          "title": "Store Id",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "source_version": {
+          "minLength": 1,
+          "title": "Source Version",
+          "type": "string"
+        },
+        "chunk_id": {
+          "minLength": 1,
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "location": {
+          "$ref": "#/$defs/Location"
+        },
+        "excerpt": {
+          "minLength": 1,
+          "title": "Excerpt",
+          "type": "string"
+        }
+      },
+      "required": [
+        "citation_id",
+        "store_id",
+        "source_id",
+        "source_version",
+        "chunk_id",
+        "location",
+        "excerpt"
+      ],
+      "title": "DocumentCitation",
+      "type": "object"
+    },
+    "HumanReview": {
+      "additionalProperties": false,
+      "properties": {
+        "reviewer_code": {
+          "minLength": 1,
+          "title": "Reviewer Code",
+          "type": "string"
+        },
+        "reviewed_at": {
+          "format": "date-time",
+          "title": "Reviewed At",
+          "type": "string"
+        },
+        "response_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Response Sha256",
+          "type": "string"
+        },
+        "independent_reviewer": {
+          "default": false,
+          "title": "Independent Reviewer",
+          "type": "boolean"
+        },
+        "rubric": {
+          "$ref": "#/$defs/Rubric"
+        },
+        "evidence_references": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Evidence References",
+          "type": "array"
+        },
+        "rationale": {
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "factual_correctness": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CountMetric"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "evidence_support": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CountMetric"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "citation_fidelity": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CountMetric"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "commercial_identity": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CountMetric"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "mandatory_constraints": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CountMetric"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "insufficiency_handling": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CountMetric"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "task_resolution": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CountMetric"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "critical_errors": {
+          "default": [],
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Critical Errors",
+          "type": "array"
+        }
+      },
+      "required": [
+        "reviewer_code",
+        "reviewed_at",
+        "response_sha256",
+        "rubric",
+        "evidence_references",
+        "rationale"
+      ],
+      "title": "HumanReview",
+      "type": "object"
+    },
+    "Location": {
+      "additionalProperties": false,
+      "properties": {
+        "page": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        },
+        "section": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Section"
+        },
+        "paragraph": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Paragraph"
+        },
+        "table": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Table"
+        }
+      },
+      "title": "Location",
+      "type": "object"
+    },
+    "ProductReference": {
+      "additionalProperties": false,
+      "properties": {
+        "product_id": {
+          "minLength": 1,
+          "title": "Product Id",
+          "type": "string"
+        },
+        "variant_id": {
+          "minLength": 1,
+          "title": "Variant Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "product_id",
+        "variant_id"
+      ],
+      "title": "ProductReference",
+      "type": "object"
+    },
+    "Rubric": {
+      "additionalProperties": false,
+      "properties": {
+        "product_correctness": {
+          "enum": [
+            "meets",
+            "partial",
+            "fails",
+            "not_applicable"
+          ],
+          "title": "Product Correctness",
+          "type": "string"
+        },
+        "data_accuracy": {
+          "enum": [
+            "meets",
+            "partial",
+            "fails",
+            "not_applicable"
+          ],
+          "title": "Data Accuracy",
+          "type": "string"
+        },
+        "source_sufficiency": {
+          "enum": [
+            "meets",
+            "partial",
+            "fails",
+            "not_applicable"
+          ],
+          "title": "Source Sufficiency",
+          "type": "string"
+        },
+        "constraint_compliance": {
+          "enum": [
+            "meets",
+            "partial",
+            "fails",
+            "not_applicable"
+          ],
+          "title": "Constraint Compliance",
+          "type": "string"
+        },
+        "response_adequacy": {
+          "enum": [
+            "meets",
+            "partial",
+            "fails",
+            "not_applicable"
+          ],
+          "title": "Response Adequacy",
+          "type": "string"
+        }
+      },
+      "required": [
+        "product_correctness",
+        "data_accuracy",
+        "source_sufficiency",
+        "constraint_compliance",
+        "response_adequacy"
+      ],
+      "title": "Rubric",
+      "type": "object"
+    },
+    "SupportedClaim": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "citation_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Citation Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "text",
+        "citation_ids"
+      ],
+      "title": "SupportedClaim",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1",
+      "default": "0.1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "run_id": {
+      "minLength": 1,
+      "title": "Run Id",
+      "type": "string"
+    },
+    "purpose": {
+      "enum": [
+        "software_example",
+        "adjustment"
+      ],
+      "title": "Purpose",
+      "type": "string"
+    },
+    "partition": {
+      "const": "adjustment",
+      "default": "adjustment",
+      "title": "Partition",
+      "type": "string"
+    },
+    "system": {
+      "enum": [
+        "retrieval_only",
+        "document_rag",
+        "integrated"
+      ],
+      "title": "System",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "candidate_sha256": {
+      "anyOf": [
+        {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Candidate Sha256"
+    },
+    "candidate_provenance": {
+      "default": "recorded_at_execution",
+      "enum": [
+        "recorded_at_execution",
+        "unknown_historical_candidate"
+      ],
+      "title": "Candidate Provenance",
+      "type": "string"
+    },
+    "artifacts": {
+      "additionalProperties": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "propertyNames": {
+        "minLength": 1
+      },
+      "title": "Artifacts",
+      "type": "object"
+    },
+    "versions": {
+      "additionalProperties": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "propertyNames": {
+        "minLength": 1
+      },
+      "title": "Versions",
+      "type": "object"
+    },
+    "parameters": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "integer"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "propertyNames": {
+        "minLength": 1
+      },
+      "title": "Parameters",
+      "type": "object"
+    },
+    "k": {
+      "default": 5,
+      "maximum": 10,
+      "minimum": 1,
+      "title": "K",
+      "type": "integer"
+    },
+    "environment": {
+      "minLength": 1,
+      "title": "Environment",
+      "type": "string"
+    },
+    "concurrency": {
+      "minimum": 1,
+      "title": "Concurrency",
+      "type": "integer"
+    },
+    "planned_cases": {
+      "minimum": 0,
+      "title": "Planned Cases",
+      "type": "integer"
+    },
+    "cases": {
+      "items": {
+        "$ref": "#/$defs/CaseResult"
+      },
+      "title": "Cases",
+      "type": "array"
+    },
+    "limitations": {
+      "default": [],
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "title": "Limitations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "run_id",
+    "purpose",
+    "system",
+    "created_at",
+    "candidate_sha256",
+    "artifacts",
+    "versions",
+    "parameters",
+    "environment",
+    "concurrency",
+    "planned_cases",
+    "cases"
+  ],
+  "title": "EvaluationRun",
+  "type": "object"
+}

@@ -1,0 +1,525 @@
+{
+  "schema_version": "0.1",
+  "run_id": "phase4-adjustment-import-20261104",
+  "purpose": "adjustment",
+  "partition": "adjustment",
+  "system": "retrieval_only",
+  "created_at": "2026-11-04T18:11:29.551958Z",
+  "candidate_sha256": null,
+  "candidate_provenance": "unknown_historical_candidate",
+  "artifacts": {
+    "original_phase4_report": "91315dca9d57508e5e427e77e0a79a1c603b5bd06f54fe1b0279ca534ad79086",
+    "adjustment_references": "065aebf92d0aa9770a742a4a1df9b97359fe78242f029abb40ffbff24872a53b",
+    "partitions_manifest_at_import": "71c6ac565bb01e67bce048056b5abb7c47e7fcc113acfb8638bd188bf17b67b5"
+  },
+  "versions": {
+    "references": "references-20261104-v1",
+    "corpus": "demo-20261104-v2",
+    "index_fingerprint": "94a7e79b631aad7b48c949a18dd5be163c4a361f29a1e0b799e2e0198e799678",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d"
+  },
+  "parameters": {
+    "k": 5,
+    "selection": "document,policy",
+    "filters": "none; expected identities not supplied to retrieval"
+  },
+  "k": 5,
+  "environment": "Historical sequential local retrieval; hardware and resources were not recorded.",
+  "concurrency": 1,
+  "planned_cases": 18,
+  "cases": [
+    {
+      "case_id": "DEV-001",
+      "family_id": "document/peripherals/device_type",
+      "category_id": "peripherals",
+      "task_type": "document",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "doc-per-001-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-per-001-s1",
+        "doc-per-001-s2",
+        "doc-per-001-s3",
+        "doc-per-009-s1",
+        "doc-per-002-s1"
+      ],
+      "timings_seconds": {
+        "total": 49.879168
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-002",
+      "family_id": "document/peripherals/connection",
+      "category_id": "peripherals",
+      "task_type": "document",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "doc-per-003-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-per-003-s1",
+        "doc-per-003-s2",
+        "doc-per-003-s3",
+        "doc-per-004-s1",
+        "doc-per-004-s2"
+      ],
+      "timings_seconds": {
+        "total": 0.109148
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-010",
+      "family_id": "document/connectivity/host_connector",
+      "category_id": "connectivity",
+      "task_type": "document",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "doc-con-001-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-con-001-s2",
+        "doc-con-001-s1",
+        "doc-con-002-s2",
+        "doc-con-001-s3",
+        "doc-con-002-s1"
+      ],
+      "timings_seconds": {
+        "total": 0.104969
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-011",
+      "family_id": "document/connectivity/interfaces",
+      "category_id": "connectivity",
+      "task_type": "document",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "doc-con-003-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-con-003-s2",
+        "doc-con-003-s1",
+        "doc-con-003-s3",
+        "doc-con-009-s2",
+        "doc-con-004-s2"
+      ],
+      "timings_seconds": {
+        "total": 0.105044
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-019",
+      "family_id": "document/lighting/power_w",
+      "category_id": "lighting",
+      "task_type": "document",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "doc-ilu-001-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-ilu-001-s2",
+        "doc-ilu-001-s1",
+        "doc-ilu-001-s3",
+        "doc-ilu-002-s2",
+        "doc-ilu-005-s2"
+      ],
+      "timings_seconds": {
+        "total": 0.097951
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-020",
+      "family_id": "document/lighting/power_source",
+      "category_id": "lighting",
+      "task_type": "document",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "doc-ilu-003-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-ilu-003-s1",
+        "doc-ilu-003-s2",
+        "doc-ilu-003-s3",
+        "doc-org-003-s1",
+        "doc-org-003-s2"
+      ],
+      "timings_seconds": {
+        "total": 0.098528
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-028",
+      "family_id": "document/organization/width_cm",
+      "category_id": "organization",
+      "task_type": "document",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "doc-org-001-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-org-001-s2",
+        "doc-org-001-s1",
+        "doc-org-009-s2",
+        "doc-org-001-s3",
+        "doc-org-007-s2"
+      ],
+      "timings_seconds": {
+        "total": 0.097943
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-029",
+      "family_id": "document/organization/depth_cm",
+      "category_id": "organization",
+      "task_type": "document",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "doc-org-003-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-org-003-s1",
+        "doc-org-003-s2",
+        "doc-ilu-003-s1",
+        "doc-mob-003-s1",
+        "doc-org-003-s3"
+      ],
+      "timings_seconds": {
+        "total": 0.09785
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-037",
+      "family_id": "document/furniture/width_cm",
+      "category_id": "furniture",
+      "task_type": "document",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "doc-mob-001-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-mob-001-s1",
+        "doc-mob-001-s2",
+        "doc-mob-002-s1",
+        "doc-mob-002-s2",
+        "doc-mob-004-s1"
+      ],
+      "timings_seconds": {
+        "total": 0.101388
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-038",
+      "family_id": "document/furniture/depth_cm",
+      "category_id": "furniture",
+      "task_type": "document",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "doc-mob-003-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-mob-003-s1",
+        "doc-mob-003-s2",
+        "doc-mob-005-s1",
+        "doc-org-004-s1",
+        "doc-mob-004-s2"
+      ],
+      "timings_seconds": {
+        "total": 0.100104
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-046",
+      "family_id": "document/everyday-accessories/material",
+      "category_id": "everyday-accessories",
+      "task_type": "document",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "doc-acc-001-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-acc-001-s2",
+        "doc-acc-001-s1",
+        "doc-acc-001-s3",
+        "doc-acc-002-s1",
+        "doc-acc-002-s2"
+      ],
+      "timings_seconds": {
+        "total": 0.098541
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-047",
+      "family_id": "document/everyday-accessories/width_cm",
+      "category_id": "everyday-accessories",
+      "task_type": "document",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "doc-acc-003-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-acc-003-s1",
+        "doc-acc-003-s2",
+        "doc-acc-003-s3",
+        "doc-acc-009-s1",
+        "doc-mob-001-s1"
+      ],
+      "timings_seconds": {
+        "total": 0.099345
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-055",
+      "family_id": "unknown-price-policy",
+      "category_id": "store",
+      "task_type": "policy",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "policy-prices-s1"
+      ],
+      "retrieved_chunk_ids": [
+        "policy-prices-s1",
+        "policy-availability-s1",
+        "policy-delivery-s1",
+        "guide-connectivity-s2",
+        "guide-everyday-accessories-s2"
+      ],
+      "timings_seconds": {
+        "total": 0.091438
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-056",
+      "family_id": "no-reservation",
+      "category_id": "store",
+      "task_type": "policy",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "policy-availability-s1"
+      ],
+      "retrieved_chunk_ids": [
+        "policy-availability-s1",
+        "policy-exchanges-s1",
+        "doc-org-007-s3",
+        "doc-mob-007-s3",
+        "policy-help-s1"
+      ],
+      "timings_seconds": {
+        "total": 0.091264
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-057",
+      "family_id": "delivery-threshold",
+      "category_id": "store",
+      "task_type": "policy",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "policy-delivery-s1"
+      ],
+      "retrieved_chunk_ids": [
+        "policy-delivery-s1",
+        "policy-prices-s1",
+        "policy-exchanges-s1",
+        "doc-per-003-s3",
+        "doc-mob-003-s3"
+      ],
+      "timings_seconds": {
+        "total": 0.105789
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-058",
+      "family_id": "exchange-window",
+      "category_id": "store",
+      "task_type": "policy",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "policy-exchanges-s1"
+      ],
+      "retrieved_chunk_ids": [
+        "policy-exchanges-s1",
+        "policy-availability-s2",
+        "policy-delivery-s2",
+        "policy-exchanges-s2",
+        "policy-help-s2"
+      ],
+      "timings_seconds": {
+        "total": 0.098071
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-059",
+      "family_id": "warranty-period",
+      "category_id": "store",
+      "task_type": "policy",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "policy-warranty-s1"
+      ],
+      "retrieved_chunk_ids": [
+        "policy-warranty-s1",
+        "policy-exchanges-s1",
+        "policy-delivery-s1",
+        "doc-per-005-s3",
+        "doc-per-006-s3"
+      ],
+      "timings_seconds": {
+        "total": 0.098933
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    },
+    {
+      "case_id": "DEV-060",
+      "family_id": "no-contact-invention",
+      "category_id": "store",
+      "task_type": "policy",
+      "evaluated_at": "2026-11-04T12:05:00Z",
+      "execution": "completed",
+      "error_code": null,
+      "response_status": null,
+      "gold_chunk_ids": [
+        "policy-help-s1"
+      ],
+      "retrieved_chunk_ids": [
+        "policy-help-s1",
+        "doc-mob-001-s1",
+        "doc-mob-002-s1",
+        "doc-mob-002-s3",
+        "doc-con-009-s1"
+      ],
+      "timings_seconds": {
+        "total": 0.115007
+      },
+      "warm_state": "unknown",
+      "usage": null,
+      "response": null,
+      "review": null
+    }
+  ],
+  "limitations": [
+    "Imported existing evidence on 2026-11-04T18:26:01.839717+00:00; no new inference.",
+    "Only 18 documentary/policy adjustment cases; 42 other adjustment cases are outside this run scope.",
+    "Original candidate fingerprint, hardware, hit scores and model warm state were not recorded.",
+    "No generated responses or human reviews are present. Original report remains unchanged."
+  ]
+}

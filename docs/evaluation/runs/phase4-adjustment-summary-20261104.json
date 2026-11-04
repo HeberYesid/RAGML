@@ -1,0 +1,1002 @@
+{
+  "kind": "phase7_adjustment_summary_not_final_evaluation",
+  "run_id": "phase4-adjustment-import-20261104",
+  "purpose": "adjustment",
+  "system": "retrieval_only",
+  "coverage": {
+    "planned": 18,
+    "attempted": 18,
+    "completed": 18,
+    "errors": 0,
+    "not_run": 0,
+    "human_reviewed": 0
+  },
+  "recall_at_k": {
+    "k": 5,
+    "mean": 1.0,
+    "applicable_cases": 18
+  },
+  "latency": {
+    "all": {
+      "count": 18,
+      "median": 0.099139,
+      "p95": 49.879168
+    },
+    "cold": {
+      "count": 0,
+      "median": null,
+      "p95": null
+    },
+    "warm": {
+      "count": 0,
+      "median": null,
+      "p95": null
+    },
+    "unknown": {
+      "count": 18,
+      "median": 0.099139,
+      "p95": 49.879168
+    }
+  },
+  "human_metrics": {
+    "factual_correctness": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "assessed_cases": 0,
+      "applicable_assessed_cases": 0
+    },
+    "evidence_support": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "assessed_cases": 0,
+      "applicable_assessed_cases": 0
+    },
+    "citation_fidelity": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "assessed_cases": 0,
+      "applicable_assessed_cases": 0
+    },
+    "commercial_identity": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "assessed_cases": 0,
+      "applicable_assessed_cases": 0
+    },
+    "mandatory_constraints": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "assessed_cases": 0,
+      "applicable_assessed_cases": 0
+    },
+    "insufficiency_handling": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "assessed_cases": 0,
+      "applicable_assessed_cases": 0
+    },
+    "task_resolution": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "assessed_cases": 0,
+      "applicable_assessed_cases": 0
+    }
+  },
+  "critical_errors": {
+    "events": 0,
+    "cases": 0,
+    "reviewed_cases": 0
+  },
+  "response_statuses": {
+    "answered": 0,
+    "clarification_required": 0,
+    "insufficient_evidence": 0
+  },
+  "by_task": {
+    "document": {
+      "coverage": {
+        "planned": 12,
+        "attempted": 12,
+        "completed": 12,
+        "errors": 0,
+        "not_run": 0,
+        "human_reviewed": 0
+      },
+      "recall_at_k": {
+        "k": 5,
+        "mean": 1.0,
+        "applicable_cases": 12
+      },
+      "latency": {
+        "all": {
+          "count": 12,
+          "median": 0.0997245,
+          "p95": 49.879168
+        },
+        "cold": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "warm": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "unknown": {
+          "count": 12,
+          "median": 0.0997245,
+          "p95": 49.879168
+        }
+      },
+      "human_metrics": {
+        "factual_correctness": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "evidence_support": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "citation_fidelity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "commercial_identity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "mandatory_constraints": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "insufficiency_handling": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "task_resolution": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        }
+      },
+      "critical_errors": {
+        "events": 0,
+        "cases": 0,
+        "reviewed_cases": 0
+      },
+      "response_statuses": {
+        "answered": 0,
+        "clarification_required": 0,
+        "insufficient_evidence": 0
+      }
+    },
+    "policy": {
+      "coverage": {
+        "planned": 6,
+        "attempted": 6,
+        "completed": 6,
+        "errors": 0,
+        "not_run": 0,
+        "human_reviewed": 0
+      },
+      "recall_at_k": {
+        "k": 5,
+        "mean": 1.0,
+        "applicable_cases": 6
+      },
+      "latency": {
+        "all": {
+          "count": 6,
+          "median": 0.098502,
+          "p95": 0.115007
+        },
+        "cold": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "warm": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "unknown": {
+          "count": 6,
+          "median": 0.098502,
+          "p95": 0.115007
+        }
+      },
+      "human_metrics": {
+        "factual_correctness": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "evidence_support": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "citation_fidelity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "commercial_identity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "mandatory_constraints": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "insufficiency_handling": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "task_resolution": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        }
+      },
+      "critical_errors": {
+        "events": 0,
+        "cases": 0,
+        "reviewed_cases": 0
+      },
+      "response_statuses": {
+        "answered": 0,
+        "clarification_required": 0,
+        "insufficient_evidence": 0
+      }
+    }
+  },
+  "by_category": {
+    "connectivity": {
+      "coverage": {
+        "planned": 2,
+        "attempted": 2,
+        "completed": 2,
+        "errors": 0,
+        "not_run": 0,
+        "human_reviewed": 0
+      },
+      "recall_at_k": {
+        "k": 5,
+        "mean": 1.0,
+        "applicable_cases": 2
+      },
+      "latency": {
+        "all": {
+          "count": 2,
+          "median": 0.1050065,
+          "p95": 0.105044
+        },
+        "cold": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "warm": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "unknown": {
+          "count": 2,
+          "median": 0.1050065,
+          "p95": 0.105044
+        }
+      },
+      "human_metrics": {
+        "factual_correctness": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "evidence_support": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "citation_fidelity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "commercial_identity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "mandatory_constraints": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "insufficiency_handling": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "task_resolution": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        }
+      },
+      "critical_errors": {
+        "events": 0,
+        "cases": 0,
+        "reviewed_cases": 0
+      },
+      "response_statuses": {
+        "answered": 0,
+        "clarification_required": 0,
+        "insufficient_evidence": 0
+      }
+    },
+    "everyday-accessories": {
+      "coverage": {
+        "planned": 2,
+        "attempted": 2,
+        "completed": 2,
+        "errors": 0,
+        "not_run": 0,
+        "human_reviewed": 0
+      },
+      "recall_at_k": {
+        "k": 5,
+        "mean": 1.0,
+        "applicable_cases": 2
+      },
+      "latency": {
+        "all": {
+          "count": 2,
+          "median": 0.098943,
+          "p95": 0.099345
+        },
+        "cold": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "warm": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "unknown": {
+          "count": 2,
+          "median": 0.098943,
+          "p95": 0.099345
+        }
+      },
+      "human_metrics": {
+        "factual_correctness": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "evidence_support": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "citation_fidelity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "commercial_identity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "mandatory_constraints": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "insufficiency_handling": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "task_resolution": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        }
+      },
+      "critical_errors": {
+        "events": 0,
+        "cases": 0,
+        "reviewed_cases": 0
+      },
+      "response_statuses": {
+        "answered": 0,
+        "clarification_required": 0,
+        "insufficient_evidence": 0
+      }
+    },
+    "furniture": {
+      "coverage": {
+        "planned": 2,
+        "attempted": 2,
+        "completed": 2,
+        "errors": 0,
+        "not_run": 0,
+        "human_reviewed": 0
+      },
+      "recall_at_k": {
+        "k": 5,
+        "mean": 1.0,
+        "applicable_cases": 2
+      },
+      "latency": {
+        "all": {
+          "count": 2,
+          "median": 0.100746,
+          "p95": 0.101388
+        },
+        "cold": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "warm": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "unknown": {
+          "count": 2,
+          "median": 0.100746,
+          "p95": 0.101388
+        }
+      },
+      "human_metrics": {
+        "factual_correctness": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "evidence_support": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "citation_fidelity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "commercial_identity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "mandatory_constraints": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "insufficiency_handling": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "task_resolution": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        }
+      },
+      "critical_errors": {
+        "events": 0,
+        "cases": 0,
+        "reviewed_cases": 0
+      },
+      "response_statuses": {
+        "answered": 0,
+        "clarification_required": 0,
+        "insufficient_evidence": 0
+      }
+    },
+    "lighting": {
+      "coverage": {
+        "planned": 2,
+        "attempted": 2,
+        "completed": 2,
+        "errors": 0,
+        "not_run": 0,
+        "human_reviewed": 0
+      },
+      "recall_at_k": {
+        "k": 5,
+        "mean": 1.0,
+        "applicable_cases": 2
+      },
+      "latency": {
+        "all": {
+          "count": 2,
+          "median": 0.09823950000000001,
+          "p95": 0.098528
+        },
+        "cold": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "warm": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "unknown": {
+          "count": 2,
+          "median": 0.09823950000000001,
+          "p95": 0.098528
+        }
+      },
+      "human_metrics": {
+        "factual_correctness": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "evidence_support": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "citation_fidelity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "commercial_identity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "mandatory_constraints": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "insufficiency_handling": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "task_resolution": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        }
+      },
+      "critical_errors": {
+        "events": 0,
+        "cases": 0,
+        "reviewed_cases": 0
+      },
+      "response_statuses": {
+        "answered": 0,
+        "clarification_required": 0,
+        "insufficient_evidence": 0
+      }
+    },
+    "organization": {
+      "coverage": {
+        "planned": 2,
+        "attempted": 2,
+        "completed": 2,
+        "errors": 0,
+        "not_run": 0,
+        "human_reviewed": 0
+      },
+      "recall_at_k": {
+        "k": 5,
+        "mean": 1.0,
+        "applicable_cases": 2
+      },
+      "latency": {
+        "all": {
+          "count": 2,
+          "median": 0.0978965,
+          "p95": 0.097943
+        },
+        "cold": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "warm": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "unknown": {
+          "count": 2,
+          "median": 0.0978965,
+          "p95": 0.097943
+        }
+      },
+      "human_metrics": {
+        "factual_correctness": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "evidence_support": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "citation_fidelity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "commercial_identity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "mandatory_constraints": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "insufficiency_handling": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "task_resolution": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        }
+      },
+      "critical_errors": {
+        "events": 0,
+        "cases": 0,
+        "reviewed_cases": 0
+      },
+      "response_statuses": {
+        "answered": 0,
+        "clarification_required": 0,
+        "insufficient_evidence": 0
+      }
+    },
+    "peripherals": {
+      "coverage": {
+        "planned": 2,
+        "attempted": 2,
+        "completed": 2,
+        "errors": 0,
+        "not_run": 0,
+        "human_reviewed": 0
+      },
+      "recall_at_k": {
+        "k": 5,
+        "mean": 1.0,
+        "applicable_cases": 2
+      },
+      "latency": {
+        "all": {
+          "count": 2,
+          "median": 24.994158,
+          "p95": 49.879168
+        },
+        "cold": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "warm": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "unknown": {
+          "count": 2,
+          "median": 24.994158,
+          "p95": 49.879168
+        }
+      },
+      "human_metrics": {
+        "factual_correctness": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "evidence_support": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "citation_fidelity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "commercial_identity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "mandatory_constraints": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "insufficiency_handling": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "task_resolution": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        }
+      },
+      "critical_errors": {
+        "events": 0,
+        "cases": 0,
+        "reviewed_cases": 0
+      },
+      "response_statuses": {
+        "answered": 0,
+        "clarification_required": 0,
+        "insufficient_evidence": 0
+      }
+    },
+    "store": {
+      "coverage": {
+        "planned": 6,
+        "attempted": 6,
+        "completed": 6,
+        "errors": 0,
+        "not_run": 0,
+        "human_reviewed": 0
+      },
+      "recall_at_k": {
+        "k": 5,
+        "mean": 1.0,
+        "applicable_cases": 6
+      },
+      "latency": {
+        "all": {
+          "count": 6,
+          "median": 0.098502,
+          "p95": 0.115007
+        },
+        "cold": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "warm": {
+          "count": 0,
+          "median": null,
+          "p95": null
+        },
+        "unknown": {
+          "count": 6,
+          "median": 0.098502,
+          "p95": 0.115007
+        }
+      },
+      "human_metrics": {
+        "factual_correctness": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "evidence_support": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "citation_fidelity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "commercial_identity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "mandatory_constraints": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "insufficiency_handling": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        },
+        "task_resolution": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "assessed_cases": 0,
+          "applicable_assessed_cases": 0
+        }
+      },
+      "critical_errors": {
+        "events": 0,
+        "cases": 0,
+        "reviewed_cases": 0
+      },
+      "response_statuses": {
+        "answered": 0,
+        "clarification_required": 0,
+        "insufficient_evidence": 0
+      }
+    }
+  },
+  "limitations": [
+    "Adjustment/software evidence only; no final acceptance or participant usefulness.",
+    "Failed applicable retrievals contribute zero; duplicate IDs do not raise recall.",
+    "Human metrics cover labelled observations only; inspect review and execution coverage.",
+    "Unreviewed claims, abstentions and execution errors are not successful tasks.",
+    "Subgroup planned counts cover recorded cases only; missing cases have unknown groups.",
+    "Latency includes failed attempts; p95 uses nearest rank, warm state is explicit.",
+    "Zero reviewed critical events does not establish security or safety.",
+    "Imported existing evidence on 2026-11-04T18:26:01.839717+00:00; no new inference.",
+    "Only 18 documentary/policy adjustment cases; 42 other adjustment cases are outside this run scope.",
+    "Original candidate fingerprint, hardware, hit scores and model warm state were not recorded.",
+    "No generated responses or human reviews are present. Original report remains unchanged."
+  ],
+  "run_sha256": "457ee8869e51051ad1e810ededcd796229d8a906866ab6765f8fa2573ffbcc78"
+}

@@ -1,0 +1,23 @@
+{
+  "reviewer_code": null,
+  "reviewed_at": null,
+  "response_sha256": null,
+  "independent_reviewer": false,
+  "rubric": {
+    "product_correctness": null,
+    "data_accuracy": null,
+    "source_sufficiency": null,
+    "constraint_compliance": null,
+    "response_adequacy": null
+  },
+  "evidence_references": [],
+  "rationale": null,
+  "factual_correctness": null,
+  "evidence_support": null,
+  "citation_fidelity": null,
+  "commercial_identity": null,
+  "mandatory_constraints": null,
+  "insufficiency_handling": null,
+  "task_resolution": null,
+  "critical_errors": []
+}

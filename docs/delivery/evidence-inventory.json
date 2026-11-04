@@ -1,0 +1,825 @@
+{
+  "kind": "phase8_selected_evidence_inventory_not_final_delivery",
+  "created_at": "2026-11-04T18:28:36.533937+00:00",
+  "selection": "Source, tests, documentation, model/runtime locks, public demo data and selected protocol/integrity files; not a distributable full installation.",
+  "excluded": [
+    "Secrets/private data",
+    "Model weights/runtime databases/caches",
+    "Reserved final payload and its generator",
+    "Academic originals",
+    "Concurrently edited root README",
+    "This inventory itself"
+  ],
+  "files": [
+    {
+      "path": "config/models.lock.json",
+      "size_bytes": 514,
+      "sha256": "830de03d0a33c0ffff7f80efa765075aefb246642403d00b39f2ad1bd7c5b20f"
+    },
+    {
+      "path": "config/runtime.lock.json",
+      "size_bytes": 342,
+      "sha256": "f55c966580fe9f1837ba834e8ff728814af2be192979aa7d76fc42a2915e632d"
+    },
+    {
+      "path": "data/evaluation/partitions.json",
+      "size_bytes": 2046,
+      "sha256": "71c6ac565bb01e67bce048056b5abb7c47e7fcc113acfb8638bd188bf17b67b5"
+    },
+    {
+      "path": "data/evaluation/README.md",
+      "size_bytes": 5136,
+      "sha256": "750dec3c1f40f1595b17f77ee4c6df17c61b4458a6f019f81a5dd3e4b1e61bf2"
+    },
+    {
+      "path": "data/sample/catalog.json",
+      "size_bytes": 116536,
+      "sha256": "50487703f9b0a6921ccf18429d8d2af5ddca0996cdf090ef3d8c21ed07c87cc9"
+    },
+    {
+      "path": "data/sample/commercial.json",
+      "size_bytes": 69538,
+      "sha256": "5aae6646ca9cebf2407d585b18566eab272092667a928501187ed591cb2c0835"
+    },
+    {
+      "path": "data/sample/documents/guides/connectivity.md",
+      "size_bytes": 862,
+      "sha256": "93703b3b51b0e2a1b3222afd5816da892ead7d49db145320df9bbc2e56578533"
+    },
+    {
+      "path": "data/sample/documents/guides/everyday-accessories.md",
+      "size_bytes": 893,
+      "sha256": "4b725d7bb8a2c7d2fd3a61151f0b29b2e9c5d21c8d99acfa2614ae2ce20b7151"
+    },
+    {
+      "path": "data/sample/documents/guides/furniture.md",
+      "size_bytes": 851,
+      "sha256": "905f068f5a8002b8bb9bd18ffd1bb8e60e364ab1e8cbd7fbc6ae11b4b1bd9647"
+    },
+    {
+      "path": "data/sample/documents/guides/lighting.md",
+      "size_bytes": 859,
+      "sha256": "494b300f88bb7b4cb9e680b2cd599c4b6f22dff46a1bd460df99729f0a06d8ff"
+    },
+    {
+      "path": "data/sample/documents/guides/organization.md",
+      "size_bytes": 833,
+      "sha256": "6bd2f207fc5abb42a4fa088d781bb50880a68c78e455dc874a101757c8cc3c30"
+    },
+    {
+      "path": "data/sample/documents/guides/peripherals.md",
+      "size_bytes": 815,
+      "sha256": "658c29d3772ae7f3c426b933975a9a72c4a71a2b665803fc6af2e2909dbed2f9"
+    },
+    {
+      "path": "data/sample/documents/policies/availability.md",
+      "size_bytes": 814,
+      "sha256": "c33a4a5c116f8b9913cb7b8d7515a8db381166a38107bce79119ad0a833a49cd"
+    },
+    {
+      "path": "data/sample/documents/policies/delivery.md",
+      "size_bytes": 820,
+      "sha256": "b41bb9cd80dcb5bcba7329ffc8f7526fd4397273d218705a1b53e15baa266118"
+    },
+    {
+      "path": "data/sample/documents/policies/exchanges.md",
+      "size_bytes": 757,
+      "sha256": "6548d0c5c445c18e23cbdee33baabbd1443d6010ed00322925e4a5be184eb322"
+    },
+    {
+      "path": "data/sample/documents/policies/help.md",
+      "size_bytes": 811,
+      "sha256": "1e65b7588711dc1ad7011e2955484b8fb424220d9b5a9d9978f0f9e19ce39a66"
+    },
+    {
+      "path": "data/sample/documents/policies/prices.md",
+      "size_bytes": 783,
+      "sha256": "2cf6983ca38e12e43afc6f56b2b0d550263e088e2854503db9bc96b2f197c03b"
+    },
+    {
+      "path": "data/sample/documents/policies/warranty.md",
+      "size_bytes": 784,
+      "sha256": "5f55a64037ea46eea72f8b6dd9a284cf1269724feae69782680c2bff007ac8a9"
+    },
+    {
+      "path": "data/sample/documents/products/nex-acc-001.md",
+      "size_bytes": 1373,
+      "sha256": "026759e17cd2faf990f81673433d865d9121790ece0199e4372b06a8ae92cb34"
+    },
+    {
+      "path": "data/sample/documents/products/nex-acc-002.md",
+      "size_bytes": 1404,
+      "sha256": "e977507134438314fd24b196f14763d3ca01b20ff7e6e4ee5b83693778a5ab50"
+    },
+    {
+      "path": "data/sample/documents/products/nex-acc-003.md",
+      "size_bytes": 1369,
+      "sha256": "fe726fef13ad40578b983c0d95b11bad0cbdebc023da12c13f9ec20936b8fb02"
+    },
+    {
+      "path": "data/sample/documents/products/nex-acc-004.md",
+      "size_bytes": 1389,
+      "sha256": "31d203409a3676d29b0fba19db805df29f3d1105099ac9c3f64be3254281e8e8"
+    },
+    {
+      "path": "data/sample/documents/products/nex-acc-005.md",
+      "size_bytes": 1391,
+      "sha256": "a0170e69009994afe0d566ef5f55c64f394fe14dbe93c1d21ab207804b7fed1d"
+    },
+    {
+      "path": "data/sample/documents/products/nex-acc-006.md",
+      "size_bytes": 1249,
+      "sha256": "30c511f88be357d5aae25b6b48553d67846c360170e3434a783958791df89fd9"
+    },
+    {
+      "path": "data/sample/documents/products/nex-acc-007.md",
+      "size_bytes": 1196,
+      "sha256": "f704917e3709b1a0765e05921732afbff1a2fe792bb69f655dd01a8cedf3d583"
+    },
+    {
+      "path": "data/sample/documents/products/nex-acc-008.md",
+      "size_bytes": 1221,
+      "sha256": "31938da1aaf1bb9613e8fd009dd48af55e37518ba85284061fe4d73a8b3a3987"
+    },
+    {
+      "path": "data/sample/documents/products/nex-acc-009.md",
+      "size_bytes": 1187,
+      "sha256": "976172de69e6c55862e4ff834f3d0a0ccdf3a386730dea85b2e8fddb369500bd"
+    },
+    {
+      "path": "data/sample/documents/products/nex-acc-010.md",
+      "size_bytes": 1232,
+      "sha256": "a37717c69a9bf011f553f7d0f95088e30570ba46c8cdb182bf44d952a8922e5c"
+    },
+    {
+      "path": "data/sample/documents/products/nex-con-001.md",
+      "size_bytes": 1461,
+      "sha256": "4cd645417f7c72457db1653267de55c3cc18ccd6f83bd6d66a2b21dbd79f1bf3"
+    },
+    {
+      "path": "data/sample/documents/products/nex-con-002.md",
+      "size_bytes": 1498,
+      "sha256": "12012b148d84c0a2766a173f80ed0d0077ae4d9c92d0e5ddbaa3839e5789eec9"
+    },
+    {
+      "path": "data/sample/documents/products/nex-con-003.md",
+      "size_bytes": 1490,
+      "sha256": "fe72390828e6ecd1b16688366234803dc01d906eda1fe682ff4a56f5454172d2"
+    },
+    {
+      "path": "data/sample/documents/products/nex-con-004.md",
+      "size_bytes": 1508,
+      "sha256": "3e51490efe41f7b0d29f8c9d22435eb4aa3bfc08d3a242dec224fe822442a44f"
+    },
+    {
+      "path": "data/sample/documents/products/nex-con-005.md",
+      "size_bytes": 1514,
+      "sha256": "473887a3ce31d8adaf37979bd18127d39981a0ecf6682aff2931b523f033b4c6"
+    },
+    {
+      "path": "data/sample/documents/products/nex-con-006.md",
+      "size_bytes": 1359,
+      "sha256": "b63ea043bce2cef6c194dd9b11b21571d947021af27d5c340fe53cbaeedeecf6"
+    },
+    {
+      "path": "data/sample/documents/products/nex-con-007.md",
+      "size_bytes": 1359,
+      "sha256": "29253ea65a35cb517e5dac0579718e6a7fe18d9b89dde5d1369c4c200083d9e6"
+    },
+    {
+      "path": "data/sample/documents/products/nex-con-008.md",
+      "size_bytes": 1374,
+      "sha256": "c01d1e90b3db40dceb18a118dd4b9b9b16a34fe76664d634c81fe98d86a8c09f"
+    },
+    {
+      "path": "data/sample/documents/products/nex-con-009.md",
+      "size_bytes": 1381,
+      "sha256": "6acda0fc5e66e0245f9d5ffed8afddcd101b00eb541da46ca829e5296c0c5014"
+    },
+    {
+      "path": "data/sample/documents/products/nex-con-010.md",
+      "size_bytes": 1351,
+      "sha256": "7a2008ec8212a8a9eb5c7340f30e8bb6150caf4a76fa7bac14a8282237a66139"
+    },
+    {
+      "path": "data/sample/documents/products/nex-ilu-001.md",
+      "size_bytes": 1382,
+      "sha256": "7a7f8d81efcf07b452ae4cbfc3252559d94a82accd9dfed80d144a5b34f068cf"
+    },
+    {
+      "path": "data/sample/documents/products/nex-ilu-002.md",
+      "size_bytes": 1411,
+      "sha256": "ac6b98f71e80435e9bcd3fa5fb069bdc4a800da801fd1064c4364bcbb9b00d22"
+    },
+    {
+      "path": "data/sample/documents/products/nex-ilu-003.md",
+      "size_bytes": 1416,
+      "sha256": "cf28d6febbd382b4b98ba18df17a9ba313b1a75ded30bc4c6818fffb779ebf66"
+    },
+    {
+      "path": "data/sample/documents/products/nex-ilu-004.md",
+      "size_bytes": 1377,
+      "sha256": "150c04e611e9b8fc0cebf80e708d3f85c4bf076baab7877acf1003eb5366006c"
+    },
+    {
+      "path": "data/sample/documents/products/nex-ilu-005.md",
+      "size_bytes": 1398,
+      "sha256": "a623ac0eb96515ae7966acecebe80704db63b230be25b7812b28d7681433b144"
+    },
+    {
+      "path": "data/sample/documents/products/nex-ilu-006.md",
+      "size_bytes": 1250,
+      "sha256": "3ec274348f6d9aa2002f9805e263f66d59c48f221ebdbe30a0f021f4f98ae7b0"
+    },
+    {
+      "path": "data/sample/documents/products/nex-ilu-007.md",
+      "size_bytes": 1255,
+      "sha256": "c4fa62d9a41f4152186f678dd94283daae979135b8e9762bff3f063a49795fd3"
+    },
+    {
+      "path": "data/sample/documents/products/nex-ilu-008.md",
+      "size_bytes": 1231,
+      "sha256": "42a120e4f907a4b8ddba74da7fb74d282833bcb748ef737736ca6df50e5738c5"
+    },
+    {
+      "path": "data/sample/documents/products/nex-ilu-009.md",
+      "size_bytes": 1305,
+      "sha256": "985ee6cbc65e688faefb3494ccf86b57573f2f4dafa9703445087e8bd13b93ee"
+    },
+    {
+      "path": "data/sample/documents/products/nex-ilu-010.md",
+      "size_bytes": 1275,
+      "sha256": "197d311fbcc8f9a995322e29860d2e81b56111187b057b40a6c08fe9aec10012"
+    },
+    {
+      "path": "data/sample/documents/products/nex-mob-001.md",
+      "size_bytes": 1411,
+      "sha256": "b38eee6d4b65a26833458a0631f6b60f791f0cfeea5957bf57f4c1bb3c0b22ba"
+    },
+    {
+      "path": "data/sample/documents/products/nex-mob-002.md",
+      "size_bytes": 1413,
+      "sha256": "cd1bcd11b5ef52836bd4d913847ea12ca93e837f6eec1a2d7c75a05248c7477d"
+    },
+    {
+      "path": "data/sample/documents/products/nex-mob-003.md",
+      "size_bytes": 1419,
+      "sha256": "3ca25e7c855c6097e037fc7efbc0ffe23b3a728352d79033bf932ade36c00098"
+    },
+    {
+      "path": "data/sample/documents/products/nex-mob-004.md",
+      "size_bytes": 1421,
+      "sha256": "c52f6488e87e06749b6b6f0e2f659b605d6657ea0efa53ed5075a8caf77fad55"
+    },
+    {
+      "path": "data/sample/documents/products/nex-mob-005.md",
+      "size_bytes": 1368,
+      "sha256": "4e7acba230ee3ab443917d68a443f1a69f3d0bf7484c139caceb4de5585ddbbf"
+    },
+    {
+      "path": "data/sample/documents/products/nex-mob-006.md",
+      "size_bytes": 1242,
+      "sha256": "eebb2ca925c91cb11ac2c0adcd6248af3c1d984fe863b2ba577a0cba63e27ac7"
+    },
+    {
+      "path": "data/sample/documents/products/nex-mob-007.md",
+      "size_bytes": 1254,
+      "sha256": "f6ca8556d42126ba955e00d70a310f6c50cf87707e822c3858a070b5abe2db3f"
+    },
+    {
+      "path": "data/sample/documents/products/nex-mob-008.md",
+      "size_bytes": 1239,
+      "sha256": "ec9647e731dd6e0dfa9f76cd0497e47fb1bd4bdabf11820b61b6b001f7176eb2"
+    },
+    {
+      "path": "data/sample/documents/products/nex-mob-009.md",
+      "size_bytes": 1243,
+      "sha256": "f6c577d561e0fc1eb4e1670625e111527604f82fc93485393fadb8d8c3d1c045"
+    },
+    {
+      "path": "data/sample/documents/products/nex-mob-010.md",
+      "size_bytes": 1298,
+      "sha256": "a815b74e1469bbaebd617539141faa647d534db7ccf163bf5251dbfd6f64c487"
+    },
+    {
+      "path": "data/sample/documents/products/nex-org-001.md",
+      "size_bytes": 1347,
+      "sha256": "c9edd77a785b362090b32eb10126e76a14d36fe45b342c587cdb3f81a7f2062c"
+    },
+    {
+      "path": "data/sample/documents/products/nex-org-002.md",
+      "size_bytes": 1340,
+      "sha256": "264341a03bed7e820719ca0863e40ed33cd6201b951b29a1ef426bb5605407cc"
+    },
+    {
+      "path": "data/sample/documents/products/nex-org-003.md",
+      "size_bytes": 1371,
+      "sha256": "e6019edf4ac2450fdccaa82574769e0cd135379b4c6f5290af9d5e2b8e384f3d"
+    },
+    {
+      "path": "data/sample/documents/products/nex-org-004.md",
+      "size_bytes": 1356,
+      "sha256": "f240e5c8986be9f29e83233e8fd68cee9c20ff0de7a45caa6bdb401658b24ca4"
+    },
+    {
+      "path": "data/sample/documents/products/nex-org-005.md",
+      "size_bytes": 1349,
+      "sha256": "fd67be8f149aa9e47ebea54c86cd4f1c376fb040fe8a36f91fc4f1c59dcd376e"
+    },
+    {
+      "path": "data/sample/documents/products/nex-org-006.md",
+      "size_bytes": 1251,
+      "sha256": "178279c64967d33fb9bfa6d0828df9775ca1313d487de8c407c86377f1ec41af"
+    },
+    {
+      "path": "data/sample/documents/products/nex-org-007.md",
+      "size_bytes": 1223,
+      "sha256": "824dc238427e756e4ef97f96f53a90dd485ddc16f726c3e625ae56b6c6a13e20"
+    },
+    {
+      "path": "data/sample/documents/products/nex-org-008.md",
+      "size_bytes": 1183,
+      "sha256": "5c6d8226e02e9745998bc2eda6324b534899af26bcb88abc8ddee2e5f5349bae"
+    },
+    {
+      "path": "data/sample/documents/products/nex-org-009.md",
+      "size_bytes": 1204,
+      "sha256": "fc04c4f38301becba4276e999ecf98415d4f9b70366f84afd3e0368696c50c39"
+    },
+    {
+      "path": "data/sample/documents/products/nex-org-010.md",
+      "size_bytes": 1275,
+      "sha256": "fd438a14e1651c493ab05738e70d76d344cc738dfb34a3eb75878b7129836176"
+    },
+    {
+      "path": "data/sample/documents/products/nex-per-001.md",
+      "size_bytes": 1397,
+      "sha256": "c4d610c4fcbc80350f0bc234420484dd0ffd155fcaf8048f6a2f44726707a513"
+    },
+    {
+      "path": "data/sample/documents/products/nex-per-002.md",
+      "size_bytes": 1394,
+      "sha256": "ea6cbea0784f6ca18e9eb257bfe2cf7d6eb1305bfd2078b96815c1136364edd8"
+    },
+    {
+      "path": "data/sample/documents/products/nex-per-003.md",
+      "size_bytes": 1326,
+      "sha256": "69e732a62ddc5593e90598596f49860520d3ee9d63a7bad53cabc73b05d44f9d"
+    },
+    {
+      "path": "data/sample/documents/products/nex-per-004.md",
+      "size_bytes": 1337,
+      "sha256": "c61f3c811c38ec7101398a7c382f75e7c86b84eb1f8ef3ea41bad2224398f1eb"
+    },
+    {
+      "path": "data/sample/documents/products/nex-per-005.md",
+      "size_bytes": 1361,
+      "sha256": "c25eac445efb623bfbaab9608667f7c5e26c9641316dd8a9b93cfeddc7ee2815"
+    },
+    {
+      "path": "data/sample/documents/products/nex-per-006.md",
+      "size_bytes": 1291,
+      "sha256": "752417f02a95f40157a1ff4d282e9b5975789e2eaced62b198691b8c3fc93c69"
+    },
+    {
+      "path": "data/sample/documents/products/nex-per-007.md",
+      "size_bytes": 1211,
+      "sha256": "465d0abbfc981d40975400955db51e46ab7e30551fc84bee3d556bf71cedb628"
+    },
+    {
+      "path": "data/sample/documents/products/nex-per-008.md",
+      "size_bytes": 1193,
+      "sha256": "ae4920515d568ac2b203a4051afc82113683432d45d2cc756f73b27b696bb054"
+    },
+    {
+      "path": "data/sample/documents/products/nex-per-009.md",
+      "size_bytes": 1258,
+      "sha256": "f0a32faa58293a30e06c6c2625cc17e56eb6cdc3705e7e936b24cf7880b0621b"
+    },
+    {
+      "path": "data/sample/documents/products/nex-per-010.md",
+      "size_bytes": 1256,
+      "sha256": "8b42f93cc4e1bdc90f9469299034abf5dedbb74b4e05ff9fd411ac43b543fe92"
+    },
+    {
+      "path": "data/sample/package-metadata.json",
+      "size_bytes": 9991,
+      "sha256": "ae00999033d3fa92b3319ae900c675bcba4bd7d59fd83d8a400dfb56ca8abf44"
+    },
+    {
+      "path": "data/sample/sources.json",
+      "size_bytes": 201821,
+      "sha256": "44d16b6be95c33cc1c4e3d2a6210f03ff3ce17d4c14f25d885b67d893f979545"
+    },
+    {
+      "path": "docs/advice/README.md",
+      "size_bytes": 8590,
+      "sha256": "c12a08e92aaf83e0c87df624dd15f667635aad13a731b685030cd72d9ac33ab5"
+    },
+    {
+      "path": "docs/architecture/contracts.md",
+      "size_bytes": 14467,
+      "sha256": "e6225b2a5c593bad8a8fafa5bcb6f30085f94b7ad60cb4384e92a72b3d108449"
+    },
+    {
+      "path": "docs/architecture/decisions.md",
+      "size_bytes": 7619,
+      "sha256": "cf43c354a020822ad8d1afb10661ed02007f6251108e58c3b4c01f9f27717a0b"
+    },
+    {
+      "path": "docs/architecture/evidence/local-api-probe-20261104.json",
+      "size_bytes": 1220,
+      "sha256": "d3170bd30600c8cf3d8dcda3960468117e1e60df75ecb877f25d882dda449f01"
+    },
+    {
+      "path": "docs/architecture/evidence/local-model-probe-20261104.json",
+      "size_bytes": 1554,
+      "sha256": "217a370596c3ac163ca6fd9210731732cf0fc890de8f77e1da3e0e1a4fa37fd2"
+    },
+    {
+      "path": "docs/architecture/local-environment.md",
+      "size_bytes": 5690,
+      "sha256": "252bdddf17519e81bb8fea886aa4f21ccab17eb8c8631fbf5418df6c7c3b83b8"
+    },
+    {
+      "path": "docs/architecture/local-models.md",
+      "size_bytes": 3715,
+      "sha256": "c9b07baffc1da45f5d92018bbd712adf61e9df210d4c991571e0785215a29f11"
+    },
+    {
+      "path": "docs/architecture/README.md",
+      "size_bytes": 6943,
+      "sha256": "b07ed4df4bf7ca4e36b28a8b5acfeea61d28ad53a70c9558e2ef9c15d8bcd9d8"
+    },
+    {
+      "path": "docs/architecture/schemas/CatalogDataset.schema.json",
+      "size_bytes": 8438,
+      "sha256": "a5331e6d99fc106533c7d96c235bcc0669dae4ace2a59ef7e248af76ee37d83d"
+    },
+    {
+      "path": "docs/architecture/schemas/ChatRequest.schema.json",
+      "size_bytes": 652,
+      "sha256": "3a08dbb5186051f696458351b990c92d5393b21fa725c70ea1251d47a369d569"
+    },
+    {
+      "path": "docs/architecture/schemas/ChatResponse.schema.json",
+      "size_bytes": 7873,
+      "sha256": "8f130938c6add5009bdb510623a3de8240c8bc96409f507f797066ce6e73616b"
+    },
+    {
+      "path": "docs/architecture/schemas/CommercialDataset.schema.json",
+      "size_bytes": 5049,
+      "sha256": "c604523b19c5df5e913dd7978d28b574ab86797053cd2bd18b6f12280b596f82"
+    },
+    {
+      "path": "docs/architecture/schemas/ErrorResponse.schema.json",
+      "size_bytes": 722,
+      "sha256": "0c2bd494474e0bbc5f718181795c0fc85596f22306f17ea897f72b50ea4d31d2"
+    },
+    {
+      "path": "docs/architecture/schemas/openapi.json",
+      "size_bytes": 5738,
+      "sha256": "bc3bbcd527302ac3b00ddc4a85b49f97587c9b7e4f144974bc952a99e01b7975"
+    },
+    {
+      "path": "docs/architecture/schemas/SessionState.schema.json",
+      "size_bytes": 2121,
+      "sha256": "8050eb9e0aa8d5b23c22b0e79b3cbfeeb22f7d563ea5e782004902ca314fbadf"
+    },
+    {
+      "path": "docs/architecture/schemas/SourceManifest.schema.json",
+      "size_bytes": 6033,
+      "sha256": "dd814155791b11daecdc140508d576601fd213b6c2e22397cc0bd84ace7758ce"
+    },
+    {
+      "path": "docs/data/ingestion-results.json",
+      "size_bytes": 582,
+      "sha256": "2dd4447d323a6397f297e994d46168c4efb326b959e1a57a0ec8e15beb1a72e5"
+    },
+    {
+      "path": "docs/data/ingestion.md",
+      "size_bytes": 6105,
+      "sha256": "e396c317ffca885cf6088525b3deceaf25a5f55472a892d1352a48dde632a85b"
+    },
+    {
+      "path": "docs/data/phase3-verification.json",
+      "size_bytes": 1585,
+      "sha256": "2adaf3111a38efb79145b0061418cceba234d1c5db73afd01b0e345af968d87a"
+    },
+    {
+      "path": "docs/data/README.md",
+      "size_bytes": 11278,
+      "sha256": "74346f6675f54514a38140a1d85be795daa32895db42a1957fa88339a0354efd"
+    },
+    {
+      "path": "docs/data/reference-integrity.json",
+      "size_bytes": 484,
+      "sha256": "19d61be652a61e2b25ee3eeba4f2c135ae79c027732a4a485b2ac2bfa955a91e"
+    },
+    {
+      "path": "docs/data/reingestion-results.json",
+      "size_bytes": 579,
+      "sha256": "816b557e69e4c4122d14865b5bee03a31f45c2737127a47d7794aec3742ac7e7"
+    },
+    {
+      "path": "docs/data/validation-results.json",
+      "size_bytes": 1839,
+      "sha256": "89d86aa4c85fbbcf4ff1eae9e2486610d09a495e1a6a4eb3b413c0b2ad54c3fa"
+    },
+    {
+      "path": "docs/delivery/procedures.md",
+      "size_bytes": 5081,
+      "sha256": "aeb1184aa925c58e2c1150c116584b11b31000a121082ee705a2dcd245d6b370"
+    },
+    {
+      "path": "docs/delivery/README.md",
+      "size_bytes": 5094,
+      "sha256": "af804d4a94f0a0d10a16c4e22e60f7d8340269cfeab9fc442806ebfe96d44052"
+    },
+    {
+      "path": "docs/delivery/verification.json",
+      "size_bytes": 5660,
+      "sha256": "129b989b4e5dcd6ff6b765404d768435ae3fa13f878d648e89388fcdedfb3c29"
+    },
+    {
+      "path": "docs/evaluation/human-review.md",
+      "size_bytes": 3378,
+      "sha256": "30150e707ff4768cd1a615efc03b10dacfc18cfb36f4a9b33250eb2bfd7814d5"
+    },
+    {
+      "path": "docs/evaluation/phase4/adjustment-retrieval.json",
+      "size_bytes": 9834,
+      "sha256": "91315dca9d57508e5e427e77e0a79a1c603b5bd06f54fe1b0279ca534ad79086"
+    },
+    {
+      "path": "docs/evaluation/phase4/code-snapshot.json",
+      "size_bytes": 2090,
+      "sha256": "cc42d5f0d0973819ae9617d5d65b970fd265a39a333698f1ebad1772c042e3b8"
+    },
+    {
+      "path": "docs/evaluation/phase4/probe-lamp.json",
+      "size_bytes": 6946,
+      "sha256": "840fb7c7b79c5ac85b26ac9ef2111425c2444b39570f9c8030deb4d1a0dfce3a"
+    },
+    {
+      "path": "docs/evaluation/phase4/probe-warranty.json",
+      "size_bytes": 7020,
+      "sha256": "277a27661b2e9d8208f22adfb45ff6ea2d634c31147fed7267e644a64ec641c1"
+    },
+    {
+      "path": "docs/evaluation/phase4/README.md",
+      "size_bytes": 10085,
+      "sha256": "4fd2f5d2b3aaa8e4044501b345d48101165c4b4b2181ebc5b858ec35c99c16f0"
+    },
+    {
+      "path": "docs/evaluation/readiness.md",
+      "size_bytes": 2993,
+      "sha256": "eedccd36c2900f1c3f0a66fbab5e499096829def53a01c835cfed6309071faa7"
+    },
+    {
+      "path": "docs/evaluation/README.md",
+      "size_bytes": 6808,
+      "sha256": "093464c5bda39ea9593351e971cd3608361ec4a16f1af8f0fd0c8fddee1baab1"
+    },
+    {
+      "path": "docs/evaluation/runs/phase4-adjustment-import-20261104.json",
+      "size_bytes": 14530,
+      "sha256": "457ee8869e51051ad1e810ededcd796229d8a906866ab6765f8fa2573ffbcc78"
+    },
+    {
+      "path": "docs/evaluation/runs/phase4-adjustment-summary-20261104.json",
+      "size_bytes": 25642,
+      "sha256": "307a52e7b1820b68d720f505d1bbbd6ca8f64ddc3d34ceb9e3bae4d454b036ae"
+    },
+    {
+      "path": "docs/evaluation/runs/README.md",
+      "size_bytes": 1263,
+      "sha256": "69c4f21bf880c828bb679c8607111f9ddbbc70036e6212a9c925926bd85d4cbb"
+    },
+    {
+      "path": "docs/evaluation/schemas/EvaluationRun.schema.json",
+      "size_bytes": 20911,
+      "sha256": "5b0a2182faf8e8b9897306925934a89f153a1af4b27cf3ead53e3e69503d9384"
+    },
+    {
+      "path": "docs/evaluation/templates/human-review.json",
+      "size_bytes": 575,
+      "sha256": "1ff3125ff8f2b3e51d719230a25a12b499e8429d9097bb7836ae2ba092212312"
+    },
+    {
+      "path": "docs/web/README.md",
+      "size_bytes": 7304,
+      "sha256": "4399809650ca31446e13132eed182dec81ab1c4cb0c8a1932e4b1bc50136d5e6"
+    },
+    {
+      "path": "memory/MEMORY.md",
+      "size_bytes": 1159,
+      "sha256": "73677c7d46741bdb21ea05172b5fe1c8484b89b6ab42154c0ec52ff4fc03d524"
+    },
+    {
+      "path": "plans/phase-1/evaluation-protocol.md",
+      "size_bytes": 15036,
+      "sha256": "0aae64a97ee9526f8e087e45e582916c22ae814c777ba93cbf0c9f566949d243"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 917,
+      "sha256": "5d6cc40151845bad9fb5d6b79ec5b1d0238a954b1483b7e13789697c8d73dac0"
+    },
+    {
+      "path": "scripts/validate_demo_data.py",
+      "size_bytes": 9215,
+      "sha256": "b4b67970f04c9babb257046579c1cf50b065ee8b3af267957aef188116b8af80"
+    },
+    {
+      "path": "scripts/verify_reference_integrity.py",
+      "size_bytes": 2012,
+      "sha256": "a193a1c0c130526cc0369d935aa64f6f9361a5288f83fe2e7e603a8adf41bd7b"
+    },
+    {
+      "path": "src/ragml/__init__.py",
+      "size_bytes": 81,
+      "sha256": "1dbd2a1e89934f440b686c093b7b93461009ea3f87f6d37ecc2e8039952ebd92"
+    },
+    {
+      "path": "src/ragml/__main__.py",
+      "size_bytes": 53,
+      "sha256": "884bdc562d960fe8fca7fb4baa4ae6034a3a00fa146121c2fea5153fb4a0b741"
+    },
+    {
+      "path": "src/ragml/advice.py",
+      "size_bytes": 16701,
+      "sha256": "bb2764524df80158f096db8939d0903169a4508f73629cdeac498725b034af23"
+    },
+    {
+      "path": "src/ragml/api.py",
+      "size_bytes": 5627,
+      "sha256": "8da88a5097edc369121045ffb33999b89e7c81763e5f64ab1657d8760406adc3"
+    },
+    {
+      "path": "src/ragml/cli.py",
+      "size_bytes": 6000,
+      "sha256": "c6238ff0b8ebcd6683b3a37f824b193f7e1690bde3a8a43e75466c298d3e6672"
+    },
+    {
+      "path": "src/ragml/commercial.py",
+      "size_bytes": 4999,
+      "sha256": "6bd37a09e248b5e737e4afafa035610cfff50b24c7a04fa70212100d90552a34"
+    },
+    {
+      "path": "src/ragml/contracts.py",
+      "size_bytes": 9115,
+      "sha256": "35f02aef9f57ea62fc148b1505a79d3daa9a9337a81650ac02c46e0cb6752386"
+    },
+    {
+      "path": "src/ragml/conversation.py",
+      "size_bytes": 5885,
+      "sha256": "ed694d805f156dfb8ae5c02330138856d0650e6d58d53ec5ff627e821e01ac99"
+    },
+    {
+      "path": "src/ragml/evaluation.py",
+      "size_bytes": 12634,
+      "sha256": "f0d16921ffcdd228ad60b1ca608a45bc28d535cef020a71623d1d6b2eb18c876"
+    },
+    {
+      "path": "src/ragml/evidence.py",
+      "size_bytes": 5714,
+      "sha256": "417c5d6078383fe82502bedc5df5c5155e05727e8dc86327d676712b569d2e31"
+    },
+    {
+      "path": "src/ragml/ingestion.py",
+      "size_bytes": 14001,
+      "sha256": "a346be7c9609f3343ed400e983a29ae65c7fda9ffc442cffa18e204289cb7b6c"
+    },
+    {
+      "path": "src/ragml/ports.py",
+      "size_bytes": 2055,
+      "sha256": "010e70474b51d9e26f63c0a24ccfe15a2024dc13461fd0fc50035ed753e2cf4a"
+    },
+    {
+      "path": "src/ragml/providers.py",
+      "size_bytes": 7125,
+      "sha256": "f62d43e80a53c9816072b76ac5ab493ef0a4fa576cc95d40c5a22be25e7b2cfe"
+    },
+    {
+      "path": "src/ragml/rag.py",
+      "size_bytes": 11808,
+      "sha256": "bb9b003ca5e3893ec846fe3a80fc2328bf471ba4909794f058df516227b14f16"
+    },
+    {
+      "path": "src/ragml/rag_cli.py",
+      "size_bytes": 4853,
+      "sha256": "e2bc89aed61cf697394fd5276aaf91d9de81d34adc942b4424447d659d7ea083"
+    },
+    {
+      "path": "src/ragml/rag_evaluation.py",
+      "size_bytes": 7049,
+      "sha256": "460bca7c654dcdb5ccd75edcfc6d5d4e98009b9f40afe02c33cc53965a621c45"
+    },
+    {
+      "path": "src/ragml/retrieval.py",
+      "size_bytes": 8113,
+      "sha256": "d6ca7ae1478633ccca802b802efe63c73ab095e8132224bc3bc7b9fcd0a2725d"
+    },
+    {
+      "path": "src/ragml/settings.py",
+      "size_bytes": 3592,
+      "sha256": "9270e15669f58c7bf4302667efbcd6ea345577f33980d6331530faee34926748"
+    },
+    {
+      "path": "src/ragml/web.py",
+      "size_bytes": 1972,
+      "sha256": "dd76e8709e50f123b34ec6b965246780337e618b87c9710fd49c8794bc5600d3"
+    },
+    {
+      "path": "src/ragml/web_assets/app.js",
+      "size_bytes": 11722,
+      "sha256": "43cf924b3b0cd03bc9446fafa8c2d88b5e5077b5ebd7731cc08cba765bfce45f"
+    },
+    {
+      "path": "src/ragml/web_assets/chat-client.mjs",
+      "size_bytes": 4376,
+      "sha256": "b4bfc6bd7bab738eb9d05479ecc3c1d0688f723cc071e9b0f2b1544f1b4edcab"
+    },
+    {
+      "path": "src/ragml/web_assets/index.html",
+      "size_bytes": 5151,
+      "sha256": "dce7a4e9187ca07347827c28ea2fd72fd91fc6cae2a1468752121daf4e370d20"
+    },
+    {
+      "path": "src/ragml/web_assets/styles.css",
+      "size_bytes": 12343,
+      "sha256": "86ec8198479637e674138466b0363bb3f636cccf031fc63fcdf5ccc2bfdd3d3b"
+    },
+    {
+      "path": "tests/README.md",
+      "size_bytes": 800,
+      "sha256": "018a2fc689d06d8036fc08bf62a9b0f4d891ded0b3f96844e11a08b81cf47087"
+    },
+    {
+      "path": "tests/test_advice.py",
+      "size_bytes": 22886,
+      "sha256": "2ce889a2e5aeb19528675cb647423db11e7fc80b0213f4b0da211df6f82749c4"
+    },
+    {
+      "path": "tests/test_evaluation.py",
+      "size_bytes": 9075,
+      "sha256": "66111ee269050f2fc523920418762b93b9bb66e5c79243afc892c60a52104f95"
+    },
+    {
+      "path": "tests/test_foundation.py",
+      "size_bytes": 12153,
+      "sha256": "172443108d06ac7dcccf17c6931b2d8b74558c93aa53231bef6b8496fadefbfb"
+    },
+    {
+      "path": "tests/test_ingestion.py",
+      "size_bytes": 8977,
+      "sha256": "a8047cca0a125af7444b554260ccc7686971638ba142ef90d501d4eb87743912"
+    },
+    {
+      "path": "tests/test_local_contracts.py",
+      "size_bytes": 10391,
+      "sha256": "fe90a72c676ced71206ab0a49a77100b7c9b6f433a504cefe2d91f2aeb7feee8"
+    },
+    {
+      "path": "tests/test_rag.py",
+      "size_bytes": 6057,
+      "sha256": "ec203ccbbfb6e4cc53a3abb27375bcdc88dcf7bdb4713a1611bef8ddcf374e8f"
+    },
+    {
+      "path": "tests/test_rag_cli.py",
+      "size_bytes": 1015,
+      "sha256": "780d6746a497eb878e381b77e3f28b7a7b1a06eea8ad2de7dad217a067df8f4d"
+    },
+    {
+      "path": "tests/test_rag_evaluation.py",
+      "size_bytes": 627,
+      "sha256": "4ed8494709c6cef4413a94cf89f95e41215364a9e597c582ce0f7f798ffbbf41"
+    },
+    {
+      "path": "tests/test_retrieval.py",
+      "size_bytes": 10009,
+      "sha256": "1b736ba252a5c49c39476f74fbeaaa3e065f4b6cb847222a87aeb757989e5bb2"
+    },
+    {
+      "path": "tests/test_web.py",
+      "size_bytes": 1896,
+      "sha256": "9796c0bc7dde4c6f36ab8dce19d5ad1c2156e499865f4fbb5405a171eaf8d5f8"
+    },
+    {
+      "path": "tests/web/browser-smoke.ps1",
+      "size_bytes": 6994,
+      "sha256": "9b912da1d0bba0aa4a622aa99f9a9fe77c4fb05dc9e7fefe699fcc7e490d177e"
+    },
+    {
+      "path": "tests/web/chat-client.test.mjs",
+      "size_bytes": 4758,
+      "sha256": "e73309850b1dc374374c887561d68fbbf41d23ef84ac8527aa4277b809c9176b"
+    },
+    {
+      "path": "uv.lock",
+      "size_bytes": 55326,
+      "sha256": "7dbe13245c0aeda1fe679f7bd144be9907ae70498eec1a6d683ca20dad4b4d92"
+    }
+  ]
+}
