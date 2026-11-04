@@ -1,0 +1,2222 @@
+{
+  "schema_version": "0.1",
+  "store_id": "nexo-demo",
+  "data_mode": "demo",
+  "revision": "demo-20261104-v2",
+  "snapshots": [
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-001-01",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-001-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "89000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-001-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 3
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-001-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-001-02",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-001-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "94000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-001-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 4
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-001-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-002-01",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-002-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "179000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-002-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 4
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-002-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-002-02",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-002-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "184000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-002-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 5
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-002-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-003-01",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-003-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "69000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-003-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 5
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-003-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-003-02",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-003-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "74000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-003-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 6
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-003-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-004-01",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-004-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "39000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-004-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 6
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-004-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-004-02",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-004-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "44000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-004-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 7
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-004-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-005-01",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-005-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "119000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-005-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 7
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-005-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-005-02",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-005-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "124000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-005-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 8
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-005-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-006-01",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-006-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "79000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-006-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": null
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-006-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-007-01",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-007-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "139000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-007-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "out_of_stock",
+          "quantity": 0
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-007-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-008-01",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-008-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": null,
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-008-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 10
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-008-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-009-01",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-009-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "59000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-009-01/price"
+      },
+      "stock": {
+        "value": null,
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-009-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-010-01",
+      "snapshot_id": "demo-20261104-v2-NEX-PER-010-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "99000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T11:30:00Z",
+        "expires_at": "2026-11-04T11:45:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-010-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 12
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-PER-010-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-001-01",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-001-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "79000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-001-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 3
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-001-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-001-02",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-001-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "84000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-001-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 4
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-001-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-002-01",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-002-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "169000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-002-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 4
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-002-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-002-02",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-002-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "174000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-002-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 5
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-002-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-003-01",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-003-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "89000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-003-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 5
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-003-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-003-02",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-003-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "94000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-003-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 6
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-003-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-004-01",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-004-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "59000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-004-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 6
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-004-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-004-02",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-004-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "64000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-004-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 7
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-004-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-005-01",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-005-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "229000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-005-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 7
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-005-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-005-02",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-005-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "234000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-005-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 8
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-005-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-006-01",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-006-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "119000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-006-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": null
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-006-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-007-01",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-007-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "39000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-007-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "out_of_stock",
+          "quantity": 0
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-007-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-008-01",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-008-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": null,
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-008-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 10
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-008-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-009-01",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-009-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "129000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-009-01/price"
+      },
+      "stock": {
+        "value": null,
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-009-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-010-01",
+      "snapshot_id": "demo-20261104-v2-NEX-CON-010-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "69000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T11:30:00Z",
+        "expires_at": "2026-11-04T11:45:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-010-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 12
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-CON-010-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-001-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-001-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "89000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-001-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 3
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-001-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-001-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-001-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "94000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-001-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 4
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-001-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-002-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-002-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "59000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-002-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 4
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-002-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-002-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-002-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "64000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-002-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 5
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-002-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-003-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-003-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "149000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-003-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 5
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-003-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-003-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-003-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "154000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-003-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 6
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-003-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-004-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-004-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "49000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-004-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 6
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-004-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-004-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-004-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "54000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-004-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 7
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-004-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-005-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-005-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "119000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-005-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 7
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-005-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-005-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-005-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "124000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-005-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 8
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-005-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-006-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-006-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "229000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-006-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": null
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-006-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-007-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-007-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "39000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-007-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "out_of_stock",
+          "quantity": 0
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-007-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-008-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-008-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": null,
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-008-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 10
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-008-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-009-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-009-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "179000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-009-01/price"
+      },
+      "stock": {
+        "value": null,
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-009-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-010-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ILU-010-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "25000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T11:30:00Z",
+        "expires_at": "2026-11-04T11:45:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-010-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 12
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ILU-010-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-001-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-001-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "19000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-001-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 3
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-001-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-001-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-001-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "24000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-001-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 4
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-001-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-002-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-002-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "29000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-002-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 4
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-002-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-002-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-002-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "34000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-002-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 5
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-002-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-003-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-003-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "89000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-003-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 5
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-003-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-003-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-003-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "94000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-003-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 6
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-003-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-004-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-004-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "69000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-004-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 6
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-004-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-004-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-004-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "74000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-004-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 7
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-004-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-005-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-005-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "109000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-005-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 7
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-005-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-005-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-005-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "114000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-005-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 8
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-005-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-006-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-006-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "69000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-006-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": null
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-006-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-007-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-007-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "129000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-007-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "out_of_stock",
+          "quantity": 0
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-007-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-008-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-008-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": null,
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-008-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 10
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-008-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-009-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-009-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "39000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-009-01/price"
+      },
+      "stock": {
+        "value": null,
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-009-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-010-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ORG-010-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "15000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T11:30:00Z",
+        "expires_at": "2026-11-04T11:45:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-010-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 12
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ORG-010-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-001-01",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-001-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "499000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-001-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 3
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-001-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-001-02",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-001-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "504000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-001-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 4
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-001-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-002-01",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-002-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "329000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-002-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 4
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-002-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-002-02",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-002-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "334000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-002-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 5
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-002-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-003-01",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-003-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "1599000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-003-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 5
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-003-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-003-02",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-003-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "1604000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-003-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 6
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-003-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-004-01",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-004-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "999000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-004-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 6
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-004-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-004-02",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-004-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "1004000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-004-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 7
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-004-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-005-01",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-005-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "329000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-005-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 7
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-005-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-005-02",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-005-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "334000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-005-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 8
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-005-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-006-01",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-006-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "649000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-006-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": null
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-006-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-007-01",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-007-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "459000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-007-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "out_of_stock",
+          "quantity": 0
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-007-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-008-01",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-008-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": null,
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-008-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 10
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-008-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-009-01",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-009-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "189000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-009-01/price"
+      },
+      "stock": {
+        "value": null,
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-009-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-010-01",
+      "snapshot_id": "demo-20261104-v2-NEX-MOB-010-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "89000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T11:30:00Z",
+        "expires_at": "2026-11-04T11:45:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-010-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 12
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-MOB-010-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-001-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-001-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "39000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-001-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 3
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-001-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-001-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-001-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "44000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-001-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 4
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-001-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-002-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-002-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "79000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-002-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 4
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-002-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-002-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-002-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "84000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-002-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 5
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-002-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-003-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-003-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "29000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-003-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 5
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-003-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-003-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-003-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "34000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-003-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 6
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-003-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-004-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-004-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "59000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-004-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 6
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-004-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-004-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-004-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "64000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-004-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 7
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-004-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-005-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-005-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "49000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-005-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 7
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-005-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-005-02",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-005-02",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "54000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-005-02/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 8
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-005-02/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-006-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-006-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "129000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-006-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": null
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-006-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-007-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-007-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "59000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-007-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "out_of_stock",
+          "quantity": 0
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-007-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-008-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-008-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": null,
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-008-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 10
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-008-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-009-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-009-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "49000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-009-01/price"
+      },
+      "stock": {
+        "value": null,
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-009-01/stock"
+      }
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-010-01",
+      "snapshot_id": "demo-20261104-v2-NEX-ACC-010-01",
+      "source_id": "commercial-nexo-demo",
+      "revision": "demo-20261104-v2",
+      "price": {
+        "value": {
+          "amount": "19000",
+          "currency": "COP"
+        },
+        "source_updated_at": "2026-11-04T11:30:00Z",
+        "expires_at": "2026-11-04T11:45:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-010-01/price"
+      },
+      "stock": {
+        "value": {
+          "availability": "in_stock",
+          "quantity": 12
+        },
+        "source_updated_at": "2026-11-04T12:00:00Z",
+        "expires_at": "2026-11-04T12:15:00Z",
+        "source_ref": "commercial-nexo-demo#NEX-ACC-010-01/stock"
+      }
+    }
+  ]
+}

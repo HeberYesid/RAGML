@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "reference_set_revision": "references-20261104-v1",
+  "partitions_manifest_sha256": "71c6ac565bb01e67bce048056b5abb7c47e7fcc113acfb8638bd188bf17b67b5",
+  "counts": {
+    "adjustment": 60,
+    "final": 60
+  },
+  "hashes_match": {
+    "adjustment_cases": true,
+    "reserved_archive": true,
+    "catalog": true,
+    "sources": true,
+    "commercial": true
+  },
+  "reserved_archive_unpacked": false,
+  "assistant_evaluation_executed": false
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1",
+  "reference_set_revision": "references-20261104-v1",
+  "data_mode": "demo",
+  "store_id": "nexo-demo",
+  "corpus_revision": "demo-20261104-v2",
+  "reference_time": "2026-11-04T12:05:00Z",
+  "counts": {
+    "adjustment": 60,
+    "final": 60
+  },
+  "task_quotas_per_partition": {
+    "document": 12,
+    "commercial": 8,
+    "recommendation": 10,
+    "comparison": 8,
+    "policy": 6,
+    "multiturn": 6,
+    "insufficient": 6,
+    "security": 4
+  },
+  "category_quota_per_partition": {
+    "peripherals": 9,
+    "connectivity": 9,
+    "lighting": 9,
+    "organization": 9,
+    "furniture": 9,
+    "everyday-accessories": 9,
+    "store": 6
+  },
+  "family_overlap": 0,
+  "exact_query_overlap": 0,
+  "adjustment_sha256": "065aebf92d0aa9770a742a4a1df9b97359fe78242f029abb40ffbff24872a53b",
+  "reserved_archive_sha256": "a57b6e1d49a12a7b2247d2aaf9db4151d505992e06127d7590bc6dae51417b53",
+  "reserved_payload_sha256": "736367bdd888affc959a201ad207e5d72945ccad92ec03ecf68e6f28de87c84b",
+  "catalog_sha256": "50487703f9b0a6921ccf18429d8d2af5ddca0996cdf090ef3d8c21ed07c87cc9",
+  "source_manifest_sha256": "44d16b6be95c33cc1c4e3d2a6210f03ff3ce17d4c14f25d885b67d893f979545",
+  "commercial_sha256": "5aae6646ca9cebf2407d585b18566eab272092667a928501187ed591cb2c0835",
+  "reference_checks": "Structured facts, exact policy extracts, commercial clock and recommendation constraints checked against versioned sources.",
+  "limitations": [
+    "Both partitions share an author and synthetic catalogue; this is not an externally blind evaluation.",
+    "Family separation is explicit; independent human review of semantic near-duplicates is still recommended.",
+    "Adversarial scenarios specify isolated fixture patches; the runner must version and hash their cloned sources.",
+    "No assistant responses, retrieval measurements or final evaluation were executed here."
+  ],
+  "reserved_access_policy": "Keep the final archive closed during tuning. Record any access; after access-driven changes use a new independent final set."
+}

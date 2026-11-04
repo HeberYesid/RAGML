@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "revision": "demo-20261104-v2",
+  "data_mode": "demo",
+  "counts": {
+    "categories": 6,
+    "products": 60,
+    "variants": 90,
+    "commercial_records": 90,
+    "sources": 72,
+    "chunks": 204
+  },
+  "coverage": [
+    {
+      "category_id": "peripherals",
+      "products": 10,
+      "variants": 15
+    },
+    {
+      "category_id": "connectivity",
+      "products": 10,
+      "variants": 15
+    },
+    {
+      "category_id": "lighting",
+      "products": 10,
+      "variants": 15
+    },
+    {
+      "category_id": "organization",
+      "products": 10,
+      "variants": 15
+    },
+    {
+      "category_id": "furniture",
+      "products": 10,
+      "variants": 15
+    },
+    {
+      "category_id": "everyday-accessories",
+      "products": 10,
+      "variants": 15
+    }
+  ],
+  "source_scopes": {
+    "product": 60,
+    "category": 6,
+    "store": 6
+  },
+  "commercial_reference_time": "2026-11-04T12:05:00Z",
+  "price_states_at_reference_time": {
+    "fresh": 78,
+    "unknown": 6,
+    "stale": 6
+  },
+  "stock_states_at_reference_time": {
+    "fresh": 84,
+    "unknown": 6
+  },
+  "checks": [
+    "current catalog, commercial and source contracts",
+    "identifiers, category attributes and variant relations",
+    "exact product association for attribute evidence",
+    "source paths, file hashes and exact section extracts",
+    "complete inventory and per-category quotas",
+    "commercial lookup with an explicit synthetic clock",
+    "fresh, unknown and stale values kept distinct",
+    "package content hashes"
+  ],
+  "not_verified": [
+    "retrieval index, embeddings, generation or browser behavior",
+    "independent semantic audit of every invented specification",
+    "final academic evaluation or utility with participants",
+    "real business conditions or portability to an actual store"
+  ]
+}

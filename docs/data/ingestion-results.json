@@ -1,0 +1,17 @@
+{
+  "status": "published",
+  "kind": "local_corpus_ingestion_not_rag_evaluation",
+  "index": {
+    "store_id": "nexo-demo",
+    "revision": "demo-20261104-v2",
+    "fingerprint": "94a7e79b631aad7b48c949a18dd5be163c4a361f29a1e0b799e2e0198e799678",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+    "dimensions": 1024,
+    "sources": 72,
+    "chunks": 204,
+    "published_at": "2026-11-04T17:55:41.785513+00:00"
+  },
+  "wall_seconds": 128.665,
+  "database_bytes": 1310720
+}

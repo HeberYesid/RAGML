@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-11-04T18:11:22.336077+00:00",
+  "kind": "phase3_technical_verification_not_final_assistant_evaluation",
+  "phase3_and_foundation_tests": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest -q tests\\test_local_contracts.py tests\\test_foundation.py tests\\test_ingestion.py",
+    "passed": 59,
+    "failed": 0,
+    "new_ingestion_checks": 15
+  },
+  "shared_repository_snapshot": {
+    "test_command": ".\\.venv\\Scripts\\python.exe -m pytest -q",
+    "passed": 138,
+    "failed": 0,
+    "lint_command": ".\\.venv\\Scripts\\python.exe -m ruff check src tests scripts",
+    "lint_result": "passed",
+    "type_command": ".\\.venv\\Scripts\\python.exe -m mypy src",
+    "type_result": "passed",
+    "source_files_checked": 18
+  },
+  "generated_package_check": {
+    "files": 76,
+    "mismatches": 0
+  },
+  "index": {
+    "sources": 72,
+    "chunks": 204,
+    "dimensions": 1024,
+    "database_bytes": 1310720,
+    "real_embedding_ingestion_seconds": 128.665
+  },
+  "references": {
+    "adjustment": 60,
+    "reserved_final": 60,
+    "integrity": "passed",
+    "final_archive_unpacked_for_tuning": false,
+    "assistant_final_evaluation_executed": false
+  },
+  "limitations": [
+    "Shared repository contains work from other phases; the global result is a point-in-time snapshot.",
+    "Reference partitions share an author and synthetic catalogue; independent semantic review remains recommended.",
+    "No conclusion about final retrieval quality, user utility or a real business follows from these checks."
+  ]
+}
