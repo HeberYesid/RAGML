@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Asistente de tienda</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="module" src="/assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-title">Saltar a la conversación</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Tienda y categorías">
+      <a class="brand" href="/" aria-label="Inicio del asistente">
+        <span class="brand-mark" aria-hidden="true">n<span>°</span></span>
+        <span id="store-name">Asistente de tienda</span>
+      </a>
+      <button type="button" class="new-chat" id="new-session"><span aria-hidden="true">＋</span> Nueva conversación</button>
+      <div class="catalog-heading"><h2>Explora el catálogo</h2><span id="product-count"></span></div>
+      <p class="muted small" id="catalog-message">Cargando categorías…</p>
+      <nav id="categories" aria-label="Categorías del catálogo"></nav>
+      <div class="sidebar-note">
+        <span class="note-symbol" aria-hidden="true">i</span>
+        <p>Una buena elección empieza con información comprobable.</p>
+        <p class="small">Consulta las fuentes que acompañan cada respuesta.</p>
+      </div>
+      <footer class="sidebar-footer"><span class="connection-dot" aria-hidden="true"></span><span id="connection-status">Comprobando conexión</span><button type="button" id="check-connection" aria-label="Comprobar conexión de nuevo">↻</button></footer>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><span>Tu asistente de catálogo</span><span id="data-mode" class="mode-badge">Datos sin verificar</span></header>
+      <div class="data-notice" id="data-notice">Verificando el origen de los datos. No compartas información personal.</div>
+      <main class="conversation" id="conversation">
+        <section id="welcome" class="welcome">
+          <div class="welcome-emblem" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M14 22h36v29H14zM22 22v-5a10 10 0 0 1 20 0v5"/><path d="m24 36 6 6 12-14"/></svg></div>
+          <h1 id="main-title" tabindex="-1">Elige con más<br>información.</h1>
+          <p class="welcome-copy">Cuéntame qué necesitas. Consulta características, explora alternativas y revisa de dónde viene cada respuesta.</p>
+          <div class="starters">
+            <button type="button" class="starter" data-prompt="Quiero consultar las características de un producto. ¿Qué necesitas saber?"><span class="starter-icon" aria-hidden="true">⌕</span><strong>Conoce un producto</strong><span>Materiales, medidas y características</span></button>
+            <button type="button" class="starter" data-prompt="Quiero comparar dos productos. ¿Qué información necesitas?"><span class="starter-icon" aria-hidden="true">⇄</span><strong>Compara opciones</strong><span>Encuentra diferencias relevantes</span></button>
+            <button type="button" class="starter" data-prompt="¿Qué políticas de cambios y garantías tiene la tienda?"><span class="starter-icon" aria-hidden="true">▤</span><strong>Revisa las políticas</strong><span>Cambios, garantías y condiciones</span></button>
+          </div>
+          <p class="welcome-footnote">Las consultas se envían al servicio local configurado.</p>
+        </section>
+        <section id="transcript" class="transcript" aria-label="Conversación" role="log" aria-live="polite" aria-relevant="additions" hidden></section>
+      </main>
+      <div class="composer-area">
+        <div id="error-banner" class="error-banner" role="alert" hidden><p id="error-text"></p><button type="button" id="retry">Reintentar consulta</button></div>
+        <div id="pending" class="pending" hidden><progress aria-label="Consultando el asistente"></progress><span>Consultando el asistente…</span><button type="button" id="cancel">Cancelar espera</button></div>
+        <form id="chat-form" action="/v1/chat" method="post">
+          <label for="message">¿Qué estás buscando?</label>
+          <div class="input-row"><textarea id="message" name="message" rows="2" maxlength="4000" required aria-describedby="input-help input-error" placeholder="Describe el producto, tu presupuesto o lo que quieres saber…"></textarea><button id="send" type="submit">Enviar <span aria-hidden="true">↗</span></button></div>
+          <p id="input-error" class="input-error" hidden></p>
+          <div class="composer-hints"><span id="input-help">Enter para enviar. Mayús + Enter para un salto de línea.</span><span id="char-count">0 / 4000</span></div>
+        </form>
+        <p class="privacy-note">La conversación permanece en esta pestaña. Puede contener errores: revisa sus fuentes.</p>
+      </div>
+    </div>
+  </div>
+  <div id="announcer" class="visually-hidden" role="status"></div>
+  <noscript><p class="noscript">Activa JavaScript para usar la conversación. La interfaz necesita enviar consultas JSON a la API local.</p></noscript>
+</body>
+</html>
