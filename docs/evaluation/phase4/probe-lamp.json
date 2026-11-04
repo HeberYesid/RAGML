@@ -1,0 +1,157 @@
+{
+  "kind": "phase4_document_probe_not_final_evaluation",
+  "response": {
+    "schema_version": "0.1",
+    "request_id": "9fc296e0-a34a-41a9-8329-80343cfb8bce",
+    "session_id": "bed934c7-3484-48ea-9871-d4be4381042f",
+    "store_id": "nexo-demo",
+    "data_mode": "demo",
+    "status": "answered",
+    "answer": "Potencia (power_w): 8 W. [E1]",
+    "claims": [
+      {
+        "text": "Potencia (power_w): 8 W.",
+        "citation_ids": [
+          "E1"
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "citation_id": "E1",
+        "kind": "document",
+        "store_id": "nexo-demo",
+        "source_id": "doc-ilu-001",
+        "source_version": "demo-20261104-v2",
+        "chunk_id": "doc-ilu-001-s2",
+        "location": {
+          "page": null,
+          "section": "Características",
+          "paragraph": null,
+          "table": null
+        },
+        "excerpt": "Potencia (power_w): 8 W."
+      }
+    ],
+    "products": [],
+    "warnings": [],
+    "versions": {
+      "corpus": "demo-20261104-v2",
+      "retrieval": "exact-cosine-v1",
+      "embedding_model": "qwen3-embedding:0.6b",
+      "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+      "generation_model": "qwen3:4b-instruct-2507-q4_K_M",
+      "generation_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "answer_mode": "verified-extract-v1",
+      "corpus_fingerprint": "94a7e79b631aad7b48c949a18dd5be163c4a361f29a1e0b799e2e0198e799678",
+      "catalog_profile": "demo-20261104-v2"
+    }
+  },
+  "retrieved": [
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "doc-ilu-001-s2",
+        "source_id": "doc-ilu-001",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "7a7f8d81efcf07b452ae4cbfc3252559d94a82accd9dfed80d144a5b34f068cf",
+        "content_hash": "b8717fbbfc42e77b69ba45c051a22b8c78a55d68306bb9a588666617d6418a12",
+        "text": "## Características\n\nProducto NEX-ILU-001, Lámpara Flexo. Categoría: Iluminación. Datos de demostración.\n\n- Potencia (power_w): 8 W.\n- Alimentación (power_source): adaptador incluido.\n- Temperatura de color (color_temperature): 3000, 4000 y 6000 K.\n- Intensidad regulable (dimmable): Sí.\n- Altura (height_cm): 40 cm.\n- Lugar de uso (use_location): interior seco.\n- Masa (weight_g): 550 g.",
+        "location": {
+          "page": null,
+          "section": "Características",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.68211584742135
+    },
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "doc-ilu-001-s1",
+        "source_id": "doc-ilu-001",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "7a7f8d81efcf07b452ae4cbfc3252559d94a82accd9dfed80d144a5b34f068cf",
+        "content_hash": "e5ffba42ba306db508e31b5c961e0d9195e375860cb31acb672f1be234bef578",
+        "text": "## Resumen\n\nProducto NEX-ILU-001, Lámpara Flexo. Categoría: Iluminación. Datos de demostración.\n\nIluminar un escritorio con brazo ajustable. Las capacidades y medidas son inventadas para este ejercicio.",
+        "location": {
+          "page": null,
+          "section": "Resumen",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.6464032638956664
+    },
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "doc-ilu-001-s3",
+        "source_id": "doc-ilu-001",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "7a7f8d81efcf07b452ae4cbfc3252559d94a82accd9dfed80d144a5b34f068cf",
+        "content_hash": "aa9658e1a32f5685ba76bb15b989feb248f19e6c8dc05d30b05d8db5d42a351b",
+        "text": "## Variantes y límites\n\nProducto NEX-ILU-001, Lámpara Flexo. Categoría: Iluminación. Datos de demostración.\n\n- NEX-ILU-001-01: Presentación A. Conserva los atributos comunes; tiene registro comercial propio.\n- NEX-ILU-001-02: Presentación B. Conserva los atributos comunes; tiene registro comercial propio.\n\nLas presentaciones A y B son opciones ficticias de empaque; no cambian las características documentadas. Precios y existencias se consultan en el registro estructurado de cada variante. No se afirman otras compatibilidades ni prestaciones. La garantía general ficticia se consulta en su política.",
+        "location": {
+          "page": null,
+          "section": "Variantes y límites",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.5872485186112766
+    },
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "guide-lighting-s1",
+        "source_id": "guide-lighting",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "494b300f88bb7b4cb9e680b2cd599c4b6f22dff46a1bd460df99729f0a06d8ff",
+        "content_hash": "37373c377d1564c941ce3d103d51b2281224955119556c347ac501c83d250e3c",
+        "text": "## Criterios de selección\n\nCategoría de demostración: Iluminación. Compare alimentación, potencia, altura, regulación y temperatura de color. Todos los artículos de esta categoría se describen para interiores secos; no existe una certificación de uso exterior en estas fuentes ficticias.",
+        "location": {
+          "page": null,
+          "section": "Criterios de selección",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.4177845519761516
+    },
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "policy-warranty-s1",
+        "source_id": "policy-warranty",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "5f55a64037ea46eea72f8b6dd9a284cf1269724feae69782680c2bff007ac8a9",
+        "content_hash": "9ff8e9d2a04e5943cbc6561f5e92e0494271095b16713dc5e657332b54785f1b",
+        "text": "## Condiciones\n\nLa garantía ficticia cubre defectos de fabricación durante 12 meses y excluye daños por uso indebido. Las particularidades requieren respaldo en la ficha del producto. El asistente no decide reclamaciones ni promete su aceptación. Este texto es una regla inventada para pruebas y no describe derechos legales ni condiciones de una empresa real.",
+        "location": {
+          "page": null,
+          "section": "Condiciones",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.3306320902335186
+    }
+  ],
+  "context_chunk_ids": [
+    "doc-ilu-001-s2",
+    "doc-ilu-001-s1",
+    "doc-ilu-001-s3",
+    "guide-lighting-s1",
+    "policy-warranty-s1"
+  ],
+  "metrics": {
+    "retrieval_seconds": 0.395254,
+    "prompt_utf8_bytes": 2941,
+    "generation_seconds": 80.22253,
+    "generation_input_tokens": 839,
+    "generation_output_tokens": 28,
+    "total_seconds": 80.618099
+  }
+}

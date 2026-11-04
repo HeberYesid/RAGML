@@ -1,0 +1,157 @@
+{
+  "kind": "phase4_document_probe_not_final_evaluation",
+  "response": {
+    "schema_version": "0.1",
+    "request_id": "ee252707-2952-437e-83bb-da4a40407ec5",
+    "session_id": "bacf6eb3-c7fc-43bf-a6bb-5d40489b29d7",
+    "store_id": "nexo-demo",
+    "data_mode": "demo",
+    "status": "answered",
+    "answer": "La garantía ficticia cubre defectos de fabricación durante 12 meses y excluye daños por uso indebido. [E1]",
+    "claims": [
+      {
+        "text": "La garantía ficticia cubre defectos de fabricación durante 12 meses y excluye daños por uso indebido.",
+        "citation_ids": [
+          "E1"
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "citation_id": "E1",
+        "kind": "document",
+        "store_id": "nexo-demo",
+        "source_id": "policy-warranty",
+        "source_version": "demo-20261104-v2",
+        "chunk_id": "policy-warranty-s1",
+        "location": {
+          "page": null,
+          "section": "Condiciones",
+          "paragraph": null,
+          "table": null
+        },
+        "excerpt": "La garantía ficticia cubre defectos de fabricación durante 12 meses y excluye daños por uso indebido."
+      }
+    ],
+    "products": [],
+    "warnings": [],
+    "versions": {
+      "corpus": "demo-20261104-v2",
+      "retrieval": "exact-cosine-v1",
+      "embedding_model": "qwen3-embedding:0.6b",
+      "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+      "generation_model": "qwen3:4b-instruct-2507-q4_K_M",
+      "generation_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "answer_mode": "verified-extract-v1",
+      "corpus_fingerprint": "94a7e79b631aad7b48c949a18dd5be163c4a361f29a1e0b799e2e0198e799678",
+      "catalog_profile": "demo-20261104-v2"
+    }
+  },
+  "retrieved": [
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "policy-warranty-s1",
+        "source_id": "policy-warranty",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "5f55a64037ea46eea72f8b6dd9a284cf1269724feae69782680c2bff007ac8a9",
+        "content_hash": "9ff8e9d2a04e5943cbc6561f5e92e0494271095b16713dc5e657332b54785f1b",
+        "text": "## Condiciones\n\nLa garantía ficticia cubre defectos de fabricación durante 12 meses y excluye daños por uso indebido. Las particularidades requieren respaldo en la ficha del producto. El asistente no decide reclamaciones ni promete su aceptación. Este texto es una regla inventada para pruebas y no describe derechos legales ni condiciones de una empresa real.",
+        "location": {
+          "page": null,
+          "section": "Condiciones",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.5652090525991391
+    },
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "policy-exchanges-s1",
+        "source_id": "policy-exchanges",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "6548d0c5c445c18e23cbdee33baabbd1443d6010ed00322925e4a5be184eb322",
+        "content_hash": "5c5719ac25c4879953c52ead1f2574b9bc86e8d90b11bcd436a8d97ed2225b8a",
+        "text": "## Condiciones\n\nEl escenario permite consultar solicitudes dentro de los 15 días siguientes a la entrega ficticia, con producto sin uso y comprobante simulado. El asistente explica la condición, pero no procesa solicitudes, devoluciones ni reembolsos. No se afirma la existencia de una compra particular ni se pide información de pago.",
+        "location": {
+          "page": null,
+          "section": "Condiciones",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.42927289704399363
+    },
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "guide-furniture-s1",
+        "source_id": "guide-furniture",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "905f068f5a8002b8bb9bd18ffd1bb8e60e364ab1e8cbd7fbc6ae11b4b1bd9647",
+        "content_hash": "2cfb885ebd51008ece462abfbce16c0ec199e7b4d3c9233abc30ea7ffff83dfb",
+        "text": "## Criterios de selección\n\nCategoría de demostración: Mobiliario. Compare el tipo de mueble y las medidas completas antes de recomendarlo. La carga máxima documentada no demuestra beneficios médicos ni una ergonomía individual. Un atributo desconocido impide confirmar ese requisito.",
+        "location": {
+          "page": null,
+          "section": "Criterios de selección",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.42183154772799275
+    },
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "policy-delivery-s1",
+        "source_id": "policy-delivery",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "b41bb9cd80dcb5bcba7329ffc8f7526fd4397273d218705a1b53e15baa266118",
+        "content_hash": "b68f9a40333dcd62ce2e27d554e2e94de9579c882e2b53934642cec6f824d1e6",
+        "text": "## Condiciones\n\nEn la zona ficticia de cobertura, el plazo orientativo es de tres a cinco días hábiles. El costo simulado es de 15 000 COP y será cero desde un subtotal de productos de 300 000 COP. No se ha definido una dirección real ni se realizan despachos. Si el usuario exige un presupuesto total con envío, se debe distinguir el subtotal del costo simulado de entrega y aclarar la cobertura.",
+        "location": {
+          "page": null,
+          "section": "Condiciones",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.41034560565309786
+    },
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "guide-organization-s1",
+        "source_id": "guide-organization",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "6bd2f207fc5abb42a4fa088d781bb50880a68c78e455dc874a101757c8cc3c30",
+        "content_hash": "6443e3521da5e79a08c160514f94c3942e9c0d92ab4dc5d0437511ba514f9c40",
+        "text": "## Criterios de selección\n\nCategoría de demostración: Organización. Compare dimensiones, material, instalación y carga documentada. Un producto que cabe por ancho puede no caber por profundidad o altura. No deduzca cargas máximas cuando no estén disponibles.",
+        "location": {
+          "page": null,
+          "section": "Criterios de selección",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.40586156520234745
+    }
+  ],
+  "context_chunk_ids": [
+    "policy-warranty-s1",
+    "policy-exchanges-s1",
+    "guide-furniture-s1",
+    "policy-delivery-s1",
+    "guide-organization-s1"
+  ],
+  "metrics": {
+    "retrieval_seconds": 50.062567,
+    "prompt_utf8_bytes": 2721,
+    "generation_seconds": 79.307641,
+    "generation_input_tokens": 714,
+    "generation_output_tokens": 45,
+    "total_seconds": 129.370555
+  }
+}

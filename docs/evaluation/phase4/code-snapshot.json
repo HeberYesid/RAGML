@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-11-04T18:16:43.788413+00:00",
+  "kind": "phase4_local_source_snapshot_not_final_evaluation",
+  "python": "3.13.7",
+  "packages": {
+    "pydantic": "2.14.2",
+    "httpx": "0.28.1",
+    "fastapi": "0.162.0",
+    "pytest": "9.2.0",
+    "ruff": "0.17.3",
+    "mypy": "2.4.1"
+  },
+  "files": {
+    "src/ragml/retrieval.py": "d6ca7ae1478633ccca802b802efe63c73ab095e8132224bc3bc7b9fcd0a2725d",
+    "src/ragml/rag.py": "bb9b003ca5e3893ec846fe3a80fc2328bf471ba4909794f058df516227b14f16",
+    "src/ragml/rag_cli.py": "e2bc89aed61cf697394fd5276aaf91d9de81d34adc942b4424447d659d7ea083",
+    "src/ragml/rag_evaluation.py": "460bca7c654dcdb5ccd75edcfc6d5d4e98009b9f40afe02c33cc53965a621c45",
+    "tests/test_retrieval.py": "1b736ba252a5c49c39476f74fbeaaa3e065f4b6cb847222a87aeb757989e5bb2",
+    "tests/test_rag.py": "ec203ccbbfb6e4cc53a3abb27375bcdc88dcf7bdb4713a1611bef8ddcf374e8f",
+    "tests/test_rag_cli.py": "780d6746a497eb878e381b77e3f28b7a7b1a06eea8ad2de7dad217a067df8f4d",
+    "tests/test_rag_evaluation.py": "4ed8494709c6cef4413a94cf89f95e41215364a9e597c582ce0f7f798ffbbf41",
+    "src/ragml/ingestion.py": "a346be7c9609f3343ed400e983a29ae65c7fda9ffc442cffa18e204289cb7b6c",
+    "src/ragml/ports.py": "010e70474b51d9e26f63c0a24ccfe15a2024dc13461fd0fc50035ed753e2cf4a",
+    "src/ragml/conversation.py": "ed694d805f156dfb8ae5c02330138856d0650e6d58d53ec5ff627e821e01ac99",
+    "src/ragml/evidence.py": "417c5d6078383fe82502bedc5df5c5155e05727e8dc86327d676712b569d2e31",
+    "src/ragml/providers.py": "f62d43e80a53c9816072b76ac5ab493ef0a4fa576cc95d40c5a22be25e7b2cfe",
+    "src/ragml/settings.py": "9270e15669f58c7bf4302667efbcd6ea345577f33980d6331530faee34926748",
+    "config/models.lock.json": "830de03d0a33c0ffff7f80efa765075aefb246642403d00b39f2ad1bd7c5b20f",
+    "config/runtime.lock.json": "f55c966580fe9f1837ba834e8ff728814af2be192979aa7d76fc42a2915e632d",
+    "pyproject.toml": "5d6cc40151845bad9fb5d6b79ec5b1d0238a954b1483b7e13789697c8d73dac0",
+    "uv.lock": "7dbe13245c0aeda1fe679f7bd144be9907ae70498eec1a6d683ca20dad4b4d92"
+  }
+}

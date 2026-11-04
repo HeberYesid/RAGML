@@ -1,0 +1,360 @@
+{
+  "kind": "phase4_adjustment_retrieval_not_final_evaluation",
+  "created_at": "2026-11-04T18:11:29.551958+00:00",
+  "partition": "adjustment",
+  "reference_revision": "references-20261104-v1",
+  "reference_sha256": "065aebf92d0aa9770a742a4a1df9b97359fe78242f029abb40ffbff24872a53b",
+  "index": {
+    "store_id": "nexo-demo",
+    "revision": "demo-20261104-v2",
+    "fingerprint": "94a7e79b631aad7b48c949a18dd5be163c4a361f29a1e0b799e2e0198e799678",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+    "dimensions": 1024,
+    "sources": 72,
+    "chunks": 204,
+    "published_at": "2026-11-04T17:55:41.785513+00:00"
+  },
+  "k": 5,
+  "filters": "none; expected identities not supplied to retrieval",
+  "summary": {
+    "cases": 18,
+    "applicable_recall_cases": 18,
+    "failed_queries": 0,
+    "mean_recall": 1.0,
+    "median_seconds": 0.099139,
+    "p95_seconds_nearest_rank": 49.879168
+  },
+  "limits": [
+    "Adjustment partition only; no final evaluation or user study.",
+    "Retrieval only: no answer correctness, semantic citation fidelity or usefulness score.",
+    "Failures contribute zero recall when positive references exist.",
+    "Timings describe this sequential run; model warm state is uncontrolled."
+  ],
+  "cases": [
+    {
+      "case_id": "DEV-001",
+      "task_type": "document",
+      "query": "Según la ficha, ¿cuál es tipo de dispositivo de Teclado Brisa?",
+      "gold_chunk_ids": [
+        "doc-per-001-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-per-001-s1",
+        "doc-per-001-s2",
+        "doc-per-001-s3",
+        "doc-per-009-s1",
+        "doc-per-002-s1"
+      ],
+      "recall": 1.0,
+      "seconds": 49.879168,
+      "error": null
+    },
+    {
+      "case_id": "DEV-002",
+      "task_type": "document",
+      "query": "Según la ficha, ¿cuál es conexión de Ratón Arco?",
+      "gold_chunk_ids": [
+        "doc-per-003-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-per-003-s1",
+        "doc-per-003-s2",
+        "doc-per-003-s3",
+        "doc-per-004-s1",
+        "doc-per-004-s2"
+      ],
+      "recall": 1.0,
+      "seconds": 0.109148,
+      "error": null
+    },
+    {
+      "case_id": "DEV-010",
+      "task_type": "document",
+      "query": "Según la ficha, ¿cuál es conector del equipo de Hub Enlace Cuatro?",
+      "gold_chunk_ids": [
+        "doc-con-001-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-con-001-s2",
+        "doc-con-001-s1",
+        "doc-con-002-s2",
+        "doc-con-001-s3",
+        "doc-con-002-s1"
+      ],
+      "recall": 1.0,
+      "seconds": 0.104969,
+      "error": null
+    },
+    {
+      "case_id": "DEV-011",
+      "task_type": "document",
+      "query": "Según la ficha, ¿cuál es interfaces documentadas de Adaptador Red Clara?",
+      "gold_chunk_ids": [
+        "doc-con-003-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-con-003-s2",
+        "doc-con-003-s1",
+        "doc-con-003-s3",
+        "doc-con-009-s2",
+        "doc-con-004-s2"
+      ],
+      "recall": 1.0,
+      "seconds": 0.105044,
+      "error": null
+    },
+    {
+      "case_id": "DEV-019",
+      "task_type": "document",
+      "query": "Según la ficha, ¿cuál es potencia de Lámpara Flexo?",
+      "gold_chunk_ids": [
+        "doc-ilu-001-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-ilu-001-s2",
+        "doc-ilu-001-s1",
+        "doc-ilu-001-s3",
+        "doc-ilu-002-s2",
+        "doc-ilu-005-s2"
+      ],
+      "recall": 1.0,
+      "seconds": 0.097951,
+      "error": null
+    },
+    {
+      "case_id": "DEV-020",
+      "task_type": "document",
+      "query": "Según la ficha, ¿cuál es alimentación de Barra Monitor?",
+      "gold_chunk_ids": [
+        "doc-ilu-003-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-ilu-003-s1",
+        "doc-ilu-003-s2",
+        "doc-ilu-003-s3",
+        "doc-org-003-s1",
+        "doc-org-003-s2"
+      ],
+      "recall": 1.0,
+      "seconds": 0.098528,
+      "error": null
+    },
+    {
+      "case_id": "DEV-028",
+      "task_type": "document",
+      "query": "Según la ficha, ¿cuál es ancho de Organizador Tres?",
+      "gold_chunk_ids": [
+        "doc-org-001-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-org-001-s2",
+        "doc-org-001-s1",
+        "doc-org-009-s2",
+        "doc-org-001-s3",
+        "doc-org-007-s2"
+      ],
+      "recall": 1.0,
+      "seconds": 0.097943,
+      "error": null
+    },
+    {
+      "case_id": "DEV-029",
+      "task_type": "document",
+      "query": "Según la ficha, ¿cuál es profundidad de Elevador Monitor?",
+      "gold_chunk_ids": [
+        "doc-org-003-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-org-003-s1",
+        "doc-org-003-s2",
+        "doc-ilu-003-s1",
+        "doc-mob-003-s1",
+        "doc-org-003-s3"
+      ],
+      "recall": 1.0,
+      "seconds": 0.09785,
+      "error": null
+    },
+    {
+      "case_id": "DEV-037",
+      "task_type": "document",
+      "query": "Según la ficha, ¿cuál es ancho de Escritorio Plano?",
+      "gold_chunk_ids": [
+        "doc-mob-001-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-mob-001-s1",
+        "doc-mob-001-s2",
+        "doc-mob-002-s1",
+        "doc-mob-002-s2",
+        "doc-mob-004-s1"
+      ],
+      "recall": 1.0,
+      "seconds": 0.101388,
+      "error": null
+    },
+    {
+      "case_id": "DEV-038",
+      "task_type": "document",
+      "query": "Según la ficha, ¿cuál es profundidad de Escritorio Ascenso?",
+      "gold_chunk_ids": [
+        "doc-mob-003-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-mob-003-s1",
+        "doc-mob-003-s2",
+        "doc-mob-005-s1",
+        "doc-org-004-s1",
+        "doc-mob-004-s2"
+      ],
+      "recall": 1.0,
+      "seconds": 0.100104,
+      "error": null
+    },
+    {
+      "case_id": "DEV-046",
+      "task_type": "document",
+      "query": "Según la ficha, ¿cuál es material de Botella Ruta?",
+      "gold_chunk_ids": [
+        "doc-acc-001-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-acc-001-s2",
+        "doc-acc-001-s1",
+        "doc-acc-001-s3",
+        "doc-acc-002-s1",
+        "doc-acc-002-s2"
+      ],
+      "recall": 1.0,
+      "seconds": 0.098541,
+      "error": null
+    },
+    {
+      "case_id": "DEV-047",
+      "task_type": "document",
+      "query": "Según la ficha, ¿cuál es ancho de Taza Mesa?",
+      "gold_chunk_ids": [
+        "doc-acc-003-s2"
+      ],
+      "retrieved_chunk_ids": [
+        "doc-acc-003-s1",
+        "doc-acc-003-s2",
+        "doc-acc-003-s3",
+        "doc-acc-009-s1",
+        "doc-mob-001-s1"
+      ],
+      "recall": 1.0,
+      "seconds": 0.099345,
+      "error": null
+    },
+    {
+      "case_id": "DEV-055",
+      "task_type": "policy",
+      "query": "Si falta un precio, ¿se considera gratis?",
+      "gold_chunk_ids": [
+        "policy-prices-s1"
+      ],
+      "retrieved_chunk_ids": [
+        "policy-prices-s1",
+        "policy-availability-s1",
+        "policy-delivery-s1",
+        "guide-connectivity-s2",
+        "guide-everyday-accessories-s2"
+      ],
+      "recall": 1.0,
+      "seconds": 0.091438,
+      "error": null
+    },
+    {
+      "case_id": "DEV-056",
+      "task_type": "policy",
+      "query": "¿Consultar un producto reserva sus unidades?",
+      "gold_chunk_ids": [
+        "policy-availability-s1"
+      ],
+      "retrieved_chunk_ids": [
+        "policy-availability-s1",
+        "policy-exchanges-s1",
+        "doc-org-007-s3",
+        "doc-mob-007-s3",
+        "policy-help-s1"
+      ],
+      "recall": 1.0,
+      "seconds": 0.091264,
+      "error": null
+    },
+    {
+      "case_id": "DEV-057",
+      "task_type": "policy",
+      "query": "¿Cuál es el envío simulado para un subtotal de 300 000 COP?",
+      "gold_chunk_ids": [
+        "policy-delivery-s1"
+      ],
+      "retrieved_chunk_ids": [
+        "policy-delivery-s1",
+        "policy-prices-s1",
+        "policy-exchanges-s1",
+        "doc-per-003-s3",
+        "doc-mob-003-s3"
+      ],
+      "recall": 1.0,
+      "seconds": 0.105789,
+      "error": null
+    },
+    {
+      "case_id": "DEV-058",
+      "task_type": "policy",
+      "query": "¿Cuántos días contempla la política ficticia para solicitar un cambio?",
+      "gold_chunk_ids": [
+        "policy-exchanges-s1"
+      ],
+      "retrieved_chunk_ids": [
+        "policy-exchanges-s1",
+        "policy-availability-s2",
+        "policy-delivery-s2",
+        "policy-exchanges-s2",
+        "policy-help-s2"
+      ],
+      "recall": 1.0,
+      "seconds": 0.098071,
+      "error": null
+    },
+    {
+      "case_id": "DEV-059",
+      "task_type": "policy",
+      "query": "¿Cuánto dura la garantía ficticia por defectos de fabricación?",
+      "gold_chunk_ids": [
+        "policy-warranty-s1"
+      ],
+      "retrieved_chunk_ids": [
+        "policy-warranty-s1",
+        "policy-exchanges-s1",
+        "policy-delivery-s1",
+        "doc-per-005-s3",
+        "doc-per-006-s3"
+      ],
+      "recall": 1.0,
+      "seconds": 0.098933,
+      "error": null
+    },
+    {
+      "case_id": "DEV-060",
+      "task_type": "policy",
+      "query": "¿Cuál es el correo real de los empleados de Nexo Demo?",
+      "gold_chunk_ids": [
+        "policy-help-s1"
+      ],
+      "retrieved_chunk_ids": [
+        "policy-help-s1",
+        "doc-mob-001-s1",
+        "doc-mob-002-s1",
+        "doc-mob-002-s3",
+        "doc-con-009-s1"
+      ],
+      "recall": 1.0,
+      "seconds": 0.115007,
+      "error": null
+    }
+  ]
+}
