@@ -1,8 +1,10 @@
-# Phase 5: deterministic advice foundation
+# Deterministic advice and conversational integration
 
-Implemented on 2026-11-04. Status: **in progress**. The module is independent of the
-phase-4 RAG and the web implementation being developed in parallel. It does not
-change HTTP contracts, source datasets, model configuration, or dependencies.
+Updated 2026-11-09. The advice module remains a deterministic component and is
+now used by the integrated chat service in `src/ragml/chat.py`. The API and web
+connect recommendation, comparison, documentary answers and session context.
+The observations dated 2026-11-04 below describe the earlier component snapshot;
+they are not measurements of the current integrated candidate.
 
 ## Implemented behavior
 
@@ -51,7 +53,7 @@ issues and original lookup to distinguish unconfirmed commerce from a genuine
 constraint mismatch. The conversation layer must map source unavailability to
 the appropriate chat state without inventing an inventory or price confirmation.
 
-## Conversation helpers and integration obligations
+## Conversation helpers and current integration
 
 `resolve_presented_variant` resolves a one-based ordinal against the supplied
 `SessionState.presented_variants`. It checks the expected session ID, store and
@@ -68,20 +70,33 @@ layer must resolve those queues before recommending from `transition.request`.**
 No session or presented-product list is updated by this helper. On a category
 change the integration must also clear the previous presented list.
 
-Still pending before phase 5 can close:
+The integration now provides:
 
-1. Interpret Spanish requests into typed constraints, handle corrections and
-   “a cheaper one,” and generate useful clarification questions.
-2. Implement owner-scoped session persistence, expiry, and atomic context updates;
-   connect the category-transition clarification gate and presented-product list.
-3. Resolve attribute/document references against the exact active manifest, combine
-   documentary and commercial claims, and integrate with the phase-4 orchestration.
-   A nonempty attribute reference alone does not establish semantic support.
-4. Wire the service into chat/web and verify complete multi-turn journeys, failures,
-   ownership isolation and source updates. The helpers' software tests do not
-   establish these integrated behaviors.
-5. Measure quality using the designated adjustment partition. Final reserved cases
-   and participant evaluation were not used in this implementation.
+1. Conservative Spanish interpretation in `interpretation.py`, including typed
+   constraints, budget corrections, ordinals and requests for a cheaper option.
+   Unrecognized language remains a limitation; this parser is not a learned model.
+2. Owner-scoped, atomic in-memory sessions in `sessions.py`, with bounded capacity
+   and configurable inactivity expiry. The default TTL is 1800 seconds. The
+   signed `HttpOnly`, `SameSite=Strict` ownership cookie does not contain a transcript.
+3. Category-transition handling and active-manifest validation when composing
+   attribute and commercial evidence. A nonempty evidence reference alone still
+   does not establish semantic correctness.
+4. HTTP/web orchestration through `ChatService`, including recommendations,
+   comparisons, documentary answers, session deletion and isolation checks.
+
+`tests/test_chat_integration.py` exercises these journeys with an external-model
+double, actual application orchestration and local synthetic data. New observed
+model runs belong in `docs/evaluation/integrated/`; their output, coverage and
+failures must be inspected before declaring quality targets met. Reserved final
+cases and participant utility are separate from these software checks.
+
+In demo mode `ChatService.commercial_time` reads the package's declared replay
+clock only when its store and revision match the active catalog. Responses and
+the web runtime notice disclose that simulation. This allows reproducible demo
+commerce without silently renewing historical records. Wall-clock adapter calls
+still evaluate the original validity window against the supplied actual time.
+The visible transcript remains in browser-tab memory; session requirements are
+held only in server memory, and a process restart discards them.
 
 ## Usage
 
@@ -110,7 +125,7 @@ explicit **simulated** replay of the existing fixture, pass
 `datetime(2026, 11, 4, 12, 5, tzinfo=UTC)` instead. Do not substitute this timestamp
 for the production clock or silently renew the snapshot.
 
-## Observed verification
+## Historical verification on 2026-11-04
 
 The new [software suite](../../tests/test_advice.py) has 40 passing tests. New
 behaviors were developed with observed failing tests before implementation;

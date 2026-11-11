@@ -4,9 +4,10 @@ Prototipo académico local en español para Nexo Demo. Consulta documentos media
 semántica y entrega respuestas extractivas con fuentes. El perfil, catálogo y fuentes se mantienen
 separados del núcleo para facilitar su sustitución por una tienda real autorizada.
 
-**Estado al 4 de noviembre de 2026:** el RAG documental se ejecuta desde la terminal. La interfaz
-web puede abrirse y mostrar el catálogo, pero su chat todavía devuelve `503` con `rag_not_ready`.
-La integración del RAG con HTTP/web y la conversación entre turnos siguen pendientes.
+**Actualización del 10 de noviembre de 2026:** el chat HTTP/web integra consultas documentales,
+asesoría, comparación y sesiones aisladas. Las respuestas documentales utilizan modelos locales;
+las recomendaciones aplican reglas explícitas sobre el catálogo. La disponibilidad efectiva se
+comprueba en `/ready` y depende de los modelos, el corpus y los datos configurados.
 
 ## Contenido
 
@@ -31,9 +32,9 @@ La integración del RAG con HTTP/web y la conversación entre turnos siguen pend
 | Corpus documental de demostración | 72 fuentes y 204 fragmentos |
 | Ingesta e índice | Embeddings de 1024 dimensiones almacenados en SQLite |
 | Recuperación y respuesta documental | Disponibles mediante `ragml.rag_cli`; consultas independientes de un turno |
-| Asesoría y comparación | Módulo determinista separado; pendiente de integración conversacional |
-| Interfaz web | Página y catálogo disponibles; chat RAG pendiente de integración |
-| Evaluación | Medición de recuperación sobre ajuste; evaluación final y utilidad con personas pendientes |
+| Asesoría y comparación | Reglas deterministas conectadas al chat y al contexto de la sesión |
+| Interfaz web | Chat integrado, catálogo, fuentes, reloj simulado y conversación nueva |
+| Evaluación | 60 casos de ajuste medidos por HTTP con modelos reales; conjunto final y utilidad con personas pendientes |
 
 Todos los datos de Nexo Demo son ficticios. Las comprobaciones de software y los ejemplos de
 inferencia no constituyen validación con una tienda real ni con participantes.
@@ -104,8 +105,8 @@ Utiliza el ejecutor del proyecto, sin requerir una instalación global de Ollama
 ```
 
 Revisa que `models.generation`, `models.embedding` y `foundation_ready` sean `true`.
-El campo `rag_available: false` describe la API base, cuya integración RAG está pendiente;
-no comprueba la disponibilidad del índice ni del comando documental.
+El campo `rag_available` del diagnóstico de base no comprueba el recorrido HTTP integrado.
+Utiliza `/ready` para conocer la disponibilidad del asistente web y sus dependencias.
 
 Continúa con la ingesta de la sección siguiente para preparar el corpus.
 
@@ -263,8 +264,8 @@ Los datos comerciales se mantienen en `data/sample/commercial.json`, separados d
 documental. El RAG documental se abstiene ante consultas comerciales reconocidas; no confirma
 precios ni existencias actuales a partir de una ficha.
 
-El módulo `ragml.advice` implementa reglas de recomendación y comparación con datos estructurados,
-pero sigue separado del recorrido RAG/web. Los registros comerciales tienen ventanas de vigencia:
+El módulo `ragml.advice` implementa reglas de recomendación y comparación con datos estructurados
+y se conecta al chat mediante `ragml.chat`. Los registros comerciales tienen ventanas de vigencia:
 una instantánea vencida no debe renovarse silenciosamente ni presentarse como actual.
 Consulta [la guía de asesoría](docs/advice/README.md).
 
@@ -279,9 +280,10 @@ En otra terminal, desde la raíz:
 ```
 
 Abre [http://127.0.0.1:8000](http://127.0.0.1:8000) y mantén la terminal abierta.
-La interfaz muestra el catálogo y utiliza la API base, pero enviar mensajes todavía produce
-`rag_not_ready`. Iniciar modelos o reconstruir el índice no completa esa integración pendiente.
-El indicador de conexión consulta la salud de la API, no la disponibilidad del RAG.
+La interfaz muestra el catálogo y envía los turnos al asistente integrado. Permite consultar
+productos y políticas, pedir recomendaciones, comparar alternativas y cambiar el presupuesto.
+El indicador de conexión consulta la salud de la API; `/ready` verifica las dependencias del chat.
+En Nexo Demo se declara el reloj comercial simulado; sus precios y existencias son ficticios.
 
 Si el puerto 8000 está ocupado, selecciona otro antes de iniciar:
 
@@ -306,9 +308,9 @@ asigna puertos diferentes.
 
 | Ruta | Comportamiento actual |
 | --- | --- |
-| `GET /health` | `200`; confirma salud de la API base y declara `rag_available: false` |
-| `GET /ready` | `503`; informa dependencias, con integración RAG pendiente |
-| `POST /v1/chat` | Una solicitud válida devuelve `503`, código `rag_not_ready` |
+| `GET /health` | `200`; informa salud y acceso al corpus, sin comprobar por sí solo toda la inferencia |
+| `GET /ready` | `200` si las dependencias están listas; `503` si alguna no está disponible |
+| `POST /v1/chat` | Respuesta conversacional y sesión; errores explícitos cuando faltan dependencias |
 | `GET /openapi.json` | Contrato HTTP local |
 | `GET /` | Interfaz, disponible al iniciar `ragml.web` |
 | `GET /v1/web/catalog` | Catálogo validado, disponible al iniciar `ragml.web` |
@@ -318,6 +320,53 @@ Los servicios escuchan en loopback para uso local. Consulta [la guía web](docs/
 para detalles de la interfaz, sesiones del cliente y estados de error.
 
 ## Evaluación y verificación
+
+### Explorar el dataset y generar gráficos
+
+El extra `analysis` incorpora Matplotlib; las estadísticas sin gráficos solo necesitan las
+dependencias base. Usa un directorio nuevo para conservar las evidencias de cada ejecución:
+
+```powershell
+uv sync --locked --extra analysis --cache-dir .cache/uv
+.\.venv\Scripts\python.exe -m ragml.analysis --output-dir docs/analysis/nueva-ejecucion
+```
+
+El comando genera estadísticas, cinco tablas CSV y cinco gráficos PNG/SVG. Distingue precios
+vigentes, desconocidos y vencidos, conserva los valores ausentes y señala posibles atípicos IQR
+sin eliminarlos. Los atributos se comparan por categoría y unidad. El reloj comercial simulado y
+los hashes de las entradas quedan registrados. Consulta los [resultados del análisis](docs/analysis/2026-11-09/README.md)
+y la [guía de reproducción](docs/analysis/README.md). `--no-charts` permite exportar solo tablas.
+
+### Medir el asistente integrado
+
+Con los modelos y la web iniciados:
+
+```powershell
+.\.venv\Scripts\python.exe -m ragml.integrated_evaluation --output-dir docs/evaluation/integrated/nueva-ejecucion --base-url http://127.0.0.1:8000 --include-security-fixtures
+```
+
+El ejecutor usa los 60 casos de ajuste y conserva los turnos reales, errores, tiempos y huellas
+del candidato. Las cuatro pruebas con documentos adversariales usan fuentes e índices clonados
+y un servidor temporal aislado. No se modifican las fuentes activas ni se abre el archivo final
+reservado. Una coincidencia de estado HTTP o una cita literal válida no equivalen a corrección
+semántica ni a utilidad con personas. Véase la [guía de evaluación integrada](docs/evaluation/integrated/README.md).
+
+### Entrega académica del Previo 3
+
+El [informe fuente](docs/reports/previo3-informe.md) desarrolla los once apartados de la guía,
+la metodología, los resultados, su interpretación y las limitaciones. La [bibliografía contrastada](docs/reports/bibliografia-verificada.md)
+conserva las fuentes y decisiones de citación. El [guion de sustentación](docs/reports/guion-sustentacion.md)
+incluye la demostración y preguntas previsibles.
+
+La carpeta `outputs/previo3/` reúne el informe editable, su PDF y la presentación. La realización
+de la exposición por el equipo y los estudios con participantes son actividades distintas de la
+preparación de estos materiales.
+
+La [medición consolidada](docs/evaluation/integrated/complete-20261110/completion.json)
+cubre los 60 casos en dos tramos del mismo candidato, sin errores de ejecución y con 50
+coincidencias de estado. Esas coincidencias no son exactitud semántica. El informe explica
+las discrepancias y el p95 de unos 184 segundos por turno, superior a la meta de diseño.
+También está preparado el [informe de avance](docs/reports/informe-avance.md).
 
 ### Medir recuperación sobre ajuste
 
@@ -374,8 +423,8 @@ siendo utilizado por otro trabajo:
 | `doctor` no confirma los modelos | Iniciar el servidor del proyecto y comprobar la configuración y los archivos lock |
 | Puerto 11435 ocupado | Identificar el servicio que lo utiliza; el script no reutiliza procesos ajenos |
 | Puerto 8000 ocupado | Seleccionar otro mediante `RAGML_PORT` antes de iniciar la web o API |
-| `rag_not_ready` en el chat | La integración HTTP/web está pendiente; utilizar `ragml.rag_cli` |
-| `rag_available: false` en `doctor` o `/health` | Es el estado de la API base; comprobar el RAG documental mediante su CLI |
+| Chat no disponible | Consultar `/ready`, iniciar modelos y comprobar el índice y los datos activos |
+| `rag_available: false` en `doctor` | Es el diagnóstico de base; comprobar `/ready` y un turno real del chat |
 | `index_unavailable_or_incompatible` | Comprobar ingesta, rutas, revisión activa y compatibilidad de modelo, digest y dimensiones |
 | `provider_unavailable` | Comprobar el servidor local y `doctor`; revisar `.cache/ollama/server.stderr.log` |
 | `clarification_required` | Indicar explícitamente el producto o variante y revisar los filtros |

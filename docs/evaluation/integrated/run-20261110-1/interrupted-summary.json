@@ -1,0 +1,16 @@
+{
+  "kind": "interrupted_development_measurement_not_final",
+  "recorded_cases": 9,
+  "planned_cases": 60,
+  "not_recorded": 51,
+  "reason": "Stopped to correct routing and budget parsing identified during development; original JSONL preserved.",
+  "completed_cases": 9,
+  "execution_errors": 0,
+  "expected_status_matches": 4,
+  "median_seconds": 0.069369,
+  "p95_seconds_nearest_rank": 216.330395,
+  "limits": [
+    "No claim about unrecorded cases or semantic accuracy.",
+    "Initial manifest fingerprints the measured development candidate; source was subsequently corrected."
+  ]
+}

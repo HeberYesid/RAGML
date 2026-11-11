@@ -253,7 +253,9 @@ class ChatService:
         catalog, manifest = snapshot.catalog, snapshot.manifest
         session_id, category_id, budget = state.session_id, state.category_id, state.budget
         evaluated_at = self.commercial_time(catalog)
-        metadata_path = self.settings.resolve_path(self.settings.catalog_path).parent / "package-metadata.json"
+        metadata_path = (
+            self.settings.resolve_path(self.settings.catalog_path).parent / "package-metadata.json"
+        )
         simulated = catalog.profile.data_mode == "demo" and metadata_path.is_file()
         warnings = (
             (

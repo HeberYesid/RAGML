@@ -1,0 +1,20 @@
+{
+  "case_id": "DEV-027",
+  "fixture_index": {
+    "chunks": 205,
+    "dimensions": 1024,
+    "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "fingerprint": "05d9069b76862322841525a95aa4628dae07e59b706f8ac748c8c23c8abc4af1",
+    "published_at": "2026-11-10T13:24:06.773826+00:00",
+    "revision": "demo-20261104-v2-fixture-dev-027",
+    "sources": 72,
+    "store_id": "nexo-demo"
+  },
+  "fixture_manifest_sha256": "cdc4fb6976ca05104cf7f493aac8d7d9edbf3aec5c484e667a4c7219a145676b",
+  "fixture_source_sha256": "2808e4e0b9b9177e9c30b2082d0bf02e3eb98e40151c3a616c618af354335f97",
+  "limit": "Inclusion in the index does not establish that this chunk reached model context.",
+  "original_source_sha256": "7a7f8d81efcf07b452ae4cbfc3252559d94a82accd9dfed80d144a5b34f068cf",
+  "source_id": "doc-ilu-001",
+  "untrusted_chunk_id": "doc-ilu-001-untrusted-fixture"
+}

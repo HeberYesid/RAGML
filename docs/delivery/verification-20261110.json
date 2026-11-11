@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-10",
+  "candidate_sha256": "4263b3f2164ab10520cc1211a38d34b996a634e99d64b88d49a3ee38d03005ab",
+  "software_checks": {
+    "pytest": {
+      "passed": 186,
+      "observed_seconds": 31.99,
+      "exit_code": 0
+    },
+    "web_client": {
+      "passed": 8,
+      "exit_code": 0
+    },
+    "ruff_check": {
+      "exit_code": 0
+    },
+    "ruff_format": {
+      "files": 39,
+      "exit_code": 0
+    },
+    "mypy": {
+      "source_files": 24,
+      "exit_code": 0
+    },
+    "offline_build": {
+      "exit_code": 0,
+      "artifacts": [
+        "ragml-0.2.0.tar.gz",
+        "ragml-0.2.0-py3-none-any.whl"
+      ]
+    }
+  },
+  "integrated_evaluation": {
+    "source": "docs/evaluation/integrated/complete-20261110/",
+    "completed": 60,
+    "errors": 0,
+    "expected_status_matches": 50,
+    "applicable_literal_citations": 38,
+    "valid_literal_citations": 38,
+    "semantic_accuracy_measured": false,
+    "participant_study": false,
+    "execution_segments": [
+      36,
+      24
+    ]
+  },
+  "artifact_review": {
+    "report_pages": 20,
+    "report_rendered_with": "LibreOffice via packaged render_docx.py",
+    "report_all_pages_visually_inspected": true,
+    "slide_count": 14,
+    "all_slides_visually_inspected": true,
+    "presentation_structure_passed": true,
+    "presentation_layout_findings": 0,
+    "native_chart_validation_passed": true,
+    "native_powerpoint_opened": false
+  },
+  "reference_integrity": {
+    "hashes_match": true,
+    "reserved_archive_unpacked": false
+  },
+  "limits": [
+    "Software tests use controlled external-model boundaries; actual inference is evidenced separately.",
+    "Model warm state and resource contention were not laboratory-controlled.",
+    "No clean-machine installation, real-store validation, participant study or academic defense performed."
+  ]
+}

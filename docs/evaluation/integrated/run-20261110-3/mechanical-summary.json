@@ -1,0 +1,288 @@
+{
+  "by_category": {
+    "everyday-accessories": {
+      "checks": {
+        "expected_status_match": {
+          "assessed": 9,
+          "matched": 8
+        },
+        "literal_document_citations_valid": {
+          "assessed": 6,
+          "matched": 6
+        },
+        "returned_products_in_acceptable_set": {
+          "assessed": 2,
+          "matched": 2
+        }
+      },
+      "coverage": {
+        "attempted": 9,
+        "completed": 9,
+        "errors": 0,
+        "not_run": 0,
+        "planned": 9
+      }
+    },
+    "furniture": {
+      "checks": {
+        "expected_status_match": {
+          "assessed": 9,
+          "matched": 8
+        },
+        "literal_document_citations_valid": {
+          "assessed": 6,
+          "matched": 6
+        },
+        "returned_products_in_acceptable_set": {
+          "assessed": 2,
+          "matched": 2
+        }
+      },
+      "coverage": {
+        "attempted": 9,
+        "completed": 9,
+        "errors": 0,
+        "not_run": 0,
+        "planned": 9
+      }
+    },
+    "store": {
+      "checks": {
+        "expected_status_match": {
+          "assessed": 6,
+          "matched": 4
+        },
+        "literal_document_citations_valid": {
+          "assessed": 4,
+          "matched": 4
+        },
+        "returned_products_in_acceptable_set": {
+          "assessed": 0,
+          "matched": 0
+        }
+      },
+      "coverage": {
+        "attempted": 6,
+        "completed": 6,
+        "errors": 0,
+        "not_run": 0,
+        "planned": 6
+      }
+    }
+  },
+  "by_task": {
+    "commercial": {
+      "checks": {
+        "expected_status_match": {
+          "assessed": 2,
+          "matched": 2
+        },
+        "literal_document_citations_valid": {
+          "assessed": 0,
+          "matched": 0
+        },
+        "returned_products_in_acceptable_set": {
+          "assessed": 0,
+          "matched": 0
+        }
+      },
+      "coverage": {
+        "attempted": 2,
+        "completed": 2,
+        "errors": 0,
+        "not_run": 0,
+        "planned": 2
+      }
+    },
+    "comparison": {
+      "checks": {
+        "expected_status_match": {
+          "assessed": 4,
+          "matched": 4
+        },
+        "literal_document_citations_valid": {
+          "assessed": 4,
+          "matched": 4
+        },
+        "returned_products_in_acceptable_set": {
+          "assessed": 0,
+          "matched": 0
+        }
+      },
+      "coverage": {
+        "attempted": 4,
+        "completed": 4,
+        "errors": 0,
+        "not_run": 0,
+        "planned": 4
+      }
+    },
+    "document": {
+      "checks": {
+        "expected_status_match": {
+          "assessed": 4,
+          "matched": 4
+        },
+        "literal_document_citations_valid": {
+          "assessed": 4,
+          "matched": 4
+        },
+        "returned_products_in_acceptable_set": {
+          "assessed": 0,
+          "matched": 0
+        }
+      },
+      "coverage": {
+        "attempted": 4,
+        "completed": 4,
+        "errors": 0,
+        "not_run": 0,
+        "planned": 4
+      }
+    },
+    "insufficient": {
+      "checks": {
+        "expected_status_match": {
+          "assessed": 2,
+          "matched": 2
+        },
+        "literal_document_citations_valid": {
+          "assessed": 0,
+          "matched": 0
+        },
+        "returned_products_in_acceptable_set": {
+          "assessed": 0,
+          "matched": 0
+        }
+      },
+      "coverage": {
+        "attempted": 2,
+        "completed": 2,
+        "errors": 0,
+        "not_run": 0,
+        "planned": 2
+      }
+    },
+    "multiturn": {
+      "checks": {
+        "expected_status_match": {
+          "assessed": 2,
+          "matched": 0
+        },
+        "literal_document_citations_valid": {
+          "assessed": 0,
+          "matched": 0
+        },
+        "returned_products_in_acceptable_set": {
+          "assessed": 2,
+          "matched": 2
+        }
+      },
+      "coverage": {
+        "attempted": 2,
+        "completed": 2,
+        "errors": 0,
+        "not_run": 0,
+        "planned": 2
+      }
+    },
+    "policy": {
+      "checks": {
+        "expected_status_match": {
+          "assessed": 6,
+          "matched": 4
+        },
+        "literal_document_citations_valid": {
+          "assessed": 4,
+          "matched": 4
+        },
+        "returned_products_in_acceptable_set": {
+          "assessed": 0,
+          "matched": 0
+        }
+      },
+      "coverage": {
+        "attempted": 6,
+        "completed": 6,
+        "errors": 0,
+        "not_run": 0,
+        "planned": 6
+      }
+    },
+    "recommendation": {
+      "checks": {
+        "expected_status_match": {
+          "assessed": 2,
+          "matched": 2
+        },
+        "literal_document_citations_valid": {
+          "assessed": 2,
+          "matched": 2
+        },
+        "returned_products_in_acceptable_set": {
+          "assessed": 2,
+          "matched": 2
+        }
+      },
+      "coverage": {
+        "attempted": 2,
+        "completed": 2,
+        "errors": 0,
+        "not_run": 0,
+        "planned": 2
+      }
+    },
+    "security": {
+      "checks": {
+        "expected_status_match": {
+          "assessed": 2,
+          "matched": 2
+        },
+        "literal_document_citations_valid": {
+          "assessed": 2,
+          "matched": 2
+        },
+        "returned_products_in_acceptable_set": {
+          "assessed": 0,
+          "matched": 0
+        }
+      },
+      "coverage": {
+        "attempted": 2,
+        "completed": 2,
+        "errors": 0,
+        "not_run": 0,
+        "planned": 2
+      }
+    }
+  },
+  "checks": {
+    "expected_status_match": {
+      "assessed": 24,
+      "matched": 20
+    },
+    "literal_document_citations_valid": {
+      "assessed": 16,
+      "matched": 16
+    },
+    "returned_products_in_acceptable_set": {
+      "assessed": 4,
+      "matched": 4
+    }
+  },
+  "coverage": {
+    "attempted": 24,
+    "completed": 24,
+    "errors": 0,
+    "not_run": 0,
+    "planned": 24
+  },
+  "kind": "integrated_adjustment_mechanical_checks_not_semantic_accuracy",
+  "limits": [
+    "Status matches and literal citation checks are not semantic answer correctness.",
+    "Returned products are checked as a set; references may identify an unsuitable product.",
+    "No human ratings or participant utility are inferred.",
+    "Retriever ranks are not exposed by this HTTP API; no retrieval Recall@k is claimed."
+  ],
+  "not_run_reasons": {}
+}

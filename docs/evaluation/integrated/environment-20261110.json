@@ -1,0 +1,17 @@
+{
+  "observed_date": "2026-11-10",
+  "cpu": "AMD Ryzen 5 3600 6-Core Processor",
+  "physical_cores": 6,
+  "logical_processors": 12,
+  "ram_gib": 15.95,
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "gpu_total_gib": 4.0,
+  "execution": "Local Windows, one HTTP evaluation sequence and one Ollama model slot",
+  "context_tokens": 4096,
+  "output_tokens": 256,
+  "model_warm_state": "unknown",
+  "limits": [
+    "Resource contention and model loading were not controlled as a laboratory benchmark.",
+    "No CPU/GPU power or temperature measurements were collected."
+  ]
+}

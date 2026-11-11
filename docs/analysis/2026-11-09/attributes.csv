@@ -1,0 +1,44 @@
+﻿category_id,key,label,unit,value_type,total_products,known,explicit_null,absent,numeric_count,numeric_missing,numeric_minimum,numeric_q1,numeric_median,numeric_q3,numeric_maximum,numeric_mean,numeric_sample_sd,numeric_iqr,numeric_lower_fence,numeric_upper_fence,numeric_outlier_count
+peripherals,device_type,Tipo de dispositivo,,text,10,10,0,0,,,,,,,,,,,,,
+peripherals,connection,Conexión,,text,10,10,0,0,,,,,,,,,,,,,
+peripherals,os_support,Sistemas documentados,,text,10,10,0,0,,,,,,,,,,,,,
+peripherals,width_cm,Ancho,cm,number,10,10,0,0,10,0,3.0,7.25,10.5,16.75,36.0,14.25,10.6907280699991,9.5,-7.0,31.0,1
+peripherals,keyboard_layout,Distribución del teclado,,text,10,3,0,7,,,,,,,,,,,,,
+peripherals,microphone,Micrófono integrado,,boolean,10,10,0,0,,,,,,,,,,,,,
+peripherals,weight_g,Masa,g,number,10,9,1,0,9,1,65.0,110.0,140.0,230.0,720.0,223.33333333333334,205.13714924410937,120.0,-70.0,410.0,1
+connectivity,device_type,Tipo de accesorio,,text,10,10,0,0,,,,,,,,,,,,,
+connectivity,host_connector,Conector del equipo,,text,10,10,0,0,,,,,,,,,,,,,
+connectivity,interfaces,Interfaces documentadas,,text,10,10,0,0,,,,,,,,,,,,,
+connectivity,power_requirement,Alimentación,,text,10,10,0,0,,,,,,,,,,,,,
+connectivity,video_output,Transporta video,,boolean,10,10,0,0,,,,,,,,,,,,,
+connectivity,requires_usb_c_alt_mode,Requiere modo alternativo USB-C,,boolean,10,10,0,0,,,,,,,,,,,,,
+connectivity,weight_g,Masa,g,number,10,9,1,0,9,1,15.0,55.0,140.0,180.0,420.0,148.88888888888889,125.6925260749863,125.0,-132.5,367.5,1
+lighting,power_w,Potencia,W,number,10,10,0,0,10,0,1.0,3.5,6.5,10.0,15.0,7.1,4.629614814791111,6.5,-6.25,19.75,0
+lighting,power_source,Alimentación,,text,10,10,0,0,,,,,,,,,,,,,
+lighting,color_temperature,Temperatura de color,,text,10,10,0,0,,,,,,,,,,,,,
+lighting,dimmable,Intensidad regulable,,boolean,10,10,0,0,,,,,,,,,,,,,
+lighting,height_cm,Altura,cm,number,10,10,0,0,10,0,0.3,4.25,25.0,39.5,145.0,33.13,42.87335484372031,35.25,-48.625,92.375,1
+lighting,use_location,Lugar de uso,,text,10,10,0,0,,,,,,,,,,,,,
+lighting,weight_g,Masa,g,number,10,9,1,0,9,1,60.0,130.0,450.0,780.0,2500.0,663.3333333333334,768.6514164431104,650.0,-845.0,1755.0,1
+organization,material,Material,,text,10,10,0,0,,,,,,,,,,,,,
+organization,width_cm,Ancho,cm,number,10,10,0,0,10,0,12.0,24.25,29.0,45.0,60.0,32.7,15.492291990248283,20.75,-6.875,76.125,0
+organization,depth_cm,Profundidad,cm,number,10,10,0,0,10,0,2.0,10.5,19.0,24.25,35.0,17.2,10.685400216078843,13.75,-10.125,44.875,0
+organization,height_cm,Altura,cm,number,10,10,0,0,10,0,1.0,10.5,13.5,26.25,35.0,16.2,11.754904413808637,15.75,-13.125,49.875,0
+organization,installation,Instalación,,text,10,10,0,0,,,,,,,,,,,,,
+organization,max_load_kg,Carga máxima,kg,number,10,9,1,0,9,1,1.0,2.0,4.0,5.0,10.0,4.111111111111111,2.8480012484391772,3.0,-2.5,9.5,1
+organization,weight_g,Masa,g,number,10,9,1,0,9,1,180.0,420.0,650.0,1400.0,1800.0,838.8888888888889,614.6837488588022,980.0,-1050.0,2870.0,0
+furniture,furniture_type,Tipo de mueble,,text,10,10,0,0,,,,,,,,,,,,,
+furniture,material,Material,,text,10,10,0,0,,,,,,,,,,,,,
+furniture,width_cm,Ancho,cm,number,10,10,0,0,10,0,40.0,51.25,61.0,110.0,140.0,76.7,36.72737398725915,58.75,-36.875,198.125,0
+furniture,depth_cm,Profundidad,cm,number,10,10,0,0,10,0,30.0,33.75,52.5,60.0,100.0,52.0,21.10818693198342,26.25,-5.625,99.375,1
+furniture,height_cm,Altura nominal,cm,number,10,10,0,0,10,0,12.0,72.75,75.0,87.25,140.0,78.7,31.1984686233867,14.5,51.0,109.0,2
+furniture,adjustable,Dispone de ajuste,,boolean,10,10,0,0,,,,,,,,,,,,,
+furniture,max_load_kg,Carga máxima,kg,number,10,9,1,0,9,1,15.0,40.0,50.0,90.0,120.0,59.44444444444444,35.3946009693255,50.0,-35.0,165.0,0
+furniture,weight_g,Masa,g,number,10,9,1,0,9,1,6000.0,10500.0,14000.0,18000.0,28000.0,15333.333333333334,7075.485849042453,7500.0,-750.0,29250.0,0
+everyday-accessories,accessory_type,Tipo de accesorio,,text,10,10,0,0,,,,,,,,,,,,,
+everyday-accessories,material,Material,,text,10,10,0,0,,,,,,,,,,,,,
+everyday-accessories,capacity_ml,Capacidad de recipiente,ml,number,10,4,0,6,4,6,350.0,425.0,475.0,562.5,750.0,512.5,170.17148213885113,137.5,218.75,768.75,0
+everyday-accessories,capacity_l,Capacidad de bolsa,L,number,10,3,0,7,3,7,4.0,7.0,10.0,12.5,15.0,9.666666666666666,5.507570547286102,5.5,,,0
+everyday-accessories,width_cm,Ancho,cm,number,10,10,0,0,10,0,7.0,8.25,21.0,27.0,60.0,22.1,16.475233938652686,18.75,-19.875,55.125,1
+everyday-accessories,care,Cuidados,,text,10,10,0,0,,,,,,,,,,,,,
+everyday-accessories,weight_g,Masa,g,number,10,9,1,0,9,1,100.0,180.0,300.0,420.0,650.0,325.55555555555554,185.00750735518216,240.0,-180.0,780.0,0

@@ -1,0 +1,7 @@
+{
+  "count": 66,
+  "median_seconds": 0.066982,
+  "p95_seconds_nearest_rank": 183.779447,
+  "warm_state": "unknown",
+  "scope": "actual HTTP turns from two disclosed segments"
+}

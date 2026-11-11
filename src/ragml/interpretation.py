@@ -105,7 +105,7 @@ def interpret(
             )
     amounts = list(
         re.finditer(
-            r"(?:presupuesto(?:\s+(?:es de|de|a))?|hasta|maximo|menos de|no mas de|tengo)\s*\$?\s*"
+            r"(?:presupuesto(?:\s+[a-z]+){0,7}|hasta|maximo|menos de|no mas de|tengo)\s*\$?\s*"
             r"(\d[\d.,]*)(?:\s*(mil|millones?))?",
             text,
         )
@@ -136,15 +136,21 @@ def interpret(
                     clarification="No hay un presupuesto positivo menor que ese importe.",
                 )
             budget = Money(amount=value - quantum, currency=currency)
+    recommendation_requested = budget is not None or bool(
+        re.search(
+            r"\b(recom\w*|busco|busca|necesito|quiero|opcion(?:es)?|barat\w*|econom\w*)\b", text
+        )
+    )
     if re.search(r"\b(compara\w*|diferencias?)\b", text):
         intent: Literal["recommend", "commercial", "compare", "document", "help"] = "compare"
+    elif recommendation_requested and not (products or variants or positions):
+        # Availability can qualify an option search without naming a stock lookup.
+        intent = "recommend"
     elif re.search(
         r"\b(precio|cuesta|cuestan|vale|stock|existencias|disponible|agotad\w*)\b", text
-    ):
+    ) or (products and re.search(r"\b(?:quedan?|unidad(?:es)?)\b", text)):
         intent = "commercial"
-    elif budget or re.search(
-        r"\b(recom\w*|busco|busca|necesito|quiero|opciones?|barat\w*|econom\w*)\b", text
-    ):
+    elif recommendation_requested:
         intent = "recommend"
     elif text.strip(" ¡!¿?.") in ("hola", "ayuda", "buenas", "buenos dias"):
         intent = "help"

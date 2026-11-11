@@ -1,0 +1,5014 @@
+{
+  "schema_version": "0.1",
+  "profile": {
+    "schema_version": "0.1",
+    "store_id": "nexo-demo",
+    "display_name": "Nexo Demo",
+    "data_mode": "demo",
+    "locale": "es-CO",
+    "currency": "COP",
+    "currency_decimal_places": 0,
+    "categories": [
+      {
+        "category_id": "peripherals",
+        "name": "Periféricos",
+        "attribute_definitions": [
+          {
+            "key": "device_type",
+            "label": "Tipo de dispositivo",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "connection",
+            "label": "Conexión",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "os_support",
+            "label": "Sistemas documentados",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "width_cm",
+            "label": "Ancho",
+            "value_type": "number",
+            "unit": "cm",
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "keyboard_layout",
+            "label": "Distribución del teclado",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "microphone",
+            "label": "Micrófono integrado",
+            "value_type": "boolean",
+            "unit": null,
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "weight_g",
+            "label": "Masa",
+            "value_type": "number",
+            "unit": "g",
+            "required_for_comparison": false,
+            "choices": []
+          }
+        ]
+      },
+      {
+        "category_id": "connectivity",
+        "name": "Conectividad",
+        "attribute_definitions": [
+          {
+            "key": "device_type",
+            "label": "Tipo de accesorio",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "host_connector",
+            "label": "Conector del equipo",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "interfaces",
+            "label": "Interfaces documentadas",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "power_requirement",
+            "label": "Alimentación",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "video_output",
+            "label": "Transporta video",
+            "value_type": "boolean",
+            "unit": null,
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "requires_usb_c_alt_mode",
+            "label": "Requiere modo alternativo USB-C",
+            "value_type": "boolean",
+            "unit": null,
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "weight_g",
+            "label": "Masa",
+            "value_type": "number",
+            "unit": "g",
+            "required_for_comparison": false,
+            "choices": []
+          }
+        ]
+      },
+      {
+        "category_id": "lighting",
+        "name": "Iluminación",
+        "attribute_definitions": [
+          {
+            "key": "power_w",
+            "label": "Potencia",
+            "value_type": "number",
+            "unit": "W",
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "power_source",
+            "label": "Alimentación",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "color_temperature",
+            "label": "Temperatura de color",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "dimmable",
+            "label": "Intensidad regulable",
+            "value_type": "boolean",
+            "unit": null,
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "height_cm",
+            "label": "Altura",
+            "value_type": "number",
+            "unit": "cm",
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "use_location",
+            "label": "Lugar de uso",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "weight_g",
+            "label": "Masa",
+            "value_type": "number",
+            "unit": "g",
+            "required_for_comparison": false,
+            "choices": []
+          }
+        ]
+      },
+      {
+        "category_id": "organization",
+        "name": "Organización",
+        "attribute_definitions": [
+          {
+            "key": "material",
+            "label": "Material",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "width_cm",
+            "label": "Ancho",
+            "value_type": "number",
+            "unit": "cm",
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "depth_cm",
+            "label": "Profundidad",
+            "value_type": "number",
+            "unit": "cm",
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "height_cm",
+            "label": "Altura",
+            "value_type": "number",
+            "unit": "cm",
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "installation",
+            "label": "Instalación",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "max_load_kg",
+            "label": "Carga máxima",
+            "value_type": "number",
+            "unit": "kg",
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "weight_g",
+            "label": "Masa",
+            "value_type": "number",
+            "unit": "g",
+            "required_for_comparison": false,
+            "choices": []
+          }
+        ]
+      },
+      {
+        "category_id": "furniture",
+        "name": "Mobiliario",
+        "attribute_definitions": [
+          {
+            "key": "furniture_type",
+            "label": "Tipo de mueble",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "material",
+            "label": "Material",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "width_cm",
+            "label": "Ancho",
+            "value_type": "number",
+            "unit": "cm",
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "depth_cm",
+            "label": "Profundidad",
+            "value_type": "number",
+            "unit": "cm",
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "height_cm",
+            "label": "Altura nominal",
+            "value_type": "number",
+            "unit": "cm",
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "adjustable",
+            "label": "Dispone de ajuste",
+            "value_type": "boolean",
+            "unit": null,
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "max_load_kg",
+            "label": "Carga máxima",
+            "value_type": "number",
+            "unit": "kg",
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "weight_g",
+            "label": "Masa",
+            "value_type": "number",
+            "unit": "g",
+            "required_for_comparison": false,
+            "choices": []
+          }
+        ]
+      },
+      {
+        "category_id": "everyday-accessories",
+        "name": "Accesorios cotidianos",
+        "attribute_definitions": [
+          {
+            "key": "accessory_type",
+            "label": "Tipo de accesorio",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "material",
+            "label": "Material",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": true,
+            "choices": []
+          },
+          {
+            "key": "capacity_ml",
+            "label": "Capacidad de recipiente",
+            "value_type": "number",
+            "unit": "ml",
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "capacity_l",
+            "label": "Capacidad de bolsa",
+            "value_type": "number",
+            "unit": "L",
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "width_cm",
+            "label": "Ancho",
+            "value_type": "number",
+            "unit": "cm",
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "care",
+            "label": "Cuidados",
+            "value_type": "text",
+            "unit": null,
+            "required_for_comparison": false,
+            "choices": []
+          },
+          {
+            "key": "weight_g",
+            "label": "Masa",
+            "value_type": "number",
+            "unit": "g",
+            "required_for_comparison": false,
+            "choices": []
+          }
+        ]
+      }
+    ],
+    "revision": "demo-20261104-v2",
+    "human_contact": null
+  },
+  "products": [
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-PER-001",
+      "category_id": "peripherals",
+      "name": "Teclado Brisa",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "teclado",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-001"
+          ]
+        },
+        {
+          "key": "connection",
+          "value": "Bluetooth 5.0",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-001"
+          ]
+        },
+        {
+          "key": "os_support",
+          "value": "Windows 11 y Android 13",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-001"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 29,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-per-001"
+          ]
+        },
+        {
+          "key": "keyboard_layout",
+          "value": "español",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-001"
+          ]
+        },
+        {
+          "key": "microphone",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-001"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 350,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-per-001"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-PER-002",
+      "category_id": "peripherals",
+      "name": "Teclado Pulso",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "teclado",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-002"
+          ]
+        },
+        {
+          "key": "connection",
+          "value": "USB-A por cable",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-002"
+          ]
+        },
+        {
+          "key": "os_support",
+          "value": "Windows 11",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-002"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 36,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-per-002"
+          ]
+        },
+        {
+          "key": "keyboard_layout",
+          "value": "español",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-002"
+          ]
+        },
+        {
+          "key": "microphone",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-002"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 720,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-per-002"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-PER-003",
+      "category_id": "peripherals",
+      "name": "Ratón Arco",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "ratón",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-003"
+          ]
+        },
+        {
+          "key": "connection",
+          "value": "Bluetooth 5.0",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-003"
+          ]
+        },
+        {
+          "key": "os_support",
+          "value": "Windows 11 y macOS 14",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-003"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 7,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-per-003"
+          ]
+        },
+        {
+          "key": "microphone",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-003"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 95,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-per-003"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-PER-004",
+      "category_id": "peripherals",
+      "name": "Ratón Viaje",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "ratón",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-004"
+          ]
+        },
+        {
+          "key": "connection",
+          "value": "receptor USB-A de 2,4 GHz",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-004"
+          ]
+        },
+        {
+          "key": "os_support",
+          "value": "Windows 11",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-004"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 5.5,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-per-004"
+          ]
+        },
+        {
+          "key": "microphone",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-004"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 65,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-per-004"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-PER-005",
+      "category_id": "peripherals",
+      "name": "Auriculares Voz",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "auriculares",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-005"
+          ]
+        },
+        {
+          "key": "connection",
+          "value": "USB-A por cable",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-005"
+          ]
+        },
+        {
+          "key": "os_support",
+          "value": "Windows 11 y macOS 14",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-005"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 17,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-per-005"
+          ]
+        },
+        {
+          "key": "microphone",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-005"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 230,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-per-005"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-PER-006",
+      "category_id": "peripherals",
+      "name": "Auriculares Diálogo",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "auriculares",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-006"
+          ]
+        },
+        {
+          "key": "connection",
+          "value": "audio combinado de 3,5 mm",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-006"
+          ]
+        },
+        {
+          "key": "os_support",
+          "value": "depende del conector de audio combinado del equipo",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-006"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 16,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-per-006"
+          ]
+        },
+        {
+          "key": "microphone",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-006"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 180,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-per-006"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-PER-007",
+      "category_id": "peripherals",
+      "name": "Cámara Encuentro",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "cámara web",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-007"
+          ]
+        },
+        {
+          "key": "connection",
+          "value": "USB-A por cable",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-007"
+          ]
+        },
+        {
+          "key": "os_support",
+          "value": "Windows 11",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-007"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 8,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-per-007"
+          ]
+        },
+        {
+          "key": "microphone",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-007"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 120,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-per-007"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-PER-008",
+      "category_id": "peripherals",
+      "name": "Panel Tacto",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "panel táctil",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-008"
+          ]
+        },
+        {
+          "key": "connection",
+          "value": "Bluetooth 5.0",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-008"
+          ]
+        },
+        {
+          "key": "os_support",
+          "value": "Windows 11",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-008"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 12,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-per-008"
+          ]
+        },
+        {
+          "key": "microphone",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-008"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 140,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-per-008"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-PER-009",
+      "category_id": "peripherals",
+      "name": "Teclado Cifra",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "teclado numérico",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-009"
+          ]
+        },
+        {
+          "key": "connection",
+          "value": "USB-A por cable",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-009"
+          ]
+        },
+        {
+          "key": "os_support",
+          "value": "Windows 11",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-009"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 9,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-per-009"
+          ]
+        },
+        {
+          "key": "keyboard_layout",
+          "value": "numérica",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-009"
+          ]
+        },
+        {
+          "key": "microphone",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-009"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 110,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-per-009"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-PER-010",
+      "category_id": "peripherals",
+      "name": "Control Presenta",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "control de presentaciones",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-010"
+          ]
+        },
+        {
+          "key": "connection",
+          "value": "receptor USB-A de 2,4 GHz",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-010"
+          ]
+        },
+        {
+          "key": "os_support",
+          "value": "Windows 11",
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-010"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 3,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-per-010"
+          ]
+        },
+        {
+          "key": "microphone",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-per-010"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": null,
+          "unit": "g",
+          "evidence_refs": []
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-CON-001",
+      "category_id": "connectivity",
+      "name": "Hub Enlace Cuatro",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "hub",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-001"
+          ]
+        },
+        {
+          "key": "host_connector",
+          "value": "USB-C",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-001"
+          ]
+        },
+        {
+          "key": "interfaces",
+          "value": "cuatro puertos USB-A de datos",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-001"
+          ]
+        },
+        {
+          "key": "power_requirement",
+          "value": "alimentación desde el equipo",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-001"
+          ]
+        },
+        {
+          "key": "video_output",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-001"
+          ]
+        },
+        {
+          "key": "requires_usb_c_alt_mode",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-001"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 85,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-con-001"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-CON-002",
+      "category_id": "connectivity",
+      "name": "Hub Enlace Video",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "hub",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-002"
+          ]
+        },
+        {
+          "key": "host_connector",
+          "value": "USB-C",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-002"
+          ]
+        },
+        {
+          "key": "interfaces",
+          "value": "HDMI hasta 3840 x 2160 a 30 Hz y dos USB-A",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-002"
+          ]
+        },
+        {
+          "key": "power_requirement",
+          "value": "alimentación desde el equipo",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-002"
+          ]
+        },
+        {
+          "key": "video_output",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-002"
+          ]
+        },
+        {
+          "key": "requires_usb_c_alt_mode",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-002"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 150,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-con-002"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-CON-003",
+      "category_id": "connectivity",
+      "name": "Adaptador Red Clara",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "adaptador de red",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-003"
+          ]
+        },
+        {
+          "key": "host_connector",
+          "value": "USB-C",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-003"
+          ]
+        },
+        {
+          "key": "interfaces",
+          "value": "Ethernet hasta 1000 Mbit/s",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-003"
+          ]
+        },
+        {
+          "key": "power_requirement",
+          "value": "alimentación desde el equipo",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-003"
+          ]
+        },
+        {
+          "key": "video_output",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-003"
+          ]
+        },
+        {
+          "key": "requires_usb_c_alt_mode",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-003"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 45,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-con-003"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-CON-004",
+      "category_id": "connectivity",
+      "name": "Adaptador Aire",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "adaptador inalámbrico",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-004"
+          ]
+        },
+        {
+          "key": "host_connector",
+          "value": "USB-A",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-004"
+          ]
+        },
+        {
+          "key": "interfaces",
+          "value": "Wi-Fi de 2,4 y 5 GHz; Windows 11 documentado",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-004"
+          ]
+        },
+        {
+          "key": "power_requirement",
+          "value": "alimentación desde el equipo",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-004"
+          ]
+        },
+        {
+          "key": "video_output",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-004"
+          ]
+        },
+        {
+          "key": "requires_usb_c_alt_mode",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-004"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 15,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-con-004"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-CON-005",
+      "category_id": "connectivity",
+      "name": "Router Doble Ruta",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "router",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-005"
+          ]
+        },
+        {
+          "key": "host_connector",
+          "value": "Ethernet RJ45",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-005"
+          ]
+        },
+        {
+          "key": "interfaces",
+          "value": "Wi-Fi de 2,4 y 5 GHz; puertos Ethernet de 1000 Mbit/s",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-005"
+          ]
+        },
+        {
+          "key": "power_requirement",
+          "value": "adaptador incluido",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-005"
+          ]
+        },
+        {
+          "key": "video_output",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-005"
+          ]
+        },
+        {
+          "key": "requires_usb_c_alt_mode",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-005"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 420,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-con-005"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-CON-006",
+      "category_id": "connectivity",
+      "name": "Extensor Alcance",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "extensor de red",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-006"
+          ]
+        },
+        {
+          "key": "host_connector",
+          "value": "Wi-Fi",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-006"
+          ]
+        },
+        {
+          "key": "interfaces",
+          "value": "Wi-Fi de 2,4 GHz",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-006"
+          ]
+        },
+        {
+          "key": "power_requirement",
+          "value": "conexión a toma eléctrica",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-006"
+          ]
+        },
+        {
+          "key": "video_output",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-006"
+          ]
+        },
+        {
+          "key": "requires_usb_c_alt_mode",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-006"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 180,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-con-006"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-CON-007",
+      "category_id": "connectivity",
+      "name": "Cable Carga Sesenta",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "cable",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-007"
+          ]
+        },
+        {
+          "key": "host_connector",
+          "value": "USB-C",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-007"
+          ]
+        },
+        {
+          "key": "interfaces",
+          "value": "USB-C a USB-C; carga hasta 60 W; longitud 1 m",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-007"
+          ]
+        },
+        {
+          "key": "power_requirement",
+          "value": "cargador compatible no incluido",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-007"
+          ]
+        },
+        {
+          "key": "video_output",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-007"
+          ]
+        },
+        {
+          "key": "requires_usb_c_alt_mode",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-007"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 55,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-con-007"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-CON-008",
+      "category_id": "connectivity",
+      "name": "Cable Pantalla Dos",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "cable",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-008"
+          ]
+        },
+        {
+          "key": "host_connector",
+          "value": "HDMI",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-008"
+          ]
+        },
+        {
+          "key": "interfaces",
+          "value": "HDMI a HDMI; longitud 2 m; hasta 3840 x 2160 a 60 Hz",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-008"
+          ]
+        },
+        {
+          "key": "power_requirement",
+          "value": "sin alimentación externa",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-008"
+          ]
+        },
+        {
+          "key": "video_output",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-008"
+          ]
+        },
+        {
+          "key": "requires_usb_c_alt_mode",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-008"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 140,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-con-008"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-CON-009",
+      "category_id": "connectivity",
+      "name": "Distribuidor Red Cinco",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "switch de red",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-009"
+          ]
+        },
+        {
+          "key": "host_connector",
+          "value": "Ethernet RJ45",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-009"
+          ]
+        },
+        {
+          "key": "interfaces",
+          "value": "cinco puertos Ethernet de 1000 Mbit/s",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-009"
+          ]
+        },
+        {
+          "key": "power_requirement",
+          "value": "adaptador incluido",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-009"
+          ]
+        },
+        {
+          "key": "video_output",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-009"
+          ]
+        },
+        {
+          "key": "requires_usb_c_alt_mode",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-009"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 250,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-con-009"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-CON-010",
+      "category_id": "connectivity",
+      "name": "Lector Memoria",
+      "attributes": [
+        {
+          "key": "device_type",
+          "value": "lector de tarjetas",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-010"
+          ]
+        },
+        {
+          "key": "host_connector",
+          "value": "USB-C",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-010"
+          ]
+        },
+        {
+          "key": "interfaces",
+          "value": "SD y microSD; no incluye tarjetas",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-010"
+          ]
+        },
+        {
+          "key": "power_requirement",
+          "value": "alimentación desde el equipo",
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-010"
+          ]
+        },
+        {
+          "key": "video_output",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-010"
+          ]
+        },
+        {
+          "key": "requires_usb_c_alt_mode",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-con-010"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": null,
+          "unit": "g",
+          "evidence_refs": []
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ILU-001",
+      "category_id": "lighting",
+      "name": "Lámpara Flexo",
+      "attributes": [
+        {
+          "key": "power_w",
+          "value": 8,
+          "unit": "W",
+          "evidence_refs": [
+            "doc-ilu-001"
+          ]
+        },
+        {
+          "key": "power_source",
+          "value": "adaptador incluido",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-001"
+          ]
+        },
+        {
+          "key": "color_temperature",
+          "value": "3000, 4000 y 6000 K",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-001"
+          ]
+        },
+        {
+          "key": "dimmable",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-001"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 40,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-ilu-001"
+          ]
+        },
+        {
+          "key": "use_location",
+          "value": "interior seco",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-001"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 550,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-ilu-001"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ILU-002",
+      "category_id": "lighting",
+      "name": "Lámpara Pinza",
+      "attributes": [
+        {
+          "key": "power_w",
+          "value": 5,
+          "unit": "W",
+          "evidence_refs": [
+            "doc-ilu-002"
+          ]
+        },
+        {
+          "key": "power_source",
+          "value": "USB-A de 5 V; adaptador no incluido",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-002"
+          ]
+        },
+        {
+          "key": "color_temperature",
+          "value": "4000 K",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-002"
+          ]
+        },
+        {
+          "key": "dimmable",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-002"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 32,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-ilu-002"
+          ]
+        },
+        {
+          "key": "use_location",
+          "value": "interior seco",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-002"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 280,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-ilu-002"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ILU-003",
+      "category_id": "lighting",
+      "name": "Barra Monitor",
+      "attributes": [
+        {
+          "key": "power_w",
+          "value": 5,
+          "unit": "W",
+          "evidence_refs": [
+            "doc-ilu-003"
+          ]
+        },
+        {
+          "key": "power_source",
+          "value": "USB-A de 5 V; adaptador no incluido",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-003"
+          ]
+        },
+        {
+          "key": "color_temperature",
+          "value": "3000, 4000 y 6000 K",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-003"
+          ]
+        },
+        {
+          "key": "dimmable",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-003"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 3,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-ilu-003"
+          ]
+        },
+        {
+          "key": "use_location",
+          "value": "interior seco",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-003"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 450,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-ilu-003"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ILU-004",
+      "category_id": "lighting",
+      "name": "Tira Ambiente",
+      "attributes": [
+        {
+          "key": "power_w",
+          "value": 10,
+          "unit": "W",
+          "evidence_refs": [
+            "doc-ilu-004"
+          ]
+        },
+        {
+          "key": "power_source",
+          "value": "adaptador incluido",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-004"
+          ]
+        },
+        {
+          "key": "color_temperature",
+          "value": "3000 K",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-004"
+          ]
+        },
+        {
+          "key": "dimmable",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-004"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 0.3,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-ilu-004"
+          ]
+        },
+        {
+          "key": "use_location",
+          "value": "interior seco",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-004"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 130,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-ilu-004"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ILU-005",
+      "category_id": "lighting",
+      "name": "Aro Encuadre",
+      "attributes": [
+        {
+          "key": "power_w",
+          "value": 10,
+          "unit": "W",
+          "evidence_refs": [
+            "doc-ilu-005"
+          ]
+        },
+        {
+          "key": "power_source",
+          "value": "USB-A de 5 V; adaptador no incluido",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-005"
+          ]
+        },
+        {
+          "key": "color_temperature",
+          "value": "3000, 4000 y 6000 K",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-005"
+          ]
+        },
+        {
+          "key": "dimmable",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-005"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 45,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-ilu-005"
+          ]
+        },
+        {
+          "key": "use_location",
+          "value": "interior seco",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-005"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 780,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-ilu-005"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ILU-006",
+      "category_id": "lighting",
+      "name": "Lámpara Pie Suave",
+      "attributes": [
+        {
+          "key": "power_w",
+          "value": 12,
+          "unit": "W",
+          "evidence_refs": [
+            "doc-ilu-006"
+          ]
+        },
+        {
+          "key": "power_source",
+          "value": "adaptador incluido",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-006"
+          ]
+        },
+        {
+          "key": "color_temperature",
+          "value": "3000 K",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-006"
+          ]
+        },
+        {
+          "key": "dimmable",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-006"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 145,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-ilu-006"
+          ]
+        },
+        {
+          "key": "use_location",
+          "value": "interior seco",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-006"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 2500,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-ilu-006"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ILU-007",
+      "category_id": "lighting",
+      "name": "Luz Armario",
+      "attributes": [
+        {
+          "key": "power_w",
+          "value": 3,
+          "unit": "W",
+          "evidence_refs": [
+            "doc-ilu-007"
+          ]
+        },
+        {
+          "key": "power_source",
+          "value": "batería recargable por USB-C; cable incluido",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-007"
+          ]
+        },
+        {
+          "key": "color_temperature",
+          "value": "4000 K",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-007"
+          ]
+        },
+        {
+          "key": "dimmable",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-007"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 2,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-ilu-007"
+          ]
+        },
+        {
+          "key": "use_location",
+          "value": "interior seco",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-007"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 120,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-ilu-007"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ILU-008",
+      "category_id": "lighting",
+      "name": "Luz Lectura",
+      "attributes": [
+        {
+          "key": "power_w",
+          "value": 2,
+          "unit": "W",
+          "evidence_refs": [
+            "doc-ilu-008"
+          ]
+        },
+        {
+          "key": "power_source",
+          "value": "dos pilas AAA no incluidas",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-008"
+          ]
+        },
+        {
+          "key": "color_temperature",
+          "value": "3000 K",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-008"
+          ]
+        },
+        {
+          "key": "dimmable",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-008"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 18,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-ilu-008"
+          ]
+        },
+        {
+          "key": "use_location",
+          "value": "interior seco",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-008"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 60,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-ilu-008"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ILU-009",
+      "category_id": "lighting",
+      "name": "Lámpara Base Carga",
+      "attributes": [
+        {
+          "key": "power_w",
+          "value": 15,
+          "unit": "W",
+          "evidence_refs": [
+            "doc-ilu-009"
+          ]
+        },
+        {
+          "key": "power_source",
+          "value": "adaptador incluido",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-009"
+          ]
+        },
+        {
+          "key": "color_temperature",
+          "value": "3000, 4000 y 6000 K",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-009"
+          ]
+        },
+        {
+          "key": "dimmable",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-009"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 38,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-ilu-009"
+          ]
+        },
+        {
+          "key": "use_location",
+          "value": "interior seco",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-009"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 1100,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-ilu-009"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ILU-010",
+      "category_id": "lighting",
+      "name": "Luz Noche",
+      "attributes": [
+        {
+          "key": "power_w",
+          "value": 1,
+          "unit": "W",
+          "evidence_refs": [
+            "doc-ilu-010"
+          ]
+        },
+        {
+          "key": "power_source",
+          "value": "conexión a toma eléctrica",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-010"
+          ]
+        },
+        {
+          "key": "color_temperature",
+          "value": "2700 K",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-010"
+          ]
+        },
+        {
+          "key": "dimmable",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-010"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 8,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-ilu-010"
+          ]
+        },
+        {
+          "key": "use_location",
+          "value": "interior seco",
+          "unit": null,
+          "evidence_refs": [
+            "doc-ilu-010"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": null,
+          "unit": "g",
+          "evidence_refs": []
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ORG-001",
+      "category_id": "organization",
+      "name": "Organizador Tres",
+      "attributes": [
+        {
+          "key": "material",
+          "value": "plástico",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-001"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 18,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-001"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 10,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-001"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 10,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-001"
+          ]
+        },
+        {
+          "key": "installation",
+          "value": "sobre superficie",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-001"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 1,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-org-001"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 180,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-org-001"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ORG-002",
+      "category_id": "organization",
+      "name": "Caja Cables",
+      "attributes": [
+        {
+          "key": "material",
+          "value": "plástico",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-002"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 30,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-002"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 12,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-002"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 12,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-002"
+          ]
+        },
+        {
+          "key": "installation",
+          "value": "sobre superficie",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-002"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 1,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-org-002"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 420,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-org-002"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ORG-003",
+      "category_id": "organization",
+      "name": "Elevador Monitor",
+      "attributes": [
+        {
+          "key": "material",
+          "value": "madera laminada",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-003"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 50,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-003"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 22,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-003"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 12,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-003"
+          ]
+        },
+        {
+          "key": "installation",
+          "value": "sobre superficie",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-003"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 10,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-org-003"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 1800,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-org-003"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ORG-004",
+      "category_id": "organization",
+      "name": "Soporte Portátil",
+      "attributes": [
+        {
+          "key": "material",
+          "value": "aluminio",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-004"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 30,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-004"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 25,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-004"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 15,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-004"
+          ]
+        },
+        {
+          "key": "installation",
+          "value": "sobre superficie",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-004"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 5,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-org-004"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 650,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-org-004"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ORG-005",
+      "category_id": "organization",
+      "name": "Cajonera Módulo",
+      "attributes": [
+        {
+          "key": "material",
+          "value": "plástico",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-005"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 28,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-005"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 35,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-005"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 30,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-005"
+          ]
+        },
+        {
+          "key": "installation",
+          "value": "sobre superficie",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-005"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 6,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-org-005"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 1600,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-org-005"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ORG-006",
+      "category_id": "organization",
+      "name": "Repisa Liviana",
+      "attributes": [
+        {
+          "key": "material",
+          "value": "madera laminada",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-006"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 60,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-006"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 18,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-006"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 2,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-006"
+          ]
+        },
+        {
+          "key": "installation",
+          "value": "fijación a pared; idoneidad de pared no evaluada",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-006"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 5,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-org-006"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 850,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-org-006"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ORG-007",
+      "category_id": "organization",
+      "name": "Panel Orden",
+      "attributes": [
+        {
+          "key": "material",
+          "value": "acero",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-007"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 50,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-007"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 2,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-007"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 35,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-007"
+          ]
+        },
+        {
+          "key": "installation",
+          "value": "fijación a pared; idoneidad de pared no evaluada",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-007"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 4,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-org-007"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 1400,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-org-007"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ORG-008",
+      "category_id": "organization",
+      "name": "Cesta Trama",
+      "attributes": [
+        {
+          "key": "material",
+          "value": "tela",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-008"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 25,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-008"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 20,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-008"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 15,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-008"
+          ]
+        },
+        {
+          "key": "installation",
+          "value": "sobre superficie",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-008"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 2,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-org-008"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 200,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-org-008"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ORG-009",
+      "category_id": "organization",
+      "name": "Archivo Vertical",
+      "attributes": [
+        {
+          "key": "material",
+          "value": "cartón rígido",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-009"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 24,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-009"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 26,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-009"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 30,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-009"
+          ]
+        },
+        {
+          "key": "installation",
+          "value": "sobre superficie",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-009"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 3,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-org-009"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 450,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-org-009"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ORG-010",
+      "category_id": "organization",
+      "name": "Sujetacables Seis",
+      "attributes": [
+        {
+          "key": "material",
+          "value": "silicona",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-010"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 12,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-010"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 2,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-010"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 1,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-org-010"
+          ]
+        },
+        {
+          "key": "installation",
+          "value": "adhesivo para superficie lisa",
+          "unit": null,
+          "evidence_refs": [
+            "doc-org-010"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": null,
+          "unit": "kg",
+          "evidence_refs": []
+        },
+        {
+          "key": "weight_g",
+          "value": null,
+          "unit": "g",
+          "evidence_refs": []
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-MOB-001",
+      "category_id": "furniture",
+      "name": "Escritorio Plano",
+      "attributes": [
+        {
+          "key": "furniture_type",
+          "value": "escritorio",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-001"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "madera laminada y acero",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-001"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 120,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-001"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 60,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-001"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 75,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-001"
+          ]
+        },
+        {
+          "key": "adjustable",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-001"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 50,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-mob-001"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 18000,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-mob-001"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-MOB-002",
+      "category_id": "furniture",
+      "name": "Escritorio Compacto",
+      "attributes": [
+        {
+          "key": "furniture_type",
+          "value": "escritorio",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-002"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "madera laminada y acero",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-002"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 80,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-002"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 45,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-002"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 75,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-002"
+          ]
+        },
+        {
+          "key": "adjustable",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-002"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 30,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-mob-002"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 12000,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-mob-002"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-MOB-003",
+      "category_id": "furniture",
+      "name": "Escritorio Ascenso",
+      "attributes": [
+        {
+          "key": "furniture_type",
+          "value": "escritorio",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-003"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "madera laminada y acero",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-003"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 120,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-003"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 60,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-003"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 72,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-003"
+          ]
+        },
+        {
+          "key": "adjustable",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-003"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 40,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-mob-003"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 28000,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-mob-003"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-MOB-004",
+      "category_id": "furniture",
+      "name": "Escritorio Esquina",
+      "attributes": [
+        {
+          "key": "furniture_type",
+          "value": "escritorio",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-004"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "madera laminada y acero",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-004"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 140,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-004"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 100,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-004"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 75,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-004"
+          ]
+        },
+        {
+          "key": "adjustable",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-004"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 50,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-mob-004"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 24000,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-mob-004"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-MOB-005",
+      "category_id": "furniture",
+      "name": "Silla Base",
+      "attributes": [
+        {
+          "key": "furniture_type",
+          "value": "silla",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-005"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "tela y acero",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-005"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 55,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-005"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 55,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-005"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 88,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-005"
+          ]
+        },
+        {
+          "key": "adjustable",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-005"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 100,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-mob-005"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 9500,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-mob-005"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-MOB-006",
+      "category_id": "furniture",
+      "name": "Silla Malla",
+      "attributes": [
+        {
+          "key": "furniture_type",
+          "value": "silla",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-006"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "malla y acero",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-006"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 62,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-006"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 60,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-006"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 95,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-006"
+          ]
+        },
+        {
+          "key": "adjustable",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-006"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 120,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-mob-006"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 14000,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-mob-006"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-MOB-007",
+      "category_id": "furniture",
+      "name": "Silla Compacta",
+      "attributes": [
+        {
+          "key": "furniture_type",
+          "value": "silla",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-007"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "tela y acero",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-007"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 50,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-007"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 50,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-007"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 85,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-007"
+          ]
+        },
+        {
+          "key": "adjustable",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-007"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 90,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-mob-007"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 10500,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-mob-007"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-MOB-008",
+      "category_id": "furniture",
+      "name": "Estante Abierto",
+      "attributes": [
+        {
+          "key": "furniture_type",
+          "value": "estante",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-008"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "madera laminada",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-008"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 60,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-008"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 30,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-008"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 140,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-008"
+          ]
+        },
+        {
+          "key": "adjustable",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-008"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 40,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-mob-008"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 16000,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-mob-008"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-MOB-009",
+      "category_id": "furniture",
+      "name": "Carro Auxiliar",
+      "attributes": [
+        {
+          "key": "furniture_type",
+          "value": "carro auxiliar",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-009"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "acero",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-009"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 40,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-009"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 30,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-009"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 70,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-009"
+          ]
+        },
+        {
+          "key": "adjustable",
+          "value": false,
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-009"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": 15,
+          "unit": "kg",
+          "evidence_refs": [
+            "doc-mob-009"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 6000,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-mob-009"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-MOB-010",
+      "category_id": "furniture",
+      "name": "Reposapiés Apoyo",
+      "attributes": [
+        {
+          "key": "furniture_type",
+          "value": "reposapiés",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-010"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "plástico",
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-010"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 40,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-010"
+          ]
+        },
+        {
+          "key": "depth_cm",
+          "value": 30,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-010"
+          ]
+        },
+        {
+          "key": "height_cm",
+          "value": 12,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-mob-010"
+          ]
+        },
+        {
+          "key": "adjustable",
+          "value": true,
+          "unit": null,
+          "evidence_refs": [
+            "doc-mob-010"
+          ]
+        },
+        {
+          "key": "max_load_kg",
+          "value": null,
+          "unit": "kg",
+          "evidence_refs": []
+        },
+        {
+          "key": "weight_g",
+          "value": null,
+          "unit": "g",
+          "evidence_refs": []
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ACC-001",
+      "category_id": "everyday-accessories",
+      "name": "Botella Ruta",
+      "attributes": [
+        {
+          "key": "accessory_type",
+          "value": "botella",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-001"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "acero inoxidable",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-001"
+          ]
+        },
+        {
+          "key": "capacity_ml",
+          "value": 500,
+          "unit": "ml",
+          "evidence_refs": [
+            "doc-acc-001"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 7,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-acc-001"
+          ]
+        },
+        {
+          "key": "care",
+          "value": "lavado manual; no usar en microondas",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-001"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 250,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-acc-001"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ACC-002",
+      "category_id": "everyday-accessories",
+      "name": "Botella Aislada",
+      "attributes": [
+        {
+          "key": "accessory_type",
+          "value": "botella",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-002"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "acero inoxidable de doble pared",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-002"
+          ]
+        },
+        {
+          "key": "capacity_ml",
+          "value": 750,
+          "unit": "ml",
+          "evidence_refs": [
+            "doc-acc-002"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 8,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-acc-002"
+          ]
+        },
+        {
+          "key": "care",
+          "value": "lavado manual; no usar en microondas",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-002"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 420,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-acc-002"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ACC-003",
+      "category_id": "everyday-accessories",
+      "name": "Taza Mesa",
+      "attributes": [
+        {
+          "key": "accessory_type",
+          "value": "taza",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-003"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "cerámica",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-003"
+          ]
+        },
+        {
+          "key": "capacity_ml",
+          "value": 350,
+          "unit": "ml",
+          "evidence_refs": [
+            "doc-acc-003"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 9,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-acc-003"
+          ]
+        },
+        {
+          "key": "care",
+          "value": "lavado manual; compatibilidad con microondas no documentada",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-003"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 330,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-acc-003"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ACC-004",
+      "category_id": "everyday-accessories",
+      "name": "Vaso Trayecto",
+      "attributes": [
+        {
+          "key": "accessory_type",
+          "value": "vaso con tapa",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-004"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "acero inoxidable",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-004"
+          ]
+        },
+        {
+          "key": "capacity_ml",
+          "value": 450,
+          "unit": "ml",
+          "evidence_refs": [
+            "doc-acc-004"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 8,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-acc-004"
+          ]
+        },
+        {
+          "key": "care",
+          "value": "lavado manual; mantener vertical",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-004"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 300,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-acc-004"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ACC-005",
+      "category_id": "everyday-accessories",
+      "name": "Bolsa Almuerzo",
+      "attributes": [
+        {
+          "key": "accessory_type",
+          "value": "bolsa",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-005"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "poliéster",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-005"
+          ]
+        },
+        {
+          "key": "capacity_l",
+          "value": 4,
+          "unit": "L",
+          "evidence_refs": [
+            "doc-acc-005"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 24,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-acc-005"
+          ]
+        },
+        {
+          "key": "care",
+          "value": "limpieza con paño húmedo; aislamiento térmico no medido",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-005"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 180,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-acc-005"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ACC-006",
+      "category_id": "everyday-accessories",
+      "name": "Mochila Jornada",
+      "attributes": [
+        {
+          "key": "accessory_type",
+          "value": "mochila",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-006"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "poliéster",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-006"
+          ]
+        },
+        {
+          "key": "capacity_l",
+          "value": 15,
+          "unit": "L",
+          "evidence_refs": [
+            "doc-acc-006"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 28,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-acc-006"
+          ]
+        },
+        {
+          "key": "care",
+          "value": "limpieza manual; impermeabilidad no documentada",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-006"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 550,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-acc-006"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ACC-007",
+      "category_id": "everyday-accessories",
+      "name": "Estuche Conexiones",
+      "attributes": [
+        {
+          "key": "accessory_type",
+          "value": "estuche",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-007"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "poliéster",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-007"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 22,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-acc-007"
+          ]
+        },
+        {
+          "key": "care",
+          "value": "limpieza con paño húmedo",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-007"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 150,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-acc-007"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ACC-008",
+      "category_id": "everyday-accessories",
+      "name": "Bolsa Reutiliza",
+      "attributes": [
+        {
+          "key": "accessory_type",
+          "value": "bolsa",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-008"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "algodón",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-008"
+          ]
+        },
+        {
+          "key": "capacity_l",
+          "value": 10,
+          "unit": "L",
+          "evidence_refs": [
+            "doc-acc-008"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 35,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-acc-008"
+          ]
+        },
+        {
+          "key": "care",
+          "value": "lavado manual en agua fría",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-008"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 100,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-acc-008"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ACC-009",
+      "category_id": "everyday-accessories",
+      "name": "Tapete Escritorio",
+      "attributes": [
+        {
+          "key": "accessory_type",
+          "value": "tapete",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-009"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "corcho y caucho",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-009"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 60,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-acc-009"
+          ]
+        },
+        {
+          "key": "care",
+          "value": "paño húmedo; no sumergir",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-009"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": 650,
+          "unit": "g",
+          "evidence_refs": [
+            "doc-acc-009"
+          ]
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    },
+    {
+      "store_id": "nexo-demo",
+      "product_id": "NEX-ACC-010",
+      "category_id": "everyday-accessories",
+      "name": "Kit Paño",
+      "attributes": [
+        {
+          "key": "accessory_type",
+          "value": "limpieza",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-010"
+          ]
+        },
+        {
+          "key": "material",
+          "value": "microfibra",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-010"
+          ]
+        },
+        {
+          "key": "width_cm",
+          "value": 20,
+          "unit": "cm",
+          "evidence_refs": [
+            "doc-acc-010"
+          ]
+        },
+        {
+          "key": "care",
+          "value": "lavar el paño separado; seguir las indicaciones del equipo a limpiar",
+          "unit": null,
+          "evidence_refs": [
+            "doc-acc-010"
+          ]
+        },
+        {
+          "key": "weight_g",
+          "value": null,
+          "unit": "g",
+          "evidence_refs": []
+        }
+      ],
+      "revision": "demo-20261104-v2"
+    }
+  ],
+  "variants": [
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-001-01",
+      "product_id": "NEX-PER-001",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-001-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-001-02",
+      "product_id": "NEX-PER-001",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-001-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-002-01",
+      "product_id": "NEX-PER-002",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-002-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-002-02",
+      "product_id": "NEX-PER-002",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-002-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-003-01",
+      "product_id": "NEX-PER-003",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-003-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-003-02",
+      "product_id": "NEX-PER-003",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-003-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-004-01",
+      "product_id": "NEX-PER-004",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-004-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-004-02",
+      "product_id": "NEX-PER-004",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-004-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-005-01",
+      "product_id": "NEX-PER-005",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-005-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-005-02",
+      "product_id": "NEX-PER-005",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-005-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-006-01",
+      "product_id": "NEX-PER-006",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-006-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-007-01",
+      "product_id": "NEX-PER-007",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-007-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-008-01",
+      "product_id": "NEX-PER-008",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-008-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-009-01",
+      "product_id": "NEX-PER-009",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-009-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-PER-010-01",
+      "product_id": "NEX-PER-010",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-PER-010-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-001-01",
+      "product_id": "NEX-CON-001",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-001-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-001-02",
+      "product_id": "NEX-CON-001",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-001-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-002-01",
+      "product_id": "NEX-CON-002",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-002-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-002-02",
+      "product_id": "NEX-CON-002",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-002-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-003-01",
+      "product_id": "NEX-CON-003",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-003-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-003-02",
+      "product_id": "NEX-CON-003",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-003-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-004-01",
+      "product_id": "NEX-CON-004",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-004-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-004-02",
+      "product_id": "NEX-CON-004",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-004-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-005-01",
+      "product_id": "NEX-CON-005",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-005-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-005-02",
+      "product_id": "NEX-CON-005",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-005-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-006-01",
+      "product_id": "NEX-CON-006",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-006-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-007-01",
+      "product_id": "NEX-CON-007",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-007-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-008-01",
+      "product_id": "NEX-CON-008",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-008-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-009-01",
+      "product_id": "NEX-CON-009",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-009-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-CON-010-01",
+      "product_id": "NEX-CON-010",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-CON-010-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-001-01",
+      "product_id": "NEX-ILU-001",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-001-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-001-02",
+      "product_id": "NEX-ILU-001",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-001-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-002-01",
+      "product_id": "NEX-ILU-002",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-002-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-002-02",
+      "product_id": "NEX-ILU-002",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-002-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-003-01",
+      "product_id": "NEX-ILU-003",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-003-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-003-02",
+      "product_id": "NEX-ILU-003",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-003-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-004-01",
+      "product_id": "NEX-ILU-004",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-004-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-004-02",
+      "product_id": "NEX-ILU-004",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-004-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-005-01",
+      "product_id": "NEX-ILU-005",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-005-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-005-02",
+      "product_id": "NEX-ILU-005",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-005-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-006-01",
+      "product_id": "NEX-ILU-006",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-006-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-007-01",
+      "product_id": "NEX-ILU-007",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-007-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-008-01",
+      "product_id": "NEX-ILU-008",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-008-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-009-01",
+      "product_id": "NEX-ILU-009",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-009-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ILU-010-01",
+      "product_id": "NEX-ILU-010",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ILU-010-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-001-01",
+      "product_id": "NEX-ORG-001",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-001-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-001-02",
+      "product_id": "NEX-ORG-001",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-001-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-002-01",
+      "product_id": "NEX-ORG-002",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-002-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-002-02",
+      "product_id": "NEX-ORG-002",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-002-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-003-01",
+      "product_id": "NEX-ORG-003",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-003-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-003-02",
+      "product_id": "NEX-ORG-003",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-003-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-004-01",
+      "product_id": "NEX-ORG-004",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-004-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-004-02",
+      "product_id": "NEX-ORG-004",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-004-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-005-01",
+      "product_id": "NEX-ORG-005",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-005-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-005-02",
+      "product_id": "NEX-ORG-005",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-005-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-006-01",
+      "product_id": "NEX-ORG-006",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-006-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-007-01",
+      "product_id": "NEX-ORG-007",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-007-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-008-01",
+      "product_id": "NEX-ORG-008",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-008-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-009-01",
+      "product_id": "NEX-ORG-009",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-009-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ORG-010-01",
+      "product_id": "NEX-ORG-010",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ORG-010-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-001-01",
+      "product_id": "NEX-MOB-001",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-001-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-001-02",
+      "product_id": "NEX-MOB-001",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-001-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-002-01",
+      "product_id": "NEX-MOB-002",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-002-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-002-02",
+      "product_id": "NEX-MOB-002",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-002-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-003-01",
+      "product_id": "NEX-MOB-003",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-003-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-003-02",
+      "product_id": "NEX-MOB-003",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-003-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-004-01",
+      "product_id": "NEX-MOB-004",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-004-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-004-02",
+      "product_id": "NEX-MOB-004",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-004-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-005-01",
+      "product_id": "NEX-MOB-005",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-005-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-005-02",
+      "product_id": "NEX-MOB-005",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-005-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-006-01",
+      "product_id": "NEX-MOB-006",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-006-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-007-01",
+      "product_id": "NEX-MOB-007",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-007-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-008-01",
+      "product_id": "NEX-MOB-008",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-008-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-009-01",
+      "product_id": "NEX-MOB-009",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-009-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-MOB-010-01",
+      "product_id": "NEX-MOB-010",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-MOB-010-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-001-01",
+      "product_id": "NEX-ACC-001",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-001-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-001-02",
+      "product_id": "NEX-ACC-001",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-001-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-002-01",
+      "product_id": "NEX-ACC-002",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-002-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-002-02",
+      "product_id": "NEX-ACC-002",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-002-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-003-01",
+      "product_id": "NEX-ACC-003",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-003-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-003-02",
+      "product_id": "NEX-ACC-003",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-003-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-004-01",
+      "product_id": "NEX-ACC-004",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-004-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-004-02",
+      "product_id": "NEX-ACC-004",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-004-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-005-01",
+      "product_id": "NEX-ACC-005",
+      "name": "Presentación A",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-005-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-005-02",
+      "product_id": "NEX-ACC-005",
+      "name": "Presentación B",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-005-02"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-006-01",
+      "product_id": "NEX-ACC-006",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-006-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-007-01",
+      "product_id": "NEX-ACC-007",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-007-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-008-01",
+      "product_id": "NEX-ACC-008",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-008-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-009-01",
+      "product_id": "NEX-ACC-009",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-009-01"
+    },
+    {
+      "store_id": "nexo-demo",
+      "variant_id": "NEX-ACC-010-01",
+      "product_id": "NEX-ACC-010",
+      "name": "Única",
+      "attributes": [],
+      "revision": "demo-20261104-v2",
+      "sku": "DEMO-ACC-010-01"
+    }
+  ]
+}

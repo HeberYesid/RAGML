@@ -1,0 +1,12 @@
+﻿category_id,variable,entity_id,value,unit,lower_fence,upper_fence
+peripherals,width_cm,NEX-PER-002,36.0,cm,-7.0,31.0
+peripherals,weight_g,NEX-PER-002,720.0,g,-70.0,410.0
+connectivity,weight_g,NEX-CON-005,420.0,g,-132.5,367.5
+lighting,height_cm,NEX-ILU-006,145.0,cm,-48.625,92.375
+lighting,weight_g,NEX-ILU-006,2500.0,g,-845.0,1755.0
+organization,max_load_kg,NEX-ORG-003,10.0,kg,-2.5,9.5
+furniture,depth_cm,NEX-MOB-004,100.0,cm,-5.625,99.375
+furniture,height_cm,NEX-MOB-008,140.0,cm,51.0,109.0
+furniture,height_cm,NEX-MOB-010,12.0,cm,51.0,109.0
+everyday-accessories,fresh_price,NEX-ACC-006-01,129000.0,COP,14000.0,94000.0
+everyday-accessories,width_cm,NEX-ACC-009,60.0,cm,-19.875,55.125

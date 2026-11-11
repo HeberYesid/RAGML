@@ -317,5 +317,7 @@ def test_foundation_http_reports_health_and_rag_absence_honestly(tmp_path: Path)
         assert client.get("/missing").json()["code"] == "not_found"
         assert client.get("/docs").status_code == 404
         responses = client.get("/openapi.json").json()["paths"]["/v1/chat"]["post"]["responses"]
-        assert responses["200"]["content"]["application/json"]["schema"]["$ref"].endswith("ChatResponse")
+        assert responses["200"]["content"]["application/json"]["schema"]["$ref"].endswith(
+            "ChatResponse"
+        )
         assert "503" in responses

@@ -1,0 +1,27 @@
+{
+  "kind": "consolidation_of_two_disjoint_adjustment_segments",
+  "created_at": "2026-11-10T15:04:49.989794+00:00",
+  "candidate_sha256": "4263b3f2164ab10520cc1211a38d34b996a634e99d64b88d49a3ee38d03005ab",
+  "all_cases_recorded": true,
+  "candidate_unchanged": true,
+  "recorded_cases": 60,
+  "planned_cases": 60,
+  "source_segments": [
+    {
+      "path": "docs/evaluation/integrated/run-20261110-2",
+      "cases_sha256": "80659b8fac49f132dde4e6a77637362f9574dbdd015589350462f9f4ca2c2d2d",
+      "candidate_sha256": "4263b3f2164ab10520cc1211a38d34b996a634e99d64b88d49a3ee38d03005ab",
+      "observations": 36
+    },
+    {
+      "path": "docs/evaluation/integrated/run-20261110-3",
+      "cases_sha256": "35ef6f998ec58a437d986bea1df344cb1b4a75de26c73dfe290d4b784ac49d8d",
+      "candidate_sha256": "4263b3f2164ab10520cc1211a38d34b996a634e99d64b88d49a3ee38d03005ab",
+      "observations": 24
+    }
+  ],
+  "limits": [
+    "Original first segment was interrupted; its absent completion file was not fabricated.",
+    "No semantic accuracy, human review or participant study inferred."
+  ]
+}

@@ -392,3 +392,50 @@ def test_preferences_never_relax_an_explicit_requirement(browser: TestClient) ->
             )
             is True
         )
+
+
+def test_remaining_units_question_confirms_stock_from_commercial_evidence(
+    browser: TestClient,
+) -> None:
+    reply = browser.post(
+        "/v1/chat",
+        json={"message": "¿Se puede confirmar que queda alguna unidad de Cámara Encuentro?"},
+    )
+
+    assert reply.status_code == 200
+    result = ChatResponse.model_validate(reply.json())
+    assert result.status == "answered"
+    assert "agotado" in result.answer
+    assert any(
+        citation.kind == "commercial" and citation.field == "stock" for citation in result.citations
+    )
+
+
+def test_explicit_product_budget_keeps_the_mandatory_mass_limit(browser: TestClient) -> None:
+    reply = browser.post(
+        "/v1/chat",
+        json={
+            "message": "Busco algo para mi espacio de trabajo en Periféricos. "
+            "El presupuesto solo del producto es 89000 COP y la masa debe ser como máximo 350 g. "
+            "Muéstrame una opción disponible; el envío se considera aparte.",
+        },
+    )
+
+    assert reply.status_code == 200
+    result = ChatResponse.model_validate(reply.json())
+    assert result.status == "answered"
+    assert result.products
+    catalog = json.loads((ROOT / "data/sample/catalog.json").read_bytes())
+    commerce = json.loads((ROOT / "data/sample/commercial.json").read_bytes())
+    products = {product["product_id"]: product for product in catalog["products"]}
+    snapshots = {record["variant_id"]: record for record in commerce["snapshots"]}
+    for item in result.products:
+        attributes = {
+            attribute["key"]: attribute["value"]
+            for attribute in products[item.product_id]["attributes"]
+        }
+        assert attributes["weight_g"] is not None and attributes["weight_g"] <= 350
+        record = snapshots[item.variant_id]
+        assert record["price"]["value"] is not None
+        assert int(record["price"]["value"]["amount"]) <= 89000
+        assert record["stock"]["value"]["availability"] == "in_stock"

@@ -1,0 +1,153 @@
+{
+  "kind": "phase4_document_probe_not_final_evaluation",
+  "response": {
+    "schema_version": "0.1",
+    "request_id": "bd308b16-4d65-4943-9cf7-4b76b7018705",
+    "session_id": "e739d0bc-9cee-471c-87a8-ecd6a57134e8",
+    "store_id": "nexo-demo",
+    "data_mode": "demo",
+    "status": "answered",
+    "answer": "Categoría: Periféricos. [E1]",
+    "claims": [
+      {
+        "text": "Categoría: Periféricos.",
+        "citation_ids": [
+          "E1"
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "citation_id": "E1",
+        "kind": "document",
+        "store_id": "nexo-demo",
+        "source_id": "doc-per-001",
+        "source_version": "demo-20261104-v2",
+        "chunk_id": "doc-per-001-s1",
+        "location": {
+          "page": null,
+          "section": "Resumen",
+          "paragraph": null,
+          "table": null
+        },
+        "excerpt": "Categoría: Periféricos."
+      }
+    ],
+    "products": [],
+    "warnings": [],
+    "versions": {
+      "corpus": "demo-20261104-v2",
+      "retrieval": "exact-cosine-v1",
+      "embedding_model": "qwen3-embedding:0.6b",
+      "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+      "generation_model": "qwen3:4b-instruct-2507-q4_K_M",
+      "generation_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "answer_mode": "verified-extract-v1",
+      "corpus_fingerprint": "94a7e79b631aad7b48c949a18dd5be163c4a361f29a1e0b799e2e0198e799678",
+      "catalog_profile": "demo-20261104-v2"
+    }
+  },
+  "retrieved": [
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "doc-per-001-s1",
+        "source_id": "doc-per-001",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "c4d610c4fcbc80350f0bc234420484dd0ffd155fcaf8048f6a2f44726707a513",
+        "content_hash": "c467c30470cf8440dffab6b57bbff1db5b854da1b247612d3456edaa9d060f28",
+        "text": "## Resumen\n\nProducto NEX-PER-001, Teclado Brisa. Categoría: Periféricos. Datos de demostración.\n\nEscritura cotidiana en un escritorio pequeño. Las capacidades y medidas son inventadas para este ejercicio.",
+        "location": {
+          "page": null,
+          "section": "Resumen",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.7126586194463536
+    },
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "doc-per-001-s2",
+        "source_id": "doc-per-001",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "c4d610c4fcbc80350f0bc234420484dd0ffd155fcaf8048f6a2f44726707a513",
+        "content_hash": "087cf0b0e1814273392acd9b8193b5e2db96a73fbe072d5696387cb4e2d90f1d",
+        "text": "## Características\n\nProducto NEX-PER-001, Teclado Brisa. Categoría: Periféricos. Datos de demostración.\n\n- Tipo de dispositivo (device_type): teclado.\n- Conexión (connection): Bluetooth 5.0.\n- Sistemas documentados (os_support): Windows 11 y Android 13.\n- Ancho (width_cm): 29 cm.\n- Distribución del teclado (keyboard_layout): español.\n- Micrófono integrado (microphone): No.\n- Masa (weight_g): 350 g.",
+        "location": {
+          "page": null,
+          "section": "Características",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.6903169345722727
+    },
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "doc-per-001-s3",
+        "source_id": "doc-per-001",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "c4d610c4fcbc80350f0bc234420484dd0ffd155fcaf8048f6a2f44726707a513",
+        "content_hash": "d2987d8312fb24ef1b6501cee4612aeb771ccb921bd537e3d5b1b41db1a467e6",
+        "text": "## Variantes y límites\n\nProducto NEX-PER-001, Teclado Brisa. Categoría: Periféricos. Datos de demostración.\n\n- NEX-PER-001-01: Presentación A. Conserva los atributos comunes; tiene registro comercial propio.\n- NEX-PER-001-02: Presentación B. Conserva los atributos comunes; tiene registro comercial propio.\n\nLas presentaciones A y B son opciones ficticias de empaque; no cambian las características documentadas. Precios y existencias se consultan en el registro estructurado de cada variante. No se afirman otras compatibilidades ni prestaciones. La garantía general ficticia se consulta en su política.",
+        "location": {
+          "page": null,
+          "section": "Variantes y límites",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.5455113714795531
+    },
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "doc-per-009-s1",
+        "source_id": "doc-per-009",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "f0a32faa58293a30e06c6c2625cc17e56eb6cdc3705e7e936b24cf7880b0621b",
+        "content_hash": "015c24d2269210a36b7766bed4bb10b8195f2d0c86886e36c98e26d6da802909",
+        "text": "## Resumen\n\nProducto NEX-PER-009, Teclado Cifra. Categoría: Periféricos. Datos de demostración.\n\nIngreso numérico con un accesorio independiente. Las capacidades y medidas son inventadas para este ejercicio.",
+        "location": {
+          "page": null,
+          "section": "Resumen",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.4841194220266043
+    },
+    {
+      "chunk": {
+        "store_id": "nexo-demo",
+        "chunk_id": "doc-per-002-s1",
+        "source_id": "doc-per-002",
+        "source_version": "demo-20261104-v2",
+        "source_content_hash": "ea6cbea0784f6ca18e9eb257bfe2cf7d6eb1305bfd2078b96815c1136364edd8",
+        "content_hash": "a93ddf0903e0147bb53cf4da8194b508e19ff1d4fb38b8ed7968dd1a15fb6c50",
+        "text": "## Resumen\n\nProducto NEX-PER-002, Teclado Pulso. Categoría: Periféricos. Datos de demostración.\n\nEscritura con teclado mecánico y conexión por cable. Las capacidades y medidas son inventadas para este ejercicio.",
+        "location": {
+          "page": null,
+          "section": "Resumen",
+          "paragraph": null,
+          "table": null
+        }
+      },
+      "score": 0.4729285261755263
+    }
+  ],
+  "context_chunk_ids": [
+    "doc-per-001-s1"
+  ],
+  "metrics": {
+    "retrieval_seconds": 59.032573,
+    "prompt_utf8_bytes": 1122,
+    "generation_seconds": 82.878977,
+    "generation_input_tokens": 307,
+    "generation_output_tokens": 27,
+    "total_seconds": 141.912035
+  }
+}

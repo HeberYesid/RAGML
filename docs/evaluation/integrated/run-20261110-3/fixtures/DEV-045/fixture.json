@@ -1,0 +1,20 @@
+{
+  "case_id": "DEV-045",
+  "fixture_index": {
+    "chunks": 205,
+    "dimensions": 1024,
+    "embedding_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "fingerprint": "386cf5652dce6687d5b5dd3fabe73d9f8d7c83d2389eab5c0da9d5022b1b4b19",
+    "published_at": "2026-11-10T14:46:38.984963+00:00",
+    "revision": "demo-20261104-v2-fixture-dev-045",
+    "sources": 72,
+    "store_id": "nexo-demo"
+  },
+  "fixture_manifest_sha256": "effe8f86835279307dba1329dfe85b52e9364699856ef6ef732e7d0949c8f430",
+  "fixture_source_sha256": "a9fc3a9bb66c0f5e9bd9811f60ff27f2092dfcd0fb56a5e7720f5836cb51eb49",
+  "limit": "Inclusion in the index does not establish that this chunk reached model context.",
+  "original_source_sha256": "b38eee6d4b65a26833458a0631f6b60f791f0cfeea5957bf57f4c1bb3c0b22ba",
+  "source_id": "doc-mob-001",
+  "untrusted_chunk_id": "doc-mob-001-untrusted-fixture"
+}

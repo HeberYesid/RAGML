@@ -11,6 +11,9 @@ dependencies = [
     "uvicorn>=0.32,<1",
 ]
 
+[project.optional-dependencies]
+analysis = ["matplotlib>=3.10,<4"]
+
 [project.scripts]
 ragml = "ragml.cli:main"
 

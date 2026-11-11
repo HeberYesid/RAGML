@@ -1,0 +1,806 @@
+{
+  "kind": "manual_demo_check_not_evaluation_case",
+  "created_at": "2026-11-10T15:08:51.250712+00:00",
+  "turns": [
+    {
+      "schema_version": "0.1",
+      "request_id": "3b7ee357-b61c-4d02-8a21-2802f8494bf8",
+      "session_id": "9437f5e9-34d4-4beb-93b3-83f0c7c4e9bb",
+      "store_id": "nexo-demo",
+      "data_mode": "demo",
+      "status": "answered",
+      "answer": "Alternativas con precio y existencias confirmados:\n1. Tira Ambiente — Presentación A\nPrecio de Tira Ambiente — Presentación A: 49000 COP.\nExistencias de Tira Ambiente — Presentación A: disponible.\n2. Tira Ambiente — Presentación B\nPrecio de Tira Ambiente — Presentación B: 54000 COP.\nExistencias de Tira Ambiente — Presentación B: disponible.\n3. Lámpara Pinza — Presentación A\nPrecio de Lámpara Pinza — Presentación A: 59000 COP.\nExistencias de Lámpara Pinza — Presentación A: disponible.",
+      "claims": [
+        {
+          "text": "Precio de Tira Ambiente — Presentación A: 49000 COP.",
+          "citation_ids": [
+            "price:NEX-ILU-004-01"
+          ]
+        },
+        {
+          "text": "Existencias de Tira Ambiente — Presentación A: disponible.",
+          "citation_ids": [
+            "stock:NEX-ILU-004-01"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Potencia: 10 W.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:power_w"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Alimentación: adaptador incluido.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:power_source"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Temperatura de color: 3000 K.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:color_temperature"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Intensidad regulable: no.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:dimmable"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Altura: 0.3 cm.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:height_cm"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Lugar de uso: interior seco.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:use_location"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Masa: 130 g.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:weight_g"
+          ]
+        },
+        {
+          "text": "Precio de Tira Ambiente — Presentación B: 54000 COP.",
+          "citation_ids": [
+            "price:NEX-ILU-004-02"
+          ]
+        },
+        {
+          "text": "Existencias de Tira Ambiente — Presentación B: disponible.",
+          "citation_ids": [
+            "stock:NEX-ILU-004-02"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación B — Potencia: 10 W.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-02:power_w"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación B — Alimentación: adaptador incluido.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-02:power_source"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación B — Temperatura de color: 3000 K.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-02:color_temperature"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación B — Intensidad regulable: no.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-02:dimmable"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación B — Altura: 0.3 cm.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-02:height_cm"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación B — Lugar de uso: interior seco.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-02:use_location"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación B — Masa: 130 g.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-02:weight_g"
+          ]
+        },
+        {
+          "text": "Precio de Lámpara Pinza — Presentación A: 59000 COP.",
+          "citation_ids": [
+            "price:NEX-ILU-002-01"
+          ]
+        },
+        {
+          "text": "Existencias de Lámpara Pinza — Presentación A: disponible.",
+          "citation_ids": [
+            "stock:NEX-ILU-002-01"
+          ]
+        },
+        {
+          "text": "Lámpara Pinza — Presentación A — Potencia: 5 W.",
+          "citation_ids": [
+            "attr:NEX-ILU-002-01:power_w"
+          ]
+        },
+        {
+          "text": "Lámpara Pinza — Presentación A — Alimentación: USB-A de 5 V; adaptador no incluido.",
+          "citation_ids": [
+            "attr:NEX-ILU-002-01:power_source"
+          ]
+        },
+        {
+          "text": "Lámpara Pinza — Presentación A — Temperatura de color: 4000 K.",
+          "citation_ids": [
+            "attr:NEX-ILU-002-01:color_temperature"
+          ]
+        },
+        {
+          "text": "Lámpara Pinza — Presentación A — Intensidad regulable: sí.",
+          "citation_ids": [
+            "attr:NEX-ILU-002-01:dimmable"
+          ]
+        },
+        {
+          "text": "Lámpara Pinza — Presentación A — Altura: 32 cm.",
+          "citation_ids": [
+            "attr:NEX-ILU-002-01:height_cm"
+          ]
+        },
+        {
+          "text": "Lámpara Pinza — Presentación A — Lugar de uso: interior seco.",
+          "citation_ids": [
+            "attr:NEX-ILU-002-01:use_location"
+          ]
+        },
+        {
+          "text": "Lámpara Pinza — Presentación A — Masa: 280 g.",
+          "citation_ids": [
+            "attr:NEX-ILU-002-01:weight_g"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "price:NEX-ILU-004-01",
+          "kind": "commercial",
+          "store_id": "nexo-demo",
+          "source_id": "commercial-nexo-demo",
+          "source_version": "demo-20261104-v2",
+          "snapshot_id": "demo-20261104-v2-NEX-ILU-004-01",
+          "variant_id": "NEX-ILU-004-01",
+          "field": "price",
+          "source_updated_at": "2026-11-04T12:00:00Z",
+          "expires_at": "2026-11-04T12:15:00Z"
+        },
+        {
+          "citation_id": "stock:NEX-ILU-004-01",
+          "kind": "commercial",
+          "store_id": "nexo-demo",
+          "source_id": "commercial-nexo-demo",
+          "source_version": "demo-20261104-v2",
+          "snapshot_id": "demo-20261104-v2-NEX-ILU-004-01",
+          "variant_id": "NEX-ILU-004-01",
+          "field": "stock",
+          "source_updated_at": "2026-11-04T12:00:00Z",
+          "expires_at": "2026-11-04T12:15:00Z"
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:power_w",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Potencia (power_w): 10 W."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:power_source",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Alimentación (power_source): adaptador incluido."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:color_temperature",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Temperatura de color (color_temperature): 3000 K."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:dimmable",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Intensidad regulable (dimmable): No."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:height_cm",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Altura (height_cm): 0.3 cm."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:use_location",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Lugar de uso (use_location): interior seco."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:weight_g",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Masa (weight_g): 130 g."
+        },
+        {
+          "citation_id": "price:NEX-ILU-004-02",
+          "kind": "commercial",
+          "store_id": "nexo-demo",
+          "source_id": "commercial-nexo-demo",
+          "source_version": "demo-20261104-v2",
+          "snapshot_id": "demo-20261104-v2-NEX-ILU-004-02",
+          "variant_id": "NEX-ILU-004-02",
+          "field": "price",
+          "source_updated_at": "2026-11-04T12:00:00Z",
+          "expires_at": "2026-11-04T12:15:00Z"
+        },
+        {
+          "citation_id": "stock:NEX-ILU-004-02",
+          "kind": "commercial",
+          "store_id": "nexo-demo",
+          "source_id": "commercial-nexo-demo",
+          "source_version": "demo-20261104-v2",
+          "snapshot_id": "demo-20261104-v2-NEX-ILU-004-02",
+          "variant_id": "NEX-ILU-004-02",
+          "field": "stock",
+          "source_updated_at": "2026-11-04T12:00:00Z",
+          "expires_at": "2026-11-04T12:15:00Z"
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-02:power_w",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Potencia (power_w): 10 W."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-02:power_source",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Alimentación (power_source): adaptador incluido."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-02:color_temperature",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Temperatura de color (color_temperature): 3000 K."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-02:dimmable",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Intensidad regulable (dimmable): No."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-02:height_cm",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Altura (height_cm): 0.3 cm."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-02:use_location",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Lugar de uso (use_location): interior seco."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-02:weight_g",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Masa (weight_g): 130 g."
+        },
+        {
+          "citation_id": "price:NEX-ILU-002-01",
+          "kind": "commercial",
+          "store_id": "nexo-demo",
+          "source_id": "commercial-nexo-demo",
+          "source_version": "demo-20261104-v2",
+          "snapshot_id": "demo-20261104-v2-NEX-ILU-002-01",
+          "variant_id": "NEX-ILU-002-01",
+          "field": "price",
+          "source_updated_at": "2026-11-04T12:00:00Z",
+          "expires_at": "2026-11-04T12:15:00Z"
+        },
+        {
+          "citation_id": "stock:NEX-ILU-002-01",
+          "kind": "commercial",
+          "store_id": "nexo-demo",
+          "source_id": "commercial-nexo-demo",
+          "source_version": "demo-20261104-v2",
+          "snapshot_id": "demo-20261104-v2-NEX-ILU-002-01",
+          "variant_id": "NEX-ILU-002-01",
+          "field": "stock",
+          "source_updated_at": "2026-11-04T12:00:00Z",
+          "expires_at": "2026-11-04T12:15:00Z"
+        },
+        {
+          "citation_id": "attr:NEX-ILU-002-01:power_w",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-002",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-002-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Potencia (power_w): 5 W."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-002-01:power_source",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-002",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-002-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Alimentación (power_source): USB-A de 5 V; adaptador no incluido."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-002-01:color_temperature",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-002",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-002-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Temperatura de color (color_temperature): 4000 K."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-002-01:dimmable",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-002",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-002-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Intensidad regulable (dimmable): Sí."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-002-01:height_cm",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-002",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-002-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Altura (height_cm): 32 cm."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-002-01:use_location",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-002",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-002-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Lugar de uso (use_location): interior seco."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-002-01:weight_g",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-002",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-002-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Masa (weight_g): 280 g."
+        }
+      ],
+      "products": [
+        {
+          "product_id": "NEX-ILU-004",
+          "variant_id": "NEX-ILU-004-01"
+        },
+        {
+          "product_id": "NEX-ILU-004",
+          "variant_id": "NEX-ILU-004-02"
+        },
+        {
+          "product_id": "NEX-ILU-002",
+          "variant_id": "NEX-ILU-002-01"
+        }
+      ],
+      "warnings": [
+        "Demostración: precios y existencias consultados con reloj simulado 2026-11-04T12:05:00+00:00."
+      ],
+      "versions": {
+        "catalog_profile": "demo-20261104-v2",
+        "corpus": "demo-20261104-v2",
+        "corpus_fingerprint": "94a7e79b631aad7b48c949a18dd5be163c4a361f29a1e0b799e2e0198e799678",
+        "chat": "integrated-v1",
+        "commercial_clock": "simulated",
+        "commercial_evaluated_at": "2026-11-04T12:05:00+00:00"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "request_id": "1a389036-996f-4669-95d6-3245f53c1da6",
+      "session_id": "9437f5e9-34d4-4beb-93b3-83f0c7c4e9bb",
+      "store_id": "nexo-demo",
+      "data_mode": "demo",
+      "status": "answered",
+      "answer": "Alternativas con precio y existencias confirmados:\n1. Tira Ambiente — Presentación A\nPrecio de Tira Ambiente — Presentación A: 49000 COP.\nExistencias de Tira Ambiente — Presentación A: disponible.",
+      "claims": [
+        {
+          "text": "Precio de Tira Ambiente — Presentación A: 49000 COP.",
+          "citation_ids": [
+            "price:NEX-ILU-004-01"
+          ]
+        },
+        {
+          "text": "Existencias de Tira Ambiente — Presentación A: disponible.",
+          "citation_ids": [
+            "stock:NEX-ILU-004-01"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Potencia: 10 W.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:power_w"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Alimentación: adaptador incluido.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:power_source"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Temperatura de color: 3000 K.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:color_temperature"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Intensidad regulable: no.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:dimmable"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Altura: 0.3 cm.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:height_cm"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Lugar de uso: interior seco.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:use_location"
+          ]
+        },
+        {
+          "text": "Tira Ambiente — Presentación A — Masa: 130 g.",
+          "citation_ids": [
+            "attr:NEX-ILU-004-01:weight_g"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "price:NEX-ILU-004-01",
+          "kind": "commercial",
+          "store_id": "nexo-demo",
+          "source_id": "commercial-nexo-demo",
+          "source_version": "demo-20261104-v2",
+          "snapshot_id": "demo-20261104-v2-NEX-ILU-004-01",
+          "variant_id": "NEX-ILU-004-01",
+          "field": "price",
+          "source_updated_at": "2026-11-04T12:00:00Z",
+          "expires_at": "2026-11-04T12:15:00Z"
+        },
+        {
+          "citation_id": "stock:NEX-ILU-004-01",
+          "kind": "commercial",
+          "store_id": "nexo-demo",
+          "source_id": "commercial-nexo-demo",
+          "source_version": "demo-20261104-v2",
+          "snapshot_id": "demo-20261104-v2-NEX-ILU-004-01",
+          "variant_id": "NEX-ILU-004-01",
+          "field": "stock",
+          "source_updated_at": "2026-11-04T12:00:00Z",
+          "expires_at": "2026-11-04T12:15:00Z"
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:power_w",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Potencia (power_w): 10 W."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:power_source",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Alimentación (power_source): adaptador incluido."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:color_temperature",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Temperatura de color (color_temperature): 3000 K."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:dimmable",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Intensidad regulable (dimmable): No."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:height_cm",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Altura (height_cm): 0.3 cm."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:use_location",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Lugar de uso (use_location): interior seco."
+        },
+        {
+          "citation_id": "attr:NEX-ILU-004-01:weight_g",
+          "kind": "document",
+          "store_id": "nexo-demo",
+          "source_id": "doc-ilu-004",
+          "source_version": "demo-20261104-v2",
+          "chunk_id": "doc-ilu-004-s2",
+          "location": {
+            "page": null,
+            "section": "Características",
+            "paragraph": null,
+            "table": null
+          },
+          "excerpt": "- Masa (weight_g): 130 g."
+        }
+      ],
+      "products": [
+        {
+          "product_id": "NEX-ILU-004",
+          "variant_id": "NEX-ILU-004-01"
+        }
+      ],
+      "warnings": [
+        "Demostración: precios y existencias consultados con reloj simulado 2026-11-04T12:05:00+00:00."
+      ],
+      "versions": {
+        "catalog_profile": "demo-20261104-v2",
+        "corpus": "demo-20261104-v2",
+        "corpus_fingerprint": "94a7e79b631aad7b48c949a18dd5be163c4a361f29a1e0b799e2e0198e799678",
+        "chat": "integrated-v1",
+        "commercial_clock": "simulated",
+        "commercial_evaluated_at": "2026-11-04T12:05:00+00:00"
+      }
+    }
+  ]
+}

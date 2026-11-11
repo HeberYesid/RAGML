@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-10",
+  "purpose": "Local academic delivery; no upload or publication performed",
+  "archive_entries": 577,
+  "excluded": [
+    "private configuration",
+    "Python environment",
+    "model weights",
+    "runtime SQLite",
+    "reserved final case archive",
+    "reserved case generator"
+  ],
+  "files": {
+    "Informe_Proyecto_RAGML.docx": {
+      "bytes": 529232,
+      "sha256": "c9559dc46d9bc69cb66cf7c3e4b43a1d0c633a0fe9b482709b26494e72b93bbd"
+    },
+    "Informe_Proyecto_RAGML.pdf": {
+      "bytes": 1011333,
+      "sha256": "c048478798738b9f2e398aba2dbb00baff3be94ee61cd7a857a808794220e240"
+    },
+    "Sustentacion_RAGML.pptx": {
+      "bytes": 312003,
+      "sha256": "f770b56d54a4252e02d6ede4e51a409a31f50296aa0877017450d1023f2f20cd"
+    },
+    "Guion_Sustentacion.md": {
+      "bytes": 10740,
+      "sha256": "ef9d34ad4ee223615d28b47a7b39237d09b86faf5a4cbc875a89f43608d0659d"
+    },
+    "Informe_Avance.md": {
+      "bytes": 4295,
+      "sha256": "982f776d117d249d74b5b5e6ae31b0cd004535db602573f0f2c8cdd9817240f5"
+    },
+    "LEEME.md": {
+      "bytes": 2594,
+      "sha256": "77edd17d6dd7b691c72ba715e6db3a9a96ef4944bc52c30df6f1628eb44e8c12"
+    },
+    "Codigo_RAGML.zip": {
+      "bytes": 3978548,
+      "sha256": "915e9008d6e8bb6b7130ecdfa409200dce4e15dff0502a1efb8cf8e46551501d"
+    }
+  }
+}
